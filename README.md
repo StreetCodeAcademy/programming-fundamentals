@@ -4,9 +4,12 @@ Welcome to the Winter 2016 sesion of StreetCode Academy's Programming Fundamenta
 
 ## Course Information
 Mon & Wed, time TBA
+
 Instructors: TBA
 
 ## Topics
 Karel something something
+
 [Variables in Processing] (variables-processing/)
+
 Processing something something
