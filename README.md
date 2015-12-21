@@ -7,4 +7,6 @@ Mon & Wed, time TBA
 Instructors: TBA
 
 ## Topics
-TBA
+Karel something something
+[Variables in Processing] (variables-processing/)
+Processing something something
