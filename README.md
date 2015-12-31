@@ -8,7 +8,8 @@ Mon & Wed, time TBA
 Instructors: TBA
 
 ## Topics
-Karel something something
+
+[Karel and Decision Making](karel-controlflow/)
 
 [Variables in Processing] (variables-processing/)
 
