@@ -109,7 +109,7 @@ Note that the `else{}` block is optional - if we don't have an alternative list 
 
 ### Exercise
 
-We've seen how we can use an if-else statement to make decisions with Karel. Say Karel's placed in a world that's **exactly** four steps wide(we only need to move four times to get Karel from one end to the other). However, each world has a few beepers scattered at random, and we want Karel to move from one end to the other, ultimately picking up all the beepers. Try writing a program that allows Karel to accomplish this for the following two worlds, and try it out in Eclipse using the if1.java and i2.java starter files:
+We've seen how we can use an if-else statement to make decisions with Karel. Say Karel's placed in a world that's **exactly** four steps wide(we only need to move four times to get Karel from one end to the other). However, each world has a few beepers scattered at random, and we want Karel to move from one end to the other, ultimately picking up all the beepers. Try writing a program that allows Karel to accomplish this for the following two worlds, and try it out in Eclipse using the if1.java and if2.java starter files:
 
 ![Karel if1 Example]
 (img/if1.png)
