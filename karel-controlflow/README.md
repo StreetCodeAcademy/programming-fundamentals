@@ -1,6 +1,6 @@
 # Making Decisions with Karel
 
-Before we get started, head over to codehs.com/go/0AF7 to enroll in this lesson's class on CodeHS. CodeHS is a great platform for teaching Java online, and we've used it to create custom content for this course. 
+Before we get started, head over to [CodeHS](codehs.com/go/0AF7) to enroll in this lesson's class on CodeHS. CodeHS is a great platform for teaching Java online, and we've used it to create custom content for this course. 
 
 Now that we understand that programming is nothing more than instructing a computer to execute certain commands, let's try our hand at it. In this lesson you'll be working with Karel - you might be wondering who that is. Check him out:
 
