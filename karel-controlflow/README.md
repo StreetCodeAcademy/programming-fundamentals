@@ -1,5 +1,7 @@
 # Making Decisions with Karel
 
+Before we get started, head over to codehs.com/go/0AF7 to enroll in this lesson's class on CodeHS. CodeHS is a great platform for teaching Java online, and we've used it to create custom content for this course. 
+
 Now that we understand that programming is nothing more than instructing a computer to execute certain commands, let's try our hand at it. In this lesson you'll be working with Karel - you might be wondering who that is. Check him out:
 
 ![Karel]
@@ -18,9 +20,9 @@ We see that Karel has quite a few things he can do - for instance, he can move i
 ```java
 move();
 ```
-He can also pick up beepers, tokens that are sometimes scattered in his world, using: 
+He can also pick up balls, tokens that are sometimes scattered in his world, using: 
 ```java
-pickBeeper();
+takeBall();
 ```
 
 Although the way the command looks may appear odd, don't worry - once typed into Eclipse, Java understands that we are asking Karel to do the specified command as per the methods sheet shown. The parenthesis () and semicolon ; are just pieces of syntax Java uses to know we are sending a command to Karel.
@@ -34,7 +36,7 @@ Let's try this out. Suppose Karel is put into the following world, where lines r
 
 We want Karel to venture outside of his enclosure, pick up the beeper, and return to where he started.
 
-How could we do this? We know from our methods list we have the move() and pickBeeper() commands at our disposal. However, it seems that just moving forward isn't enough - after a few steps forward Karel would hit a wall. Referencing back to our methods list, we see that Karel can also turn right. We'll have to incorporate a few turns into our list of commands to make sure Karel can move outside of his house and return safely without hitting any walls. A working program would look like this:
+How could we do this? We know from our methods list we have the move() and takeBall() commands at our disposal. However, it seems that just moving forward isn't enough - after a few steps forward Karel would hit a wall. Referencing back to our methods list, we see that Karel can also turn right. We'll have to incorporate a few turns into our list of commands to make sure Karel can move outside of his house and return safely without hitting any walls. A working program would look like this:
 
 ```java
 move();
@@ -43,7 +45,7 @@ turnRight();
 move();
 turnLeft();
 move();
-pickBeeper();
+takeBall();
 turnAround();
 move();
 move();
@@ -61,7 +63,7 @@ Before we get there though, give this problem a shot:
 ![Karel Newspaper2 Example]
 (img/newspaper2.png)
 
-Similarly, we want Karel to go outside and pick up all the beepers present, ultimately returning to his starting location. Give it a go using the "newspaper2.java" starter file in Eclipse!
+Similarly, we want Karel to go outside and pick up all the beepers present, ultimately returning to his starting location. Give it a go using the Newspaper Karel exercise in the CodeHS lesson.
 
 ## Making Decisions
 
@@ -109,7 +111,7 @@ Note that the `else{}` block is optional - if we don't have an alternative list 
 
 ### Exercise
 
-We've seen how we can use an if-else statement to make decisions with Karel. Say Karel's placed in a world that's **exactly** four steps wide(we only need to move four times to get Karel from one end to the other). However, each world has a few beepers scattered at random, and we want Karel to move from one end to the other, ultimately picking up all the beepers. Try writing a program that allows Karel to accomplish this for the following two worlds, and try it out in Eclipse using the if1.java and if2.java starter files:
+We've seen how we can use an if-else statement to make decisions with Karel. Say Karel's placed in a world that's **exactly** four steps wide(we only need to move four times to get Karel from one end to the other). However, each world has a few beepers scattered at random, and we want Karel to move from one end to the other, ultimately picking up all the beepers. Try writing a program that allows Karel to accomplish this for the following two worlds, and try it out in the two worlds in the CodeHS lesson:
 
 ![Karel if1 Example]
 (img/if1.png)
@@ -128,7 +130,7 @@ Let's say we want Karel to be able to repeat a number of steps a certain number 
 ```java
 move();
 if(beepersPresent()){
-	pickBeeper();
+	takeBall();
 }
 ```
 
@@ -168,7 +170,7 @@ Give it a shot! Karel is in the following world:
 ![Karel for Exercise]
 (img/forProblem.png)
 
-We want Karel to move forward and pick up every beeper in this five step world. Check out the starter file forProblem.java and give it a go.
+We want Karel to move forward and pick up every beeper in this five step world. Check out the starter file for for-loops in the CodeHS lesson and give it a go.
 
 ## While Loops 
 
@@ -203,7 +205,7 @@ or below:
 ![Karel while2 Exercise]
 (img/whileProblem2.png)
 
-Using a while loop, write a program that enables Karel to pick up all the beepers no matter the world. Try your code out using the starter packages whileProblem1.java and whileProblem2.java
+Using a while loop, write a program that enables Karel to pick up all the beepers no matter the world. Try your code out using the starter files for While-Loop1 and While-Loop2 at CodeHS.
 
 ## Conclusion
 
@@ -220,6 +222,6 @@ and
 (img/combined2.png)
 
 
-Tackling this might require using an if statement, some while loops, and some creative thinking. Give it a shot! Test your code using combined1.java and combined2.java
+Tackling this might require using an if statement, some while loops, and will definitely require some creative thinking. Another hint: remember Karel can check if frontIsClear() before executing something. Give it a shot! Test your code using the Challenge-World1 and Challenge-World2 files on CodeHS. 
 
 
