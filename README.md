@@ -23,6 +23,8 @@ To download Processing, go [here](https://processing.org/download/?processing).
 
 For a bunch of awesome Processing tutorials and lessons, go [here](https://processing.org/tutorials/)!
 
+To check out what other people have done with processing in the past, go [here](http://www.openprocessing.org/)!
+
 ## Feedback/Surveys
 
 [Day 1](https://docs.google.com/forms/d/1bU1ze9t2kFa4p0rzNSQCMbUzr_5jfzW51jt0CBDY5-A/viewform)
