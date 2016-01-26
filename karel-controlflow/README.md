@@ -232,7 +232,7 @@ After you've mastered these exercises. Try your hand at some of the worlds from 
 
 Also, please fill out this feedback survey so we can know how to teach this class better!
 
-[Feedback](https://docs.google.com/forms/d/1bU1ze9t2kFa4p0rzNSQCMbUzr_5jfzW51jt0CBDY5-A/edit
+[Feedback](https://docs.google.com/forms/d/1bU1ze9t2kFa4p0rzNSQCMbUzr_5jfzW51jt0CBDY5-A/viewform
 )
 
 
