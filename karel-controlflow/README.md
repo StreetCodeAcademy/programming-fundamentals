@@ -224,4 +224,17 @@ and
 
 Tackling this might require using an if statement, some while loops, and will definitely require some creative thinking. Another hint: remember Karel can check if frontIsClear() before executing something. Give it a shot! Test your code using the Challenge-World1 and Challenge-World2 files on CodeHS. 
 
+## Further Challenges
+
+After you've mastered these exercises. Try your hand at some of the worlds from below - particularly checkerboard and midpoint. Credit to Luke Wilson for creating these for StreetCode!
+
+[Khan Academy Karel](https://www.khanacademy.org/computer-programming/karel/5213500187869184)
+
+Also, please fill out this feedback survey so we can know how to teach this class better!
+
+[Feedback](https://docs.google.com/forms/d/1bU1ze9t2kFa4p0rzNSQCMbUzr_5jfzW51jt0CBDY5-A/edit
+)
+
+
+
 
