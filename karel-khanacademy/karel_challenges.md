@@ -1,3 +1,20 @@
+Each challenge has a challenge description at the top.
+
+For example, for [Newspaper](https://www.khanacademy.org/computer-programming/karel-newspaper/6643911212400640), the description at the top is
+```
+* ~~~~~ Newspaper Challenge [Difficulty: Beginner] ~~~~~~
+ *
+ * Karel likes routine. Each morning it goes outside, picks up the newspaper (beeper),
+ * and then returns to its original position to read it. Write a program to do just that.
+ *
+```
+
+Write your code inside the `run()` function. Look for
+```
+var run = function() {
+    // Fill me out with a solution!
+```
+
 ####Beginner
 - [Newspaper](https://www.khanacademy.org/computer-programming/karel-newspaper/6643911212400640) (just commands)
 - [Move That Beeper!](https://www.khanacademy.org/computer-programming/karel-move-that-beeper/6177501893885952) (just commands)
