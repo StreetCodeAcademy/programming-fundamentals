@@ -23,10 +23,10 @@
 - [UN](https://www.khanacademy.org/computer-programming/karel-un/4570259021103104) (for loops)
 
 ####Master
--[Maze](https://www.khanacademy.org/computer-programming/karel-maze/5638720870678528)
--[Midpoint](https://www.khanacademy.org/computer-programming/karel-midpoint/6008043699175424)
--[Checkerboard](https://www.khanacademy.org/computer-programming/karel-checkerboard/5924809648898048)
--[Beeper Ramp](https://www.khanacademy.org/computer-programming/karel-beeper-ramp/6444278729539584)
+- [Maze](https://www.khanacademy.org/computer-programming/karel-maze/5638720870678528)
+- [Midpoint](https://www.khanacademy.org/computer-programming/karel-midpoint/6008043699175424)
+- [Checkerboard](https://www.khanacademy.org/computer-programming/karel-checkerboard/5924809648898048)
+- [Beeper Ramp](https://www.khanacademy.org/computer-programming/karel-beeper-ramp/6444278729539584)
 
 ####Almost Impossible (most of the mentors don’t even know how to do these)
--[Square It](https://www.khanacademy.org/computer-programming/karel-square-it/5161453015400448)
+- [Square It](https://www.khanacademy.org/computer-programming/karel-square-it/5161453015400448)
