@@ -15,7 +15,7 @@
 ####Advanced
 - [Double Down](https://www.khanacademy.org/computer-programming/karel-double-down/6719496328577024) (This challenge uses whiles and a LOT of thinking)
 - [Cover It Up](https://www.khanacademy.org/computer-programming/karel-cover-it-up/5178824446443520) (can be solved with only whiles)
--[Gotta Pick ‘em All](https://www.khanacademy.org/computer-programming/karel-gotta-pick-em-all/4955035217428480) (can be solved with only whiles)
+- [Gotta Pick ‘em All](https://www.khanacademy.org/computer-programming/karel-gotta-pick-em-all/4955035217428480) (can be solved with only whiles)
 - [Roomba](https://www.khanacademy.org/computer-programming/karel-roomba/5960483131359232)
 - [Fill in the Blanks](https://www.khanacademy.org/computer-programming/karel-fill-in-the-blanks/5722670553104384)
 - [Fill in the Blanks II](https://www.khanacademy.org/computer-programming/karel-fill-in-the-blanks-ii/6502263170007040)
