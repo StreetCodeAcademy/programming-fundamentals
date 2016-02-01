@@ -47,3 +47,5 @@ var run = function() {
 
 ####Almost Impossible (most of the mentors don’t even know how to do these)
 - [Square It](https://www.khanacademy.org/computer-programming/karel-square-it/5161453015400448)
+
+####[Karel Reference](https://docs.google.com/document/d/14TaIyBXcMZTMwJm2lXv46mg89SoqbKqEysfhggC4_EI/pub)
