@@ -28,11 +28,11 @@ Congrats! We’ve made a bouncing ball. Now can we make the ball move up and dow
 
 #####7. OOP
 
-Can we now make this object oriented? Hint: we might want to make a `BouncingBall` [class](https://processing.org/tutorials/objects/)
+What if we wanted to add more balls? Let’s move onto the lesson on [objects](objects.md) to learn how we can do that with a new CS concept
 
 #####8. More bouncing balls!
 
-Can we add more bouncing balls? Hint: an [array](https://processing.org/tutorials/arrays/) might be helpful
+Now that we have created a `class` for the ball, let's learn how to use arrays to add more balls! https://processing.org/tutorials/arrays/
 
 Extensions:
 - color!
