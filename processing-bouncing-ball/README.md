@@ -34,6 +34,9 @@ What if we wanted to add more balls? Let’s move onto the lesson on [objects](o
 
 Now that we have created a `class` for the ball, let's learn how to use arrays to add more balls! https://processing.org/tutorials/arrays/
 
+#####9. A ball that bounces randomly off the walls
+
+Let's learn about [inheritance](inheritance.md) to see how we can add a ball that bounces randomly off the walls
+
 Extensions:
-- color!
-- balls change speed/direction when bouncing off of walls
+- colors!
