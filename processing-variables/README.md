@@ -78,4 +78,54 @@ We can see in the console that this prints out "Beyonce is the nicest human bein
 
 Using the ```name``` variable, change around the names of who is being complimented (use the starter code in compliment_beyonce). You should only have to change one line of code for all of the output statements to be changed!
 
+### Exercise - More Types of Variables
 
+Variables can come in many different types. You've already seen the `String`. There's also the `int`, the `float`, the `boolean` ... among many others. 
+
+#### The int
+Let's start with the `int`. The int helps us store and use integers. 
+Type ```int one = 1;``` in your processing editor. 
+
+Notice the variable has three parts: the type (which is int), the variable name (which is "one"), and finally the variable value which is 1.
+
+Let's go ahead and declare more variables. 
+Type ```int two = 2;``` on the next line. And on the next line type ```int three = 3```. 
+Finally lets add these variables together and see the result. 
+Type ```System.out.console(one + two + three);``` on the next line and press run. 
+
+That makes sense! Easy right. 
+Now, on the next line, type ```one = 3;```. That looks wrong right?
+Actually not really, "one" is just the variable name. It has nothing to do with the variable value. Variables are variable meaning that can and often times will change their values. This is called reassignment. 
+
+Go ahead and type ```System.out.console(one + two + three);``` on the next line. Notice that result is different. 
+
+We can also multiply, divide, raise, subtract, .... ints. They work just like numbers in the real world. 
+Go ahead and declare some ints. Do whatever you want with them and then make them compute a final value that you will print out to the console. Show the person next to you and ask them to figure out what the value will be at the end. :)
+
+##### The float
+In programming, we can't express values with decimal points like 3.14159 using ints. So we need some other variable type to help us do that. Introducing the float. 
+This is what a float looks like ```float pi = 3.14159;```. Notice that it still has a variable's three parts. This rule is never broken. 
+
+We can also do all the math operations using floats. Go ahead add, subtract, multiply some floats. We can even mix up our math operations with floats and ints. Go ahead and do that too. 
+
+##### The boolean
+In programming, we live in a binary world. Which means everything is either true or false. There are no in-betweens. So how do we express truth and false-hood? We use the boolean. The boolean is a variable type that only has two values, true or false. 
+
+Here's what it looks like ```boolean trumpIsAwesome = false;```. We can't really use them for math but we use them a lot when we are trying figure out what the code is going to do. 
+
+For example:
+```
+if (trumpIsAwesome) {
+  System.out.console("Let's keep him.");
+} else {
+  System.out.console("Bring Obama back.");
+}
+```
+
+Here's another example
+```
+boolean trumpIsScary = true;
+while (trumpIsScary) {
+  System.out.println("I'm gonna keep looking out for all my people.");
+}
+```
