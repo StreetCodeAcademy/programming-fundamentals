@@ -27,7 +27,7 @@ After playing around for a bit, one really important thing to learn is how objec
 
 1. [Logic and control statements](https://github.com/StreetCodeAcademy/programming-fundamentals/tree/master/karel-controlflow) (if, else, while, for)
 2. [Variables](https://github.com/StreetCodeAcademy/programming-fundamentals/tree/master/processing-variables)
-3. Functions and methods (I haven't found a good tutorial for this yet, but I'll find one soon! - feel free to Google around)
+3. [Functions] http://www.cs.du.edu/~malbow/COMP1671/Notes/ProcessingNotes3.pdf 
 
 Once you've gone through the basics of building objects, play around with objects to try doing things like making more complex drawings. Try making animations and objects that can bounce of walls. Try making your own game or artwork! Check out the bouncingball file in this folder for an example of something cool you can do using objects.
 
