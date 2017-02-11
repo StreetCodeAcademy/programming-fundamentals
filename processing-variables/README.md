@@ -91,13 +91,13 @@ Notice the variable has three parts: the type (which is int), the variable name 
 Let's go ahead and declare more variables. 
 Type ```int two = 2;``` on the next line. And on the next line type ```int three = 3```. 
 Finally lets add these variables together and see the result. 
-Type ```System.out.console(one + two + three);``` on the next line and press run. 
+Type ```System.out.println(one + two + three);``` on the next line and press run. 
 
 That makes sense! Easy right. 
 Now, on the next line, type ```one = 3;```. That looks wrong right?
 Actually not really, "one" is just the variable name. It has nothing to do with the variable value. Variables are variable meaning that can and often times will change their values. This is called reassignment. 
 
-Go ahead and type ```System.out.console(one + two + three);``` on the next line. Notice that result is different. 
+Go ahead and type ```System.out.println(one + two + three);``` on the next line. Notice that result is different. 
 
 We can also multiply, divide, raise, subtract, .... ints. They work just like numbers in the real world. 
 Go ahead and declare some ints. Do whatever you want with them and then make them compute a final value that you will print out to the console. Show the person next to you and ask them to figure out what the value will be at the end. :)
@@ -116,9 +116,9 @@ Here's what it looks like ```boolean trumpIsAwesome = false;```. We can't really
 For example:
 ```
 if (trumpIsAwesome) {
-  System.out.console("Let's keep him.");
+  System.out.println("Let's keep him.");
 } else {
-  System.out.console("Bring Obama back.");
+  System.out.println("Bring Obama back.");
 }
 ```
 
