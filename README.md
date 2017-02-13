@@ -11,7 +11,7 @@ Instructors: Nathaniel Shak, Aneesh Pappu, Thomas Wang, Shrey Gupta, Vicki Niu, 
 
 [Karel and Decision Making](karel-controlflow/)
 
-[Variables in Processing](variables-processing/)
+[Variables in Processing](processing-variables/)
 
 Processing something something
 
