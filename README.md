@@ -15,7 +15,7 @@ Instructors: Nathaniel Shak, Aneesh Pappu, Thomas Wang, Shrey Gupta, Vicki Niu, 
 
 Processing something something
 
-##Helpful Links
+## Helpful Links
 
 To sign up for the class Piazza, an online forum where you can ask the teachers questions, click [here](piazza.com/streetcode_academy/winter2016/cs101?token=BSszBTTCP0l) and use the access code, hacker2.
 

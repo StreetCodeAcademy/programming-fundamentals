@@ -1,4 +1,4 @@
-#Build Your Instagram Filter
+# Build Your Instagram Filter
 
 Did you know that you can build your own instagram filter? And not only is it quite easy, but you will also learn
 a lot about functions, for loops, and arrays on your way there. 
