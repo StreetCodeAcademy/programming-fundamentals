@@ -13,14 +13,14 @@ As you probably guessed, you'll be writing code in the white text space. The pla
 To start off, let's go ahead and type the following into your Processing window:
 
 ```java
-System.out.println("Hello, world!");
+println("Hello, world!");
 ```
 
 If you press run and wait a few seconds, you should see the following output in your console.
 
 ![Hello, World!](img/hello-world.png)
 
-The `System.out.println` function is what prints stuff to your console. Whatever you stick inside the parentheses (with quotation marks) will appear in the console once you run.
+The `println` function is what prints stuff to your console. Whatever you stick inside the parentheses (with quotation marks) will appear in the console once you run.
 
 ### Exercise - multiple lines
 
@@ -53,6 +53,8 @@ This sounds really abstract and confusing, so let's look at an example.
 
 ![Complimenting Beyonce with variables](img/compliment-beyonce-var.png)
 
+> Note: we're now on a newer version of processing where you can just do `println` instead of `System.out.println`
+
 Code can also be found in examples/compliment_beyonce if you want to try it yourself!
 
 There are a couple things happening here. On line 1, we declare a variable - this is the magic step. Let's unpack what this line is doing.
@@ -66,9 +68,9 @@ After we've declared the type, we write the label name. In this case, it's simpl
 The equals sign is confusing: in math class, we learn that equals sign mean that two things are equivalent. In programming, it takes a slightly different context. This is more like assigning the variable ```x``` a value of ```3``` - or in this case, assigning the variable ```name``` a value of ```"Beyonce"```
 
 Now, let's look at how we use this ```name``` variable. In line 3, we have:
-```System.out.println(name + " is the nicest human being I know");```
+```println(name + " is the nicest human being I know");```
 
-We can see in the console that this prints out "Beyonce is the nicest human being I know". Using some superpower detective skills, you can see that we've replaced ```name``` with the information it holds: "Beyonce". So typing ```System.out.println(name + " is the nicest human being I know");``` is the same as ```System.out.println("Beyonce" + " is the nicest human being I know");```
+We can see in the console that this prints out "Beyonce is the nicest human being I know". Using some superpower detective skills, you can see that we've replaced ```name``` with the information it holds: "Beyonce". So typing ```println(name + " is the nicest human being I know");``` is the same as ```println("Beyonce" + " is the nicest human being I know");```
 
 ### Exercise - compliment generator, round 2
 
@@ -87,13 +89,13 @@ Notice the variable has three parts: the type (which is int), the variable name 
 Let's go ahead and declare more variables. 
 Type ```int two = 2;``` on the next line. And on the next line type ```int three = 3```. 
 Finally lets add these variables together and see the result. 
-Type ```System.out.println(one + two + three);``` on the next line and press run. 
+Type ```println(one + two + three);``` on the next line and press run. 
 
 That makes sense! Easy right. 
 Now, on the next line, type ```one = 3;```. That looks wrong right?
 Actually not really, "one" is just the variable name. It has nothing to do with the variable value. Variables are variable meaning that can and often times will change their values. This is called reassignment. 
 
-Go ahead and type ```System.out.println(one + two + three);``` on the next line. Notice that result is different. 
+Go ahead and type ```println(one + two + three);``` on the next line. Notice that result is different. 
 
 We can also multiply, divide, raise, subtract, .... ints. They work just like numbers in the real world. 
 Go ahead and declare some ints. Do whatever you want with them and then make them compute a final value that you will print out to the console. Show the person next to you and ask them to figure out what the value will be at the end. :)
@@ -112,9 +114,9 @@ Here's what it looks like ```boolean trumpIsAwesome = false;```. We can't really
 For example:
 ```
 if (trumpIsAwesome) {
-  System.out.println("Let's keep him.");
+  println("Let's keep him.");
 } else {
-  System.out.println("Bring Obama back.");
+  println("Bring Obama back.");
 }
 ```
 
@@ -122,6 +124,6 @@ Here's another example
 ```
 boolean trumpIsScary = true;
 while (trumpIsScary) {
-  System.out.println("I'm gonna keep looking out for all my people.");
+  println("I'm gonna keep looking out for all my people.");
 }
 ```
