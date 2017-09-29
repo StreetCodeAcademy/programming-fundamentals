@@ -6,6 +6,12 @@ void setup(){
   background(255,255,255);
   Sodoku board = new Sodoku();
   board.setNumber(9, 1, 1);
+  try {
+    board.loadBoard("board1.txt");
+  } catch(Exception e) {
+    println("whoops, guess the board didn't work");
+    exit();
+  }
   board.printBoard();
 }
 
@@ -37,9 +43,8 @@ class Sodoku {
     drawNumbers();
   }
   
-  //in this method, 1 corresponds to the first row, and 9 to the last row (we subtract 1 to get rid of 0 indexing!)
   public void setNumber(int val, int x, int y){
-    board[x - 1][y - 1] = val;  
+    board[x][y] = val;  
   }
   
   public void solveBoard(){
@@ -63,6 +68,24 @@ class Sodoku {
       return false;  
     }
     return false;
+  }
+  
+  //reads txt file in as sodoku board - board must be 9x9 with 0s as empty squares
+  public void loadBoard(String filename) throws Exception{
+    String[] lines = loadStrings(filename);
+    if(lines.length != 9){
+        throw new Exception("wrong number of lines in file");
+      }
+    for(int i = 0; i < lines.length; i++) {
+      String[] nums = split(lines[i],' ');
+      if(nums.length != 9){
+        throw new Exception("wrong number of numbers in line");
+      }
+      for(int j = 0; j < nums.length; j++) {
+          int num = int(nums[j]);
+          board[j][i] = num;
+      }
+    }
   }
   
   private void drawNumbers(){
