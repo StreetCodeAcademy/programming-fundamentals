@@ -1,77 +1,100 @@
 import java.util.*;
 
+boolean solve = false;
+boolean solved = false;
+Sodoku board = null;
 
 void setup(){
   size(500,500);
   background(255,255,255);
-  Sodoku board = new Sodoku();
-  board.setNumber(9, 1, 1);
   try {
-    board.loadBoard("board1.txt");
+    board = new Sodoku("board2.txt");
   } catch(Exception e) {
-    println("whoops, guess the board didn't work");
+    println(e.getMessage());
     exit();
   }
   board.printBoard();
 }
 
 void draw(){
+  if(solve && !solved) {
+    board.solveBoard();
+    board.printBoard();
+    solved = true;
+  }
+}
+
+void mouseClicked() {
+  solve = true;
+}
+
+//represents the position of a given square on the board -> has an x and a y coordinate
+class Coordinate {
   
+  public int x;
+  public int y;
+  
+  Coordinate(int x, int y){
+    this.x = x;
+    this.y = y;
+  }
+}
+
+//copies a 2d array 
+//(hint: this will be helpful to use in your recursion since just passing the board array will pass it by reference, meaning that every recursive call will be modifying the same board array
+public int[][] twoDArrCopy(int[][] orig){
+  int[][] copy = new int[orig.length][];
+  for(int i = 0; i < orig.length; i++){
+    copy[i] = orig[i].clone();  
+  }
+  return copy;
 }
 
 class Sodoku {
  
- int[][] board;
-  
-  Sodoku(){
+ int[][] board; //holds all the numbers on the board
+ List<Coordinate> blankSquares = new ArrayList<Coordinate>(); //all the spaces the player has control over
+ 
+  Sodoku(String filename) throws Exception{
     board = new int[9][];
     for(int i = 0; i < 9; i++){
-      board[i] = new int[9];
-      for(int j = 0; j < 9; j++){
-          board[i][j] = 0;
-      }
+      board[i] = new int[9]; 
     }
+    loadBoard(filename);
   }
   
-  Sodoku(int[][] boardInit){
-    board = boardInit.clone();
+  //color in all spaces that the player controls in white
+  private void shadeWrittenSpaces(){
+    stroke(255,255,255);
+    fill(255, 255, 255);
+    for(int i = 0; i < blankSquares.size(); i++) {
+      Coordinate cord = blankSquares.get(i);
+      rect(cord.x * width/9, cord.y * height/9, width/9, height/9);
+    }
+    stroke(0,0,0);
   }
   
   public void printBoard(){
-    background(255,255,255);
+    background(240,240,240);
+    shadeWrittenSpaces();
     drawSquares();
     drawNumbers();
   }
   
-  public void setNumber(int val, int x, int y){
-    board[x][y] = val;  
-  }
-  
+  //solves the sodoku puzzle and sets board to be the solution
   public void solveBoard(){
-    //TODO: Complete this!  
+    //TODO: Complete this!
   }
   
-  //returns a list of all the valid numbers that could be put in a given spot
-  public List<Integer> validMoves(int x, int y){
-    //TODO: Complete this!
+  //returns a list of all the valid numbers that could be put in the spot represented by cord on the board represented by curBoard
+  //this will be very helpful in your solver function on the recursive step
+  public List<Integer> validMoves(Coordinate cord, int[][] curBoard){
+    //TODO: Complete this (to use in your solver function)
     return null;
   }
   
-  public boolean isFinished(){
-    //TODO: Complete this!
-    return false;  
-  }
-  
-  //takes a move and returns whether or not it is a valid move - TODO: complete this if you think it would be helpful for your implementation
-  public boolean moveValid(int val, int x, int y){
-    if(val > 9 || val < 1){
-      return false;  
-    }
-    return false;
-  }
-  
   //reads txt file in as sodoku board - board must be 9x9 with 0s as empty squares
-  public void loadBoard(String filename) throws Exception{
+  private void loadBoard(String filename) throws Exception{
     String[] lines = loadStrings(filename);
     if(lines.length != 9){
         throw new Exception("wrong number of lines in file");
@@ -84,6 +107,17 @@ class Sodoku {
       for(int j = 0; j < nums.length; j++) {
           int num = int(nums[j]);
           board[j][i] = num;
+      }
+    }
+    loadWrittenSpaces();
+  }
+  
+  private void loadWrittenSpaces() {
+    for(int x = 0; x < 9; x++){
+      for(int y = 0; y < 9; y++){
+        if(board[x][y] == 0){
+          blankSquares.add(new Coordinate(x, y));
+        }
       }
     }
   }
