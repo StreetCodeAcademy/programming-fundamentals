@@ -1,5 +1,7 @@
 import java.util.*;
 
+//when the program starts, you will see the initial Sodoku puzzle without the solution. Once you click on the board, the solveBoard function will be called.
+
 boolean solve = false;
 boolean solved = false;
 Sodoku board = null;
@@ -52,7 +54,7 @@ public int[][] twoDArrCopy(int[][] orig){
 
 class Sodoku {
  
- int[][] board; //holds all the numbers on the board
+ int[][] board; //holds all the numbers on the board 0's are used to store unfilled spaces
  List<Coordinate> blankSquares = new ArrayList<Coordinate>(); //all the spaces the player has control over
  
   Sodoku(String filename) throws Exception{
@@ -81,12 +83,14 @@ class Sodoku {
     drawNumbers();
   }
   
+  //You should only need to modify the two below functions (or create any new functions you need to make this work).
+  
   //solves the sodoku puzzle and sets board to be the solution
   public void solveBoard(){
     //TODO: Complete this!
   }
   
-  //returns a list of all the valid numbers that could be put in the spot represented by cord on the board represented by curBoard
+  //returns a list of all the valid numbers that could be put in the spot represented by cord on the board passed in as the curBoard variable
   //this will be very helpful in your solver function on the recursive step
   public List<Integer> validMoves(Coordinate cord, int[][] curBoard){
     //TODO: Complete this (to use in your solver function)
