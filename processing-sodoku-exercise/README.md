@@ -12,7 +12,7 @@ Before attempting this project, students should:
 
 * Be very familiar with Java.
 * Understand classes and objects well.
-* Be familiar with Java datastructures, such as lists and 2d arrays.
+* Be familiar with Java datastructures, such as lists and 2D arrays.
 * Understand the concepts of recursion and depth-first-search.
 * Have experience psuedocoding and solving complex algorithmic coding problems.
 
@@ -28,7 +28,7 @@ By completing this project, students will:
 
 ## Getting Started
 
-First, download the Sodoku\_Template folder and open Sodoku\_Template in Processing. For this project, we give you a decent amount of code to start. When you run the program for the first time, you should see something like this:
+First, download the Sodoku\_Template folder and open Sodoku\_Template.pde in Processing. For this project, we give you a decent amount of code to start. When you run the program for the first time, you should see something like this:
 
 ![](startingboard.png)
 
@@ -50,9 +50,9 @@ There's a lot there. Thankfully, the only two functions you'll need to modify ar
 	    return null;
 	}
 
-solveBoard is the function that the program will call that we will need to implement to solve the sodoku board (and then store the solution in the `board` variable). validMoves is a function that, while it is not required, it is highly reccomended that you implement in order to help you with the solveBoard function.
+solveBoard is the function that the program will call that we will need to implement to solve the sodoku board (and then store the solution in the `board` variable). validMoves is a function that, while it is not required, is highly reccomended that you implement in order to help you with the solveBoard function.
 
-Now let's take a look at some of the rest of the code.
+Let's take a look at some of the rest of the code.
 
 On line 33, you'll see the coordinate class:
 
@@ -79,8 +79,8 @@ In the Sodoku class, you'll see the following variables:
 
 	class Sodoku {
 	 
-	int[][] board; //holds all the numbers on the board 0's are used to store unfilled spaces
-	List<Coordinate> blankSquares = new ArrayList<Coordinate>(); //all the spaces the player has control over
+	 int[][] board; //holds all the numbers on the board 0's are used to store unfilled spaces
+	 List<Coordinate> blankSquares = new ArrayList<Coordinate>(); //all the spaces the player has control over
 	
 	...
 
@@ -104,17 +104,15 @@ The rest of the code is mostly around setting up the board and displaying number
 	
 That the solveBoard function won't be called and displayed until you click. Just to make sure you don't solve the solution then wonder why nothing's showing up ;)
 
-Anyways, good luck!
-
 ## Tips
 
 ### Psuedocode it out!
 
-This is a complicated problem that has a solution that is not the most straightforward. Once you're familiar with the code, take a step back and write out on paper the steps that you think your solution should take before starting to type out the code.
+This is a complicated problem with a solution that is not the most straightforward. Once you're familiar with the code, take a step back and write out on paper the steps that you think your solution should take before starting to type out the code.
 
 ### Be careful of passing by reference
 
-One you're implementing your recursive solution, you will probably have to pass around some data in the form of 2D arrays and/or lists. Remember that in Java **objects are passed by reference**, meaning that if I pass a variable that stores something like a 2D array or a list into a function as a parameter, it will be the same 2D array or list being used in the place I passed it from. This can get especially hairy when you're using recursion.
+One you're implementing your recursive solution, you will probably have to pass around some data in the form of 2D arrays and/or lists. Remember that in Java **objects are passed by reference**, meaning that if I pass a variable that stores something like a 2D array or a list into a function as a parameter, any modifications that I make to it in that function will also exist for the variable in the place I passed it from. *In both functions, the code will be modifying the same object*. This can get especially hairy when you're using recursion.
 
 Just to illustrate this, if I had the following code:
 
@@ -126,7 +124,7 @@ Whatever was done in modifyArray to `a` to a would still be in place when printA
 
 If you do not want this to happen, you will need to **make a copy** of the array before passing it into the function. We've provided the twoDArrCopy function on line 47 to make this easier for you.
 
-In addition, if you're thinking of doing the same thing for lists, there may be an easier way that involved keeping track of a number instead of the whole list :).
+In addition, if you're thinking of doing the same thing for lists, there may be an easier way that involves keeping track of a number instead of the whole list :).
 
 ### Checking correctness
 

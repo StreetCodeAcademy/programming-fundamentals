@@ -10,7 +10,7 @@ void setup(){
   size(500,500);
   background(255,255,255);
   try {
-    board = new Sodoku("board2.txt");
+    board = new Sodoku("board1.txt");
   } catch(Exception e) {
     println(e.getMessage());
     exit();
