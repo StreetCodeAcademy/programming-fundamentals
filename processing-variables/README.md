@@ -6,8 +6,7 @@ Now that you're a Karel master, we're going to move into a slightly different pr
 
 You should already have Processing installed on your computer! If you go ahead and open the program, you'll see a window like this.
 
-![Processing Start Page]
-(img/processing-start.png)
+![Processing Start Page](img/processing-start.png)
 
 As you probably guessed, you'll be writing code in the white text space. The play and stop buttons at the top allow you to start and stop your code running, and the black space at the bottom is a console. Unlike in Karel, we can have our Processing code print different things to the console! This is fun (you can make your computer say whatever you want) and can also be a useful tool for finding out why things aren't running or what the state of the program is.
 
@@ -19,8 +18,7 @@ System.out.println("Hello, world!");
 
 If you press run and wait a few seconds, you should see the following output in your console.
 
-![Hello, World!]
-(img/hello-world.png)
+![Hello, World!](img/hello-world.png)
 
 The `System.out.println` function is what prints stuff to your console. Whatever you stick inside the parentheses (with quotation marks) will appear in the console once you run.
 
