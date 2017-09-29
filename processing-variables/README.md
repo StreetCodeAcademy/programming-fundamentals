@@ -1,6 +1,6 @@
 # Variables in Processing
 
-Now that you're a Karel master, we're going to move into a slightly different programming language! [Processing] (https://processing.org/) uses a lot of the same syntax and logic as Karel, so semicolons and if statements aren't going anywhere. It also adds a lot of exciting new things that let you do much more than move Karel around a screen: you can build [games] (http://www.openprocessing.org/sketch/116027), cool [3D visualizations] (https://www.behance.net/gallery/Phantogram/14442795), and so much more.
+Now that you're a Karel master, we're going to move into a slightly different programming language! [Processing](https://processing.org/) uses a lot of the same syntax and logic as Karel, so semicolons and if statements aren't going anywhere. It also adds a lot of exciting new things that let you do much more than move Karel around a screen: you can build games, cool [3D visualizations](https://www.behance.net/gallery/Phantogram/14442795), and so much more.
 
 ## Getting Started - Hello, World!
 
@@ -41,8 +41,7 @@ Given the choice between free pizza and [person], I would probably choose [perso
 ```
 
 Have it print compliments for at least 5 different people! Ex:
-![Compliment example]
-(img/compliment-beyonce.png)
+![Compliment example](img/compliment-beyonce.png)
 
 ## Variables
 
@@ -52,8 +51,7 @@ We solve this in programming with something called a variable. It lets you take 
 
 This sounds really abstract and confusing, so let's look at an example.
 
-![Complimenting Beyonce with variables]
-(img/compliment-beyonce-var.png)
+![Complimenting Beyonce with variables](img/compliment-beyonce-var.png)
 
 Code can also be found in examples/compliment_beyonce if you want to try it yourself!
 
