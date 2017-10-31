@@ -28,7 +28,9 @@ By completing this project, students will:
 
 ## Getting Started
 
-First, download the Sodoku\_Template folder and open Sodoku\_Template.pde in Processing. For this project, we give you a decent amount of code to start. When you run the program for the first time, you should see something like this:
+First, download the Sodoku\_Template folder and open Sodoku\_Template.pde in Processing. You can do that from [this link](https://drive.google.com/file/d/0B94NM1x_5GdGeHgyNFFCNjlVLUk/view?usp=sharing).
+
+For this project, we give you a decent amount of code to start. When you run the program for the first time, you should see something like this:
 
 ![](startingboard.png)
 
