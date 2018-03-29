@@ -158,6 +158,7 @@ LastName =  "Ganesan"
 print (FirstName + " " + LastName)
 print(FirstName + " is a G.")
 ```
+
 The last example may seem a little weird, but remember since `FirstName` and `LastName` are strings, you are allowed to print out the larger string `FirstName + " " + LastName`. 
  
 ## Practice
