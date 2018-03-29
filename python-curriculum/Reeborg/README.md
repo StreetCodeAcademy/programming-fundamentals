@@ -397,6 +397,7 @@ This problem is very tricky! But it is very satisfying. Let your student know th
  - For any Stanford mentors, this problem is similar to the Midpoint Karel problem from CS106A
 
 **Guiding Questions:**
+
 How can we use the tokens to keep track of different aspects of the situation: how large the world is, where Reeborg has been?
 If we don't know how large the world is, how do we go about finding the center point? (spend some time and try to brainstorm an algorithm on paper with your student before coding up a solution)
 
