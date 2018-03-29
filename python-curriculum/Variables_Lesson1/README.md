@@ -1,5 +1,5 @@
 # Introduction to Python
-<p> Hello! And welcome to Streetcode!! It's great to have you here! If you're reading this, you're in the Intro to Hack class, ready to learn Python! This is probably your first class, so we're going to start by showing you what Python is, and why we learn it! </p>
+<p> Hello! And welcome to Streetcode!! It's great to have you here! If you're reading this, you're in the Intro to Hack class, ready to learn Python! We're going to start by showing you what Python is, and why we learn it! </p>
 
 # What is Python?
 <p> Have you ever wondered how people build apps, or create websites? Everything on your computer is powered by lines of instructions that tell the computer exactly what to do. We call these lines of instructions "code", and "coding" is nothing but the process of writing those instructions out one-by-one. Python is one of the "languages" used to give the computer instructions - and it's definitely one of the better ones! Here's what Python "code" looks like:
@@ -52,7 +52,9 @@ LastName = "Ganesan"
 ```
 
 Notice the structure to each line. To create a **variable** in python, use the following pattern:
-<span style="color:blue">variable_name</span> = <span style="color:red">value</span>. The equal sign in Python means something a little different than what you're used to in math. By saying <code>my_name = "Jack"</code>, I'm assigning  "Jack" to the variable my_name. **Remember that the equal sign assigns variables in Python** Variable names have a few rules. First, you can't have spaces in a variable name. So, you _can't_ do this: 
+<span style="color:blue">variable_name</span> = <span style="color:red">value</span>. The equal sign in Python means something a little different than what you're used to in math. By saying <code>my_name = "Jack"</code>, I'm assigning  "Jack" to the variable my_name. You could imagine a box labled `my_name` that we put the word, "Jack" into. 
+
+**Remember that the equal sign assigns variables in Python** Variable names have a few rules. First, you can't have spaces in a variable name. So, you _can't_ do this: 
 
 ```python 
 First Name = "Diwakar"
@@ -89,6 +91,10 @@ another_number = my_favorite_number * 2 - 10
 ```
 Then, `another_number` will equal 15 (the value in `my_favorite_number` times 2 minus 10, so (15 * 2 - 10), which is 20. Again, we're assigning `another_number` to equal `my_favorite_number * 2`.
 
+### Try it:
+
+Go ahead and work with your mentor to make several variables that store numbers. Then try running your code and see if there are any errors. It shouldn't show anything yet. That will come later.
+
 ##Text
 Python also let's you remember short pieces of text, like your name! But, it's a bit tricky. You **can't** do this: 
 
@@ -113,6 +119,10 @@ Name = FirstName + " " + LastName
 Then, `Name` will contain the string `"Diwakar Ganesan"`. The last line of code used the **+** symbol to combine together three strings: `FirstName`, `" "` (a space character), and `LastName`.
 
 Always remember: **text in python must be surrounded by quotes**. 
+
+### Try it:
+
+Go ahead and work with your mentor to make several variables that store words or sentences this time. Again, try running your code and see if there are any errors. Like before, nothing should print out yet.
 
 ##Print Statements
 We're now going to talk about `print` statements! Remember the first line of code you wrote in this exercize? `print ("Hello, World')`. This line of code is called a print statement. A print statement is used to output lines of **text** to your screen! For example, if I write the following lines of code:
@@ -146,10 +156,15 @@ The trickiest part is figuring out what goes inside the open and close parenthes
 FirstName = "Diwakar"
 LastName =  "Ganesan"
 print (FirstName + " " + LastName)
+print(FirstName + " is a G.")
 ```
 The last example may seem a little weird, but remember since `FirstName` and `LastName` are strings, you are allowed to print out the larger string `FirstName + " " + LastName`. 
  
-##Practice Activity
+## Practice
 
-Now that we've learned a bit about Python and it's syntax, let's practice! Ask your teacher for a Syntax Puzzle Kit! You'll receive a set of index cards that have scrambled lines of Python. The set of cards you recieve are shuffled, and you should use what you've learned so far to piece together **5** lines of Python code!
+Work with a mentor to use the variables you defined to print out various sentences. You can try printing the variables by themselves, printing them with other variables, and combining them with other Strings that are not variables.
+
+> **Tip:** You might end up with some weird results when you try to print out a variable that stores a number in combination with other things. Before your mentor tells you how to fix it, see if you can figure this out on your own by Googling it.
+> 
+> Googling is an important skill that you'll end up using a lot the more you program. A good place to start is pasting the error message you see when you ran the program into Google.
  
