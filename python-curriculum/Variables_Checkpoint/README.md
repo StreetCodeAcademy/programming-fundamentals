@@ -73,4 +73,3 @@ print('Hello', person)
 Run the program above in IDLE. Notice that it prompts you for your name and then prints `Hello Darth Vader` (Yeah, that's my real name). 
 
 Your last task is to write a program that interviews a potential job candidate. Your program will welcome the candidate, ask them a series of questions (name, age, eye color, number of siblings, years of work experience, motivation level .... etc), run a series of secret computations, and then tell the candidate if they are hired or if they've gotta keep looking. 
- 	
