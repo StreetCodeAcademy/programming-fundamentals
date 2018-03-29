@@ -158,10 +158,25 @@ print(FirstName + " is a G.")
 ```
 
 The last example may seem a little weird, but remember since `FirstName` and `LastName` are strings, you are allowed to print out the larger string `FirstName + " " + LastName`. Feel free to copy and paste this code into your window to test it out and mess with it.
+
+## Taking user input
+
+Now that we've learned how to use variables, take a look [here](https://steemit.com/howto/@jackmanmania/python-programming-lesson-1-variables) to see how you can get user input and store it in a variable. You can skip the first part that repeats the things we already covered.
  
 ## Practice
 
-Work with a mentor to use the variables you defined to print out various sentences. You can try printing the variables by themselves, printing them with other variables, and combining them with other Strings that are not variables.
+Work with a mentor to use the variables you defined to print out various sentences. You can try printing the variables by themselves, printing them with other variables, and combining them with other Strings that are not variables. After that try the same thing, but getting having the variables equal things that the user types in.
+
+>**Hint:** use the `input` function
+
+**Some project ideas:** Make your own compliment generator! Ask the user their name, then have your computer make them blush by sweet talking them.
+
+![](Compliments.png)
+
+Alternatively, you could build a roast generator:
+
+![](Roasts.png)
+
 
 > **Tip:** You might end up with some weird results when you try to print out a variable that stores a number in combination with other things. Before your mentor tells you how to fix it, see if you can figure this out on your own by Googling it.
 > 

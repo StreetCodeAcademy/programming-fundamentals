@@ -4,7 +4,9 @@ In this lesson, we'll really test our metal with variables and really make sure 
 
 ### Exercise 1: Commenting & Variable Assignment
 Copy the code from the following code into IDLE window. 
-Add a comment above each line of code that explains exactly what that line does. If you don't know what a comment is, ask your instructor to help you. 
+Add a comment above each line of code that explains exactly what that line does and what each variable will be. If you don't know what a comment is, ask your instructor to help you. 
+
+By the end, see if you can tell what the code will print out before you run it.
 
 ```
 cars = 100
@@ -17,12 +19,12 @@ carpool_capacity = cars_driven * space_in_a_car
 average_passengers_per_car = passengers / cars_driven
 
 
-print "There are", cars, "cars available."
-print "There are only", drivers, "drivers available."
-print "There will be", cars_not_driven, "empty cars today."
-print "We can transport", carpool_capacity, "people today."
-print "We have", passengers, "to carpool today."
-print "We need to put about", average_passengers_per_car, "in each car."
+print("There are", cars, "cars available.")
+print("There are only", drivers, "drivers available.")
+print("There will be", cars_not_driven, "empty cars today.")
+print("We can transport", carpool_capacity, "people today.")
+print("We have", passengers, "to carpool today.")
+print("We need to put about", average_passengers_per_car, "in each car.")
 ```
 
 
@@ -40,31 +42,20 @@ carpool_capacity = cars_driven * spotted_ufos
 average_passengers_per_car = passengers / cars_driven
 
 
-print "There are", cars, "cars available."
-print "There are only", drivers, "drivers available."
-print "There will be", cars_not_driven, "empty cars today."
-print "We can transport", carpool_capacity, "people today."
-print "We have", passengers, "to carpool today."
-print "We need to put about", average_passengers_per_car, "in each car."
+print("There are", cars, "cars available.")
+print("There are only", drivers, "drivers available.")
+print("There will be", cars_not_driven, "empty cars today.")
+print("We can transport", carpool_capacity, "people today.")
+print("We have", passengers, "to carpool today.")
+print("We need to put about", average_passengers_per_car, "in each car.")
 ```
 
 Copy the above code into IDLE and run it. Notice that IDLE/Python reports an error and your code doesn't run. Why is that? When you know why, clearly explain the "why" and then fix it. **FIGURE IT OUT BY YOURSELF**
 
 If you've completed the exercise, congratulations, you've debugged your code. Debugging is a very important skill. In fact, it's so important that a well known rule of thumb in software development is _"Writing code takes is a 1/4 of development while 3/4 is debugging"_. 
 
-### Exercise 3: Even MORE Printing!
-Complete all exercises from the following links: 
-https://learnpythonthehardway.org/book/ex5.html
-https://learnpythonthehardway.org/book/ex6.html
 
-Notice that we've learned a new way to print. 
-
-### Exercise 4: So You Think You Understand Variables
-From the following link, run the code in IDLE. In a comment, explain what each line of code is doing. Explain why the printing in the console looks like it does. 
-https://learnpythonthehardway.org/book/ex8.html
-
-
-### Exercise 5: Job Interview AI
+### Exercise 3: Job Interview AI
 ```
 person = input('Enter your name: ')
 print('Hello', person)
