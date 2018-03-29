@@ -146,20 +146,18 @@ Each print statement consists of **4** parts:
 - **Some Text**
 - Close parenthesis: **<span style="color:purple">)</span>**
 
-The trickiest part is figuring out what goes inside the open and close parenthesis. In the list above, it says to place **some text** in between the parenthesis. What this means is that you can print out anything that counts as a string. Above, in the variables section, we said that strings are any lines of text contained in quotation marks. So, all of the following are valid **print** statements:
+The trickiest part is figuring out what goes inside the open and close parenthesis. In the list above, it says to place **some text** in between the parenthesis. What this means is that you can print out anything that counts as a string. Above, in the variables section, we said that strings are any lines of text contained in quotation marks. So, all of the following code is all valid.
 
-- `print("Hello, World")`
 
-- `print("I like " + "pie")`
-
-- ```python
+```python
+print("Hello, World")
 FirstName = "Diwakar"
 LastName =  "Ganesan"
 print (FirstName + " " + LastName)
 print(FirstName + " is a G.")
 ```
 
-The last example may seem a little weird, but remember since `FirstName` and `LastName` are strings, you are allowed to print out the larger string `FirstName + " " + LastName`. 
+The last example may seem a little weird, but remember since `FirstName` and `LastName` are strings, you are allowed to print out the larger string `FirstName + " " + LastName`. Feel free to copy and paste this code into your window to test it out and mess with it.
  
 ## Practice
 
