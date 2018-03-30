@@ -43,7 +43,7 @@ Now, save this file onto your computer. Feel free to ask your teacher for help! 
 
 If it doesn't, ask one of the teachers for help. If it does, congrats :). You just wrote your first line of Python! Your on your way to creating whatever you want on a computer!
 
-#Syntax
+# Syntax
 Now, we have to talk about Syntax - or the way lines of Python code are put together. The first piece of syntax we're going to talk about is how to define **variables**. A variable is a way to store information - the different things you want to remember in your code. For example, if you wanted your code to "remember" your first and last name, you would write something like this: 
 
 ```python 
@@ -72,7 +72,7 @@ Additionally, variable names **can't** start with a number. So, this wouldn't fl
 
 Now, what can we store in variables? There are really only two different kinds of variables we can store in python: **numbers** and **text**. 
 
-##Numbers
+## Numbers
 The most important thing you'd want your program to remember are numbers. To remember numbers in Python, you can use code like this: 
 
 ```python 
@@ -95,7 +95,7 @@ Then, `another_number` will equal 15 (the value in `my_favorite_number` times 2 
 
 Go ahead and work with your mentor to make several variables that store numbers. Then try running your code and see if there are any errors. It shouldn't show anything yet. That will come later.
 
-##Text
+## Text
 Python also let's you remember short pieces of text, like your name! But, it's a bit tricky. You **can't** do this: 
 
 ```python
@@ -124,7 +124,7 @@ Always remember: **text in python must be surrounded by quotes**.
 
 Go ahead and work with your mentor to make several variables that store words or sentences this time. Again, try running your code and see if there are any errors. Like before, nothing should print out yet.
 
-##Print Statements
+## Print Statements
 We're now going to talk about `print` statements! Remember the first line of code you wrote in this exercize? `print ("Hello, World')`. This line of code is called a print statement. A print statement is used to output lines of **text** to your screen! For example, if I write the following lines of code:
 
 ![Sample Code][multiple_print]
