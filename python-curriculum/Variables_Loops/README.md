@@ -226,7 +226,7 @@ That's all there is to it! Notice how, just like with an ```if``` statement, we 
 
 With just the code above, we would be able to get Karel to move all the way across an empty board because he will move until ```front_is_clear()``` is false, which is when he hits a wall. After running this loop, the board looks like this:
 
-![](WhileLoop.png)
+![](WhileLoop.PNG)
 
 Your challenge: try to write a program that gets Karel to move across two vertical columns, using what you've learned above!
 
@@ -320,7 +320,7 @@ Much of the code after the first line of the for loop should look familiar to yo
 >
 > Another Hint: The final state of Karel after running this code is:
 
-![](ForLoop.png)
+![](ForLoop.PNG)
 
 > Final Hint: It turns out we need to make Karel move across two rows before repeating the entire process. The code inside the loop is making Karel move across two rows. Which statements get Karel to move across the first, and then the second row?
 
