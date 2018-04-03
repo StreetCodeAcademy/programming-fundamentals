@@ -91,9 +91,19 @@ another_number = my_favorite_number * 2 - 10
 ```
 Then, `another_number` will equal 15 (the value in `my_favorite_number` times 2 minus 10, so (15 * 2 - 10), which is 20. Again, we're assigning `another_number` to equal `my_favorite_number * 2`.
 
+To test this all out, you could try:
+
+```python
+print(another_number)
+```
+
+and see if it prints out what you expected.
+
 ### Try it:
 
-Go ahead and work with your mentor to make several variables that store numbers. Then try running your code and see if there are any errors. It shouldn't show anything yet. That will come later.
+Go ahead and work with your mentor to make several variables that store numbers. Then try running your code and see if there are any errors. Once you define a couple of variables, you can try printing them out as well.
+
+> **Note to mentors:** It can be helpful to, on a seperate piece of paper, draw out boxes for each variable with the value stored in it.
 
 ## Text
 Python also let's you remember short pieces of text, like your name! But, it's a bit tricky. You **can't** do this: 
@@ -120,12 +130,20 @@ Then, `Name` will contain the string `"Diwakar Ganesan"`. The last line of code 
 
 Always remember: **text in python must be surrounded by quotes**. 
 
+Once again, you can test and see what your variable is storing by running:
+
+```python
+print(Name)
+```
+> Feel free to try this with the other variables as well!
+
+
 ### Try it:
 
-Go ahead and work with your mentor to make several variables that store words or sentences this time. Again, try running your code and see if there are any errors. Like before, nothing should print out yet.
+Go ahead and work with your mentor to make several variables that store words or sentences this time. Again, try running your code and see if there are any errors. Then you can try printing your variables to see if they store what you think they do.
 
 ## Print Statements
-We're now going to talk about `print` statements! Remember the first line of code you wrote in this exercize? `print ("Hello, World')`. This line of code is called a print statement. A print statement is used to output lines of **text** to your screen! For example, if I write the following lines of code:
+We're now going to talk about `print` statements! Remember the first line of code you wrote in this exercize? `print ("Hello, World')` as well as the times we printed out some of our variables. This line of code is called a print statement. A print statement is used to output lines of **text** to your screen! For example, if I write the following lines of code:
 
 ![Sample Code][multiple_print]
 
@@ -157,7 +175,11 @@ print (FirstName + " " + LastName)
 print(FirstName + " is a G.")
 ```
 
-The last example may seem a little weird, but remember since `FirstName` and `LastName` are strings, you are allowed to print out the larger string `FirstName + " " + LastName`. Feel free to copy and paste this code into your window to test it out and mess with it.
+The last example may seem a little weird, but remember since `FirstName` and `LastName` are strings, you are allowed to print out the larger string `FirstName + " " + LastName`. 
+
+### Try it:
+
+Feel free to copy and paste this code into your window to test it out and mess with it. Try making a couple more print statements and printing out various messages, both with and without variables.
 
 ## Taking user input
 
@@ -165,7 +187,9 @@ Now that we've learned how to use variables, take a look [here](https://steemit.
  
 ## Practice
 
-Work with a mentor to use the variables you defined to print out various sentences. You can try printing the variables by themselves, printing them with other variables, and combining them with other Strings that are not variables. After that try the same thing, but getting having the variables equal things that the user types in.
+>Mentors: once again, it could be really helpful to use a seperate piece of paper with "boxes" for each variable that store a value.
+
+Work with a mentor to use the variables you defined to print out various sentences. You can try printing the variables by themselves, printing them with other variables, and combining them with other Strings that are not variables. After that try the same thing, but having the variables equal things that the user types in.
 
 >**Hint:** use the `input` function
 
