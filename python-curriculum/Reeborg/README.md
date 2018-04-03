@@ -133,6 +133,8 @@ repeat 5:
 
 Have the student try to complete the Around 1 exercise. If they are having trouble, encourage them to try writing out the program command by command and then have them point out to you which parts are the same. Use that warm-up as a starting point for helping them figure out what information goes in the `#number of repeats` and `#commands to repeat` fields.
 
+> For students moving quickly, you could optionally ask them to see if they could figure out how to use nested repeats/for loops so that they don't have to write the same for loop multiple times.
+
 ### Exercise: Hurdle 1
 
 ![](Hurdles1.png)
