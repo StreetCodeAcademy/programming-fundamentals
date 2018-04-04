@@ -166,11 +166,11 @@ Two things will be printed. What will they be? Well, if you answered ```False```
 
 # If Statements and Loops
 
-Now that we have learned about types of variables and operators, we can start doing cool things with them! The first thing we're going to learn is the ```if``` statement.
+Now that we have learned about types of variables and operators, we can start doing cool things with them! The first thing we're going to review is the ```if``` statement, but with a twist: we're going to use variables in them.
 
 ## If Statements
 
-Just like in English, the ```if``` statement is a condition. If I'm hungry, I will eat. If you're at StreetCode, then you're awesome. In programming, the exact same thing happens: ```if``` something is true, then do something else. For example, ```if``` I have less than 5 fish, I will go fishing. Otherwise (or ```else```), I will not go fishing. Let's take the fisherman as an example to understand how to use an ```if``` statement:
+Just like in English, the ```if``` statement is a condition. If I'm hungry, I will eat. If you're at StreetCode, then you're awesome. In programming, the exact same thing happens: ```if``` something is true, then do something else. For example, ```if``` I have less than 5 fish, I will go fishing. Otherwise (or ```else```), I will not go fishing. Let's take the fisherman as an example to understand how to use an ```if``` statement, using a **variable** that we created ourselves:
 
 ```python
 my_fish = 4
@@ -180,7 +180,7 @@ else:
     print("I have 5 or more fish!")
 ```
 
-Will the fisherman add a fish here? YES! That's because we go fishing if we have less than 5 fish, which is true. Notice how we write an ```if``` statement:
+Will the fisherman add a fish here? YES! That's because we go fishing if we have less than 5 fish, which is true. We know this because of our variable, ```my_fish```. Recall how we write an ```if``` statement:
 
 ```python
 if some_condition is True:
@@ -195,7 +195,7 @@ You can use ```if``` statements on any **condition**, or question you ask. The q
 * ```i_am_hungry and you_are_hungry```
 * ```mi_casa == tu_casa```
 
-Here are some things you can't ask in an ```if``` statement. Can you identify why?
+Here are some things you can't ask in an ```if``` statement. Can you identify why? Discuss with your mentor.
 
 * ```height = 5```
 * ```my_age```
@@ -203,7 +203,7 @@ Here are some things you can't ask in an ```if``` statement. Can you identify wh
 
 ## Loops
 
-Now we’re going to dive into two very useful items in our programming toolbox: ```while``` loops and ```for``` loops.
+Now we’re going to revisit two very useful items in our programming toolbox: ```while``` loops and ```for``` loops.
 
 To be a good programmer, we need to make efficient programs, and that means knowing how to best store and manipulate our data.
 
@@ -222,17 +222,40 @@ while front_is_clear():
     move()
 ```
 
-That's all there is to it! Notice how, just like with an ```if``` statement, we have the keyword, ```while```, and then a question (or condition) we ask Karel the robot, and then a colon ```:```, and inside the loop, we do whatever we want to do over and over until the condition we ask isn't true anymore.
+That's all there is to it! Make sure to remember how, just like with an ```if``` statement, we have the keyword, ```while```, and then a question (or condition) we ask Karel the robot, and then a colon ```:```, and inside the loop, we do whatever we want to do over and over until the condition we ask isn't true anymore.
 
 With just the code above, we would be able to get Karel to move all the way across an empty board because he will move until ```front_is_clear()``` is false, which is when he hits a wall. After running this loop, the board looks like this:
 
 ![](WhileLoop.PNG)
 
-Your challenge: try to write a program that gets Karel to move across two vertical columns, using what you've learned above!
+This should look pretty familiar. But, now that we know what variables are and how to use them, we can make ```while``` loops using variables, too. For example, you could have a ```while``` loop that uses a variable you make, called ```my_number```:
+
+```python
+# what does this program do?
+my_number = 10
+while my_number >= 6:
+    my_number -= 1
+```
+
+Discuss this with your mentor: what does the above loop do? What is the value of my_number once this program is done running?
+
+### Your turn! Write a program that asks for a password:
+
+Your challenge is to use the tools in your toolbox to write a program that asks the user for a ```password```, and keeps re-prompting them **until they get it right**. Recall the syntax for accepting user input:
+
+```python
+word = input("Give me a word! ")
+```
+
+This program stores the text that the user types into the variable ```word```.
+
+> Hint: What is the condition that you should put in your ```while``` loop? What needs to happen for the word the user types to be the correct password? Think about using an operator. Which would you use to see if the password they enter is equal to the correct one?
+
+
 
 ### For Loops
 
-The second type of important loop is the ```for``` loop. It's easy for us to get Karel to move by writing
+The second type of important loop, as you'll recall, is the ```for``` loop. Remember how it's easy for us to get Karel to move by writing
 
 ```python
 while front_is_clear():
@@ -240,15 +263,14 @@ while front_is_clear():
 turn_left()
 ```
 
-And then copying and pasting that text again and again to have Karel move around the board. This works for short programs, but there's a problem. Imagine if he needed to do that 100, 1000, or 10000 times! That would be way too time-consuming to type (or even copy-paste), and
-it’s very inefficient.
+And then copying and pasting that text again and again to have Karel move around the board. This works for short programs, but there's a problem. Imagine if he needed to do that 100, 1000, or 10000 times! That would be way too time-consuming to type (or even copy-paste), and it’s very inefficient.
 
 When we **know how many times we want to do something**, we can easily use a **for loop** that happens again and again until we tell it to stop. Inside of this loop, we can use a **counter variable** that changes each time, and we’ll use that changing variable to display how many fish we currently have.
 
 Below, I've written the code that will let Karel move across the entire 10 x 10 board by going across every row! Don't worry if it looks difficult to understand; we're going to break it down line by line.
 
 ```python
-for i in range(5):
+for i in range(5): # i is called a "counter variable"
     while front_is_clear():
         move()
     turn_left()
@@ -263,8 +285,7 @@ for i in range(5):
         turn_left()
 ```
 
-Let’s break the for loop down into its components. First, we have the ```for```, which signals that we’re about to enter the loop. Next, we declare a variable that will be used as a counter in
-the loop. The variable we declare here, ```i```, is commonly used for indexing arrays. In Python, the ```in``` literally means what you think it does—you are going to make ```i``` loop over some range of numbers or elements of a list (which we’ll discuss later), and each time we loop, ```i``` will be a value *in* that list of numbers or elements.
+Let’s break the for loop down into its components. First, we have the ```for```, which signals that we’re about to enter the loop. Next, we declare a variable that will be used as a counter in the loop. The **variable** we declare here, ```i```, is commonly used for indexing arrays. In Python, the ```in``` literally means what you think it does—you are going to make ```i``` loop over some range of numbers or elements of a list (which we’ll discuss later), and each time we loop, ```i``` will be a value *in* that list of numbers or elements.
 
 Another important concept is ```range```. The ```range``` function requires one or two parameters. If you use ```range(2)```, for example, python creates a list of numbers starting from 0, adding each time by 1, and having the total length of the number you gave it. So, for example, ```range(2)``` would create the list [0, 1], since there are two elements and it starts counting from 0.
 
@@ -294,23 +315,7 @@ Notice how, in the second line of our program, there is a **tab indent**. This i
 
 Here, when we indent, we are going one level deeper into our **scope**. Everything you write with this indent will be run *inside of* the for loop, rather than after the entire loop has finished (which is when you backspace the indent after you’re done with typing everything want to run inside the loop). When you backspace your indent, you move out one level of scope, so make sure to keep the indents in line for good style, functionality, and readability.
 
-Everything after line 2 will be run again and again for the number of times we told Karel, which is 5. So, we'll be running the inside of the program 5 times:
-
-```python
-for i in range(5):
-    while front_is_clear():
-        move()
-    turn_left()
-    move()
-    turn_left()
-    while front_is_clear():
-        move()
-    for i in range(3):
-        turn_left()
-    move()
-    for i in range(3):
-        turn_left()
-```
+Everything after line 2 will be run again and again for the number of times we told Karel, which is 5. So, we'll be running the inside of the program 5 times.
 
 #### Your turn! Figure out the code:
 
@@ -322,6 +327,67 @@ Much of the code after the first line of the for loop should look familiar to yo
 
 ![](ForLoop.PNG)
 
-> Final Hint: It turns out we need to make Karel move across two rows before repeating the entire process. The code inside the loop is making Karel move across two rows. Which statements get Karel to move across the first, and then the second row?
+> Extra Hint: It turns out we need to make Karel move across two rows before repeating the entire process. The code inside the loop is making Karel move across two rows. Which statements get Karel to move across the first, and then the second row?
 
-Fantastic job!! You've just learned about different types of loops, the ```if``` statement, and different types of variables, commands, and questions (operators) that you can use to make your programs a lot more powerful. Onward to the checkpoint exercise, where you'll build a *guessing game*!
+### Important Point
+
+It's important that we understand the difference between a ```for``` loop and a ```while``` loop. Discuss this with your mentor, as this is a crucial point! We use ```for``` loops when we **know how many times we want to do something**.
+
+We use ```while``` loops when we don't know how many times for sure, but we know a **condition for when we want to stop**. If you can say "I want to do something until ___", there's a good chance you want to use a ```while``` loop. Make sure you understand this distinction, because you'll need it later!
+
+### Your turn again! Let's build a broken record:
+
+Now that you've learned how ```if``` statements, ```for``` loops, and ```while``` loops interact with variables, let's try to build a broken record that says the same thing all the time...well, almost.
+
+Let's pretend that you're a HUGE cat fan, and you're adopting a ton of cats today. In fact, you're adopting 100 cats all at once! Every time you adopt one cat, the adoption agency needs to print out how many cats you have total. So, we'd expect your output to look something like:
+
+```python
+You now have 1 cat(s).
+You now have 2 cat(s).
+You now have 3 cat(s).
+...
+You now have 100 cat(s).
+```
+
+Work with your mentor and use a ```for``` loop to create a program that will print out these 100 statements. **Save this code, as you'll use it in an exercise further down on this page!**
+
+### Now, let's mix it up and loop over a list:
+
+Although we haven't covered this directly in our lessons so far, this is a great chance for us to interact with another kind of variable: a list. We're going to supply you a name of all the cats you got, and you just need to print them all out, one by one. The syntax for this is:
+
+```python
+for cat in list_of_cats:
+    # your code here
+```
+
+This is almost exactly what you've done before, with two differences: ```i``` turned into ```cat```, and ```range(100)``` turned into ```list_of_cats```. Behind the scenes, python is doing the same thing, though; ```cat``` is a variable that represents the cat name you are currently printing, and ```list_of_cats``` is a list of all the possibilities you need to look at, which is the same thing as a list of numbers from 1 to 100, which is what you were using earlier with ```range()```! Check in with your mentor to make sure this makes sense.
+
+You can copy this statement here that creates the list of cats into the very beginning of your program, since we haven't covered lists yet:
+
+```python
+list_of_cats = ["Joe", "Lily", "Sammy G", "Nyan", "Mimi", "Sally", "Heidi", "Jones"]
+```
+
+### Redesigning the while loop
+
+We learned earlier that ```while``` loops don't have **counter variables** like ```for``` loops do. But, it turns out, we can *force* them to have counter variables, if we want them to. It's your task to build a ```while``` loop that has a counter variable that adds by 1 every time you go through the loop! Complete the "broken record" task above by using a ```while``` loop instead of a ```for``` loop, and compare your code with the code you wrote earlier.
+
+### An additional extravaganza!
+
+In this exercise, you're going to build a program that gets users to input numbers, and you're going to **add all of the numbers up and print out the sum** every time they input another number. For example, if the user inputs 1, then 2, then 3, then you're going to print out 1, then 3, then 6. Print out the sum immediately after the user inputs each number. End your program when the user inputs a 0. You can assume that none of the numbers are less than 0 (but you can check for that if you'd like an extra challenge)!
+
+If you're having trouble with getting python to see the user inputs as **integer numbers**, try the following command:
+
+```python
+number = int(input("Enter a number: "))
+```
+
+The ```int()``` command forces the input to be converted into a number.
+
+
+
+# And...Onward!
+
+Fantastic job!! You've just learned about the combination of different kinds of variables with different types of loops, the ```if``` statement, and different types of commands and questions (operators) that you can use to make your programs a lot more powerful.
+
+Onward to the checkpoint exercise, where you'll build an interactive *guessing game*!
