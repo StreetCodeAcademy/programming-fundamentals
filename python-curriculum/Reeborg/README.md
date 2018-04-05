@@ -19,6 +19,7 @@ Below, you'll find a table of contents of the generalized lesson sequence. Feel 
 4. While Loops
 5. Combining Conditions/Advanced Conditions
 6. Challenges
+7. Even Harder Challenges
 
 ## Navigating Reeborg
 You can help your student navigate to the pre-loaded world with the same name as the exercises (in the **Exercise Breakdown** part of this document) in Reeborg using the top toolbar. Here is a screenshot for your reference:
@@ -359,13 +360,18 @@ If we don't know how large the world is, how do we go about finding the center p
 
 This problem can be solved using only a few tokens or using many tokens. You can guide the student through whichever method comes to them first. If they choose to use many tokens, you can encourage them to think about how to solve the problem if they were only able to use two tokens once they have completed their initial solution.
 
+## 7. Even Harder Challenges
+
+>If you've gotten to this point, you're definitely ready to move on to the next lessons. But if you want to push yourself....
+
 ### Exercise: Maze
 
-![](Maze.png)
+![](Maze.png)	
 
-This problem is actually not that difficult to code up a solution to, but very challenging to devise a strategy to solve. In this problem, we will get a lot of practice with psuedocoding and coming up with solutions to complex problems.
+The code for this solution is actually not too complicated implement, but it's very challenging to devise a strategy to solve. In this problem, we will get a lot of practice with psuedocoding and coming up with solutions to complex problems.
 
-**Guiding Questions:** Questions
+**Guiding Questions:**
+
 If you were stuck in a maze, what strategy would you use to try to escape?
 Let's try tracing our way through Reeborg's maze. What happens if you always try to go left when you can? What happens if you always try to go right when you can?
 
@@ -403,4 +409,33 @@ elif front_is_clear():
 	#go right
 ...
 ```
+
+### Exercise: Checkerboard: the challenge
+
+##### To find this exercise, first click, "Other Worlds", then click "Go to Challenges". After that you will find "Checkerboard: the challenge". 
+
+>To get back to the other challenges, you will have to click "Other Worlds again, then click "Go to Introduction Reeborg".
+
+![](Checkerboard.png)
+
+This problem is very difficult! Despite potentially being somewhat straightforward to come up with a psuedocoded solution to it, the actually implementation to solving this is very messy. Careful decomposition will be very helpful here.
+
+**Guiding Questions:**
+
+What are some repeated tasks you will be doing in this problem that could be broken down into functions? If your strategy is to snake back and forth like this:
+
+![](Checkerboardstrat.png)
+
+How would Reeborg act differently when advancing to the next row when it was coming from the left vs from the right? How would we be able to tell the difference between the two situations? How can Reeborg know when it's done so that it doesn't get in an **infinite loop**.
+
+When writing functions for this problem three important things to focus on are:
+
+1. What situation will Reeborg be in when I use this function?
+2. What "work" will this function do?
+3. In what situation will Reeborg be **after** this function finishes.
+
+> Optionally, you can move on to "Checkerboard: the great challenge" after this problem if the student wants to push themself. I won't bother writing up guiding questions to that here...
+
+That's it! Feel free to poke around and try other exercises if the student really wants a challenge,
+
 
