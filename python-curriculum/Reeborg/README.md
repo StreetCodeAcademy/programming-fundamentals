@@ -306,52 +306,6 @@ If your student is struggling, have them jump back to **3. Basic Conditions/If S
 
 Have your student test this code from Hurdle 4 on Hurdle 1, Hurdle 2 and Hurdle 3. Ask them why they think it works for such a diverse set of problems.
 
-### Extension exercises:
-
-### Exercise: Maze
-
-![](Maze.png)
-
-This exercise might be good for a student who wants to try the challenge problems in the following section, **6. Challenges**. Maze will prepare students to utilize strategy and algorithmic thinking more explicitly, in preparation for exercises like **Center 1** in the challenges.
-
-**Guiding Questions:** Questions
-If you were stuck in a maze, what strategy would you use to try to escape?
-Let's try tracing our way through Reeborg's maze. What happens if you always try to go left when you can? What happens if you always try to go right when you can?
-
-Try to guide your student to think about the right-hand rule typically implemented in maze solvers. This is a good place to introduce pseudo-coding to your student if they are not already familiar with this technique. Explain how pseudo-code can be useful for working through more complex algorithm dependent solutions
-
-The maze solution has the following pseudo-code:
-
-```
- 1.  Have Reeborg follow along the right edge of the maze
-	 2. Turn right if Reeborg can
-	 3. Go straight ahead if Reeborg can't turn right
-	 4. Turn left as a last resort
-```
-
-With the pseudo-code written up, it's much easier to see that the natural structure of this solution requires if/elif/else statements. This might be a good time to explain how conditions are ordered in if/elif/else statements. 
-
-Explain to students students that if/elif/else statements execute top to bottom and as soon as the program determines a true condition, it will execute the commands in that block without checking any of the next conditions.
-
-It could be helpful to ask a question like: "Imagine that Reeborg is at an intersection in the world where both the right is clear (Reeborg can turn right) and the front is clear (Reeborg can go straight), and the first if statement in the code checks for if the front is clear and the second elif statement checks for if the right is clear. What does this code tell Reeborg to do? Is that the correct behavior according to the pseudo-code? What's wrong with this code?". 
-
-Which of these gives you the correct behavior?
-
-```python
-if front_is_clear():
-	#go straight 
-elif right_is_clear():
-	#go right
-...
-```
-
-```python
-if right_is_clear():
-	#go straight 
-elif front_is_clear():
-	#go right
-...
-```
 Congratulate your student for finishing the StreetCode Reeborg sequence! The following section goes over some challenge problems if your student shows interest or motivation. You can also have them try any other problems they're interested in.
 
 ## 6. Challenges
@@ -404,4 +358,49 @@ How can we use the tokens to keep track of different aspects of the situation: h
 If we don't know how large the world is, how do we go about finding the center point? (spend some time and try to brainstorm an algorithm on paper with your student before coding up a solution)
 
 This problem can be solved using only a few tokens or using many tokens. You can guide the student through whichever method comes to them first. If they choose to use many tokens, you can encourage them to think about how to solve the problem if they were only able to use two tokens once they have completed their initial solution.
+
+### Exercise: Maze
+
+![](Maze.png)
+
+This problem is actually not that difficult to code up a solution to, but very challenging to devise a strategy to solve. In this problem, we will get a lot of practice with psuedocoding and coming up with solutions to complex problems.
+
+**Guiding Questions:** Questions
+If you were stuck in a maze, what strategy would you use to try to escape?
+Let's try tracing our way through Reeborg's maze. What happens if you always try to go left when you can? What happens if you always try to go right when you can?
+
+Try to guide your student to think about the right-hand rule typically implemented in maze solvers. This is a good place to introduce pseudo-coding to your student if they are not already familiar with this technique. Explain how pseudo-code can be useful for working through more complex algorithm dependent solutions
+
+The maze solution has the following pseudo-code:
+
+```
+ 1.  Have Reeborg follow along the right edge of the maze
+	 2. Turn right if Reeborg can
+	 3. Go straight ahead if Reeborg can't turn right
+	 4. Turn left as a last resort
+```
+
+With the pseudo-code written up, it's much easier to see that the natural structure of this solution requires if/elif/else statements. This might be a good time to explain how conditions are ordered in if/elif/else statements. 
+
+Explain to students students that if/elif/else statements execute top to bottom and as soon as the program determines a true condition, it will execute the commands in that block without checking any of the next conditions.
+
+It could be helpful to ask a question like: "Imagine that Reeborg is at an intersection in the world where both the right is clear (Reeborg can turn right) and the front is clear (Reeborg can go straight), and the first if statement in the code checks for if the front is clear and the second elif statement checks for if the right is clear. What does this code tell Reeborg to do? Is that the correct behavior according to the pseudo-code? What's wrong with this code?". 
+
+Which of these gives you the correct behavior?
+
+```python
+if front_is_clear():
+	#go straight 
+elif right_is_clear():
+	#go right
+...
+```
+
+```python
+if right_is_clear():
+	#go straight 
+elif front_is_clear():
+	#go right
+...
+```
 
