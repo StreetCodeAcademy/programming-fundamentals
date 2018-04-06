@@ -130,7 +130,7 @@ Then, `Name` will contain the string `"Diwakar Ganesan"`. The last line of code 
 
 Always remember: **text in python must be surrounded by quotes**. 
 
-Once again, you can test and see what your variable is storing by running:
+Once again, after writing all the above code, you can test and see what your variable is storing by running:
 
 ```python
 print(Name)
@@ -189,9 +189,9 @@ Now that we've learned how to use variables, take a look [here](https://steemit.
 
 >Mentors: once again, it could be really helpful to use a seperate piece of paper with "boxes" for each variable that store a value.
 
-Work with a mentor to use the variables you defined to print out various sentences. You can try printing the variables by themselves, printing them with other variables, and combining them with other Strings that are not variables. After that try the same thing, but having the variables equal things that the user types in.
+Work with a mentor to use the variables you defined to print out various sentences. You can try printing the variables by themselves, printing them with other variables, and combining them with other pieces of text. After that try the same thing, but having the variables equal things that the user types in.
 
->**Hint:** use the `input` function
+>**Hint:** use the `input` function to do this.
 
 **Some project ideas:** Make your own compliment generator! Ask the user their name, then have your computer make them blush by sweet talking them.
 
