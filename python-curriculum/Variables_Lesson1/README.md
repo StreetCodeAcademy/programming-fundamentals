@@ -91,7 +91,7 @@ another_number = my_favorite_number * 2 - 10
 ```
 Then, `another_number` will equal 15 (the value in `my_favorite_number` times 2 minus 10, so (15 * 2 - 10), which is 20. Again, we're assigning `another_number` to equal `my_favorite_number * 2`.
 
-To test this all out, you could try:
+After writing all the code above, to test this all out, you could try:
 
 ```python
 print(another_number)
