@@ -1,6 +1,6 @@
 # Introduction to Variable Types
 
-Kudos for finishing the last lesson! Now that we've gotten our feet wet with python, we already know a lot: how to use the IDLE, how to create a variable, how to print a statement, and how to take user input. If you need a refresher, take a look at the **Variables Lesson**, where we went over these concepts.
+Kudos for finishing the last lesson! Now that we've gotten our feet wet with python, we already know a lot: how to use the IDLE, how to create a variable, how to print a statement, and how to take user input. If you need a refresher, take a look at the [**Variables Lesson**](https://github.com/StreetCodeAcademy/programming-fundamentals/tree/master/python-curriculum/Variables_Lesson1), where we went over these concepts.
 
 # Types of Variables: Numbers and Text
 
@@ -37,7 +37,7 @@ Now we're getting into some fancier programming lingo. Are you ready to sound li
 
 Booleans sound weird and scary, but they're really not: booleans are simply variables, just like numbers or text, but instead, they can only store two possible values: either ```True``` or ```False```. That's why we often make boolean variables that have ```is``` or ```has``` in them because we use them to answer questions we might have.
 
-For example, when we were Reeborg, we had to check ```frontIsClear```. We ask Karel the question about whether the front is clear, and the answer can only be yes or no. That's why it's good to have boolean variables, because we can ask simple questions and get simple answers.
+For example, when we were Reeborg, we had to check ```frontIsClear```. We ask Reeborg the question about whether the front is clear, and the answer can only be yes or no. That's why it's good to have boolean variables, because we can ask simple questions and get simple answers.
 
 For example, I can make a boolean variable about myself:
 
@@ -160,7 +160,9 @@ print(my_secret_number == your_secret_number) # what does this print?
 print(my_secret_number < your_secret_number) # how about this one?
 ```
 
-Two things will be printed. What will they be? Well, if you answered ```False``` and ```True```, you're right! That's because ```my_secret_number``` is *not* equal (```!=```) to ```your_secret_number```, but it **is** true that ```my_secret_number``` is less than ```your_secret_number```. That's all there is to it!
+Two things will be printed. What will they be? Well, if you answered ```False``` and ```True```, you're right! That's because ```my_secret_number``` is *not* equal (```!=```) to ```your_secret_number```, but it **is** true that ```my_secret_number``` is less than ```your_secret_number```. 
+
+> Feel free to practice making several more of these booleans using the operators above if you're curious.
 
 
 
@@ -201,6 +203,8 @@ Here are some things you can't ask in an ```if``` statement. Can you identify wh
 * ```my_age```
 * ```"I like pie"```
 
+**Go ahead and run through a couple more examples with a mentor here before moving on.**
+
 ## Loops
 
 Now we’re going to revisit two very useful items in our programming toolbox: ```while``` loops and ```for``` loops.
@@ -222,9 +226,9 @@ while front_is_clear():
     move()
 ```
 
-That's all there is to it! Make sure to remember how, just like with an ```if``` statement, we have the keyword, ```while```, and then a question (or condition) we ask Karel the robot, and then a colon ```:```, and inside the loop, we do whatever we want to do over and over until the condition we ask isn't true anymore.
+That's all there is to it! Make sure to remember how, just like with an ```if``` statement, we have the keyword, ```while```, and then a question (or condition) we ask Reeborg the robot, and then a colon ```:```, and inside the loop, we do whatever we want to do over and over until the condition we ask isn't true anymore.
 
-With just the code above, we would be able to get Karel to move all the way across an empty board because he will move until ```front_is_clear()``` is false, which is when he hits a wall. After running this loop, the board looks like this:
+With just the code above, we would be able to get Reeborg to move all the way across an empty board because he will move until ```front_is_clear()``` is false, which is when he hits a wall. After running this loop, the board looks like this:
 
 ![](WhileLoop.PNG)
 
@@ -255,7 +259,7 @@ This program stores the text that the user types into the variable ```word```.
 
 ### For Loops
 
-The second type of important loop, as you'll recall, is the ```for``` loop. Remember how it's easy for us to get Karel to move by writing
+The second type of important loop, as you'll recall, is the ```for``` loop. Remember how it's easy for us to get Reeborg to move by writing
 
 ```python
 while front_is_clear():
@@ -263,11 +267,11 @@ while front_is_clear():
 turn_left()
 ```
 
-And then copying and pasting that text again and again to have Karel move around the board. This works for short programs, but there's a problem. Imagine if he needed to do that 100, 1000, or 10000 times! That would be way too time-consuming to type (or even copy-paste), and it’s very inefficient.
+And then copying and pasting that text again and again to have Reeborg move around the board. This works for short programs, but there's a problem. Imagine if he needed to do that 100, 1000, or 10000 times! That would be way too time-consuming to type (or even copy-paste), and it’s very inefficient.
 
 When we **know how many times we want to do something**, we can easily use a **for loop** that happens again and again until we tell it to stop. Inside of this loop, we can use a **counter variable** that changes each time, and we’ll use that changing variable to display how many fish we currently have.
 
-Below, I've written the code that will let Karel move across the entire 10 x 10 board by going across every row! Don't worry if it looks difficult to understand; we're going to break it down line by line.
+Below, I've written the code that will let Reeborg move across the entire 10 x 10 board by going across every row! Don't worry if it looks difficult to understand; we're going to break it down line by line.
 
 ```python
 for i in range(5): # i is called a "counter variable"
@@ -315,19 +319,19 @@ Notice how, in the second line of our program, there is a **tab indent**. This i
 
 Here, when we indent, we are going one level deeper into our **scope**. Everything you write with this indent will be run *inside of* the for loop, rather than after the entire loop has finished (which is when you backspace the indent after you’re done with typing everything want to run inside the loop). When you backspace your indent, you move out one level of scope, so make sure to keep the indents in line for good style, functionality, and readability.
 
-Everything after line 2 will be run again and again for the number of times we told Karel, which is 5. So, we'll be running the inside of the program 5 times.
+Everything after line 2 will be run again and again for the number of times we told Reeborg, which is 5. So, we'll be running the inside of the program 5 times.
 
 #### Your turn! Figure out the code:
 
-Much of the code after the first line of the for loop should look familiar to you. We're using a ``while`` loop to move until Karel hits a wall, and we're using ```for``` loops to turn left a certain number of times that we want Karel to turn (in this case, 3). Can you figure out why we need to run this code 5 times to have Karel run across the entire board?
+Much of the code after the first line of the for loop should look familiar to you. We're using a ``while`` loop to move until Reeborg hits a wall, and we're using ```for``` loops to turn left a certain number of times that we want Reeborg to turn (in this case, 3). Can you figure out why we need to run this code 5 times to have Reeborg run across the entire board?
 
-> Hint: Look at the final state of Karel in the While Loops section above. What code did we use to get there? How does that code relate to this code?
+> Hint: Look at the final state of Reeborg in the While Loops section above. What code did we use to get there? How does that code relate to this code?
 >
-> Another Hint: The final state of Karel after running this code is:
+> Another Hint: The final state of Reeborg after running this code is:
 
 ![](ForLoop.PNG)
 
-> Extra Hint: It turns out we need to make Karel move across two rows before repeating the entire process. The code inside the loop is making Karel move across two rows. Which statements get Karel to move across the first, and then the second row?
+> Extra Hint: It turns out we need to make Reeborg move across two rows before repeating the entire process. The code inside the loop is making Reeborg move across two rows. Which statements get Reeborg to move across the first, and then the second row?
 
 ### Important Point
 
@@ -390,4 +394,4 @@ The ```int()``` command forces the input to be converted into a number.
 
 Fantastic job!! You've just learned about the combination of different kinds of variables with different types of loops, the ```if``` statement, and different types of commands and questions (operators) that you can use to make your programs a lot more powerful.
 
-Onward to the checkpoint exercise, where you'll build an interactive *guessing game*!
+Onward to the [checkpoint exercise](https://github.com/StreetCodeAcademy/programming-fundamentals/tree/master/python-curriculum/guessing_game_checkpoint), where you'll build an interactive *guessing game*!
