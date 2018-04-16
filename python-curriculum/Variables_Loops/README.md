@@ -389,9 +389,22 @@ number = int(input("Enter a number: "))
 The ```int()``` command forces the input to be converted into a number.
 
 
-
 # And...Onward!
 
 Fantastic job!! You've just learned about the combination of different kinds of variables with different types of loops, the ```if``` statement, and different types of commands and questions (operators) that you can use to make your programs a lot more powerful.
 
 Onward to the [checkpoint exercise](https://github.com/StreetCodeAcademy/programming-fundamentals/tree/master/python-curriculum/guessing_game_checkpoint), where you'll build an interactive *guessing game*!
+
+### Bonus challenge:
+
+You're free to move on now, but if you want an extra challenge...
+
+If you did the Reeborg center challenge, do you remember how much work you had to do with dropping smiley faces and picking them back up to solve the problem?
+
+![](Center1.png)
+
+Go ahead and head back to [Reeborg](http://reeborg.ca/reeborg.html) and go to the "Center 1" problem.
+
+Now that you know how to use variables, see if you can design a smarter way to solve this problem that only puts down one smiley face (the one in the middle). 
+
+> **Hint:** You should be able to solve this problem by only going across the world once, then coming back into the center. Think about how you could use a variable to keep track of the width of the world, then combine that with a for loop.
