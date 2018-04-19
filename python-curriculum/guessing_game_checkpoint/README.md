@@ -1,4 +1,4 @@
-﻿
+
 # Python Fundamentals: Guessing Game
 
 I'm thinking of a number between 0 and 100. Try guessing what it is. If you get it wrong, I'll tell you whether your next guess should be higher or lower.
@@ -12,16 +12,19 @@ secret_number = 27
 
 ## Ask the player to enter a number
 Now, to start the game, we want to tell the player the range the secret number is in. As you have seen before, your program can show messages to the player by using  the `print()` function. After that, we can use the `input()` function to ask the player to enter a number. Lets try that out now:
+
 ```python
 secret_number = 27
 print('I am thinking of a number between 0 and 100. Can you guess what it is?')
 player_guess = input('Try guessing a number. ')
 # Try printing out the player's guess here
 ```
+
 Try running your program. You should see the message you printed to the screen, and then you will be asked to enter a number. To make sure it is working correctly, try printing the `player_guess` at the end.
 
 ## Check if the guess is bigger than the secret number
 Now that the player has entered a guess, we should see if their guess is bigger, smaller, or correct. Remember the `if` statement? Lets use that to check the player's guess. First, lets add an if statement to check if the player guess is bigger than our secret number.
+
 ```python
 secret_number = 27
 print('I am thinking of a number between 0 and 100. Can you guess what it is?')
@@ -56,6 +59,7 @@ Now try running your program again. This time you shouldn't get an error.
 
 ## Add two more checks
 Awesome! Now we can add two more checks to see if the player's guess is less than the secret number, or equal to the secret number:
+
 ```python
 secret_number = 27
 print('I am thinking of a number between 0 and 100. Can you guess what it is?')
