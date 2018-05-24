@@ -1,4 +1,5 @@
-#Getting Started with Processing#
+#Getting Started with Processing
+
 #####To start this lesson, students should:#####
 
 - Be familiar with coordinate systems.
