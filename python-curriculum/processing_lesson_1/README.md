@@ -1,21 +1,21 @@
-#Getting Started with Processing
+# Getting Started with Processing
 
-#####To start this lesson, students should:#####
+##### To start this lesson, students should:#####
 
 - Be familiar with coordinate systems.
 - Have familiarity and experience using variables.
 - Have familiarity and experience using functions.
 
-#####By completing this lesson, students will:#####
+##### By completing this lesson, students will:#####
 
 - Become familiar with Processing.
 - Learn how to draw shapes in Processing.
 - Become familiar with the computer coordinate system.
 
 
-##Setting up Processing with Python##
+## Setting up Processing with Python##
 
-###Make sure Processing is installed###
+### Make sure Processing is installed###
 
 Ask a mentor to make sure that Processing is set up on your computer. This should have been done already, but if not, a mentor should be able to help you.
 
@@ -23,7 +23,7 @@ Processing doesn't include support for the Python programming language by defaul
 
 >Note: Before starting make sure it says Python, not java, in the top right corner 
 
-###Test things out!###
+### Test things out!###
 Add the following lines of code:
 
     size(500, 500)
@@ -37,8 +37,8 @@ If you get any errors here, ask a mentor for help. Otherwise, you're ready to ge
 
 
 
-##Drawing Shapes in Processing##
-###Drawing your first shape###
+## Drawing Shapes in Processing##
+### Drawing your first shape###
 Go ahead and add these lines of code below 
 
     fill(255, 165, 0)
@@ -74,7 +74,7 @@ Takes in 3 parameters: the red, green and blue value. Each value is an integer v
 You can go ahead and explore the fill function [here](http://py.processing.org/reference/fill.html) and the [color tutorial](http://py.processing.org/tutorials/color/) as well.
 
 
-##Computer Coordinate Systems##
+## Computer Coordinate Systems##
 As you're looking through all these numbers, if you've learned geometry before, all of them might make sense except for the y coordinate.
 
 That's because in computer coordinates, y increases from top to bottom, meaning that the top of the screen is where y = 0, then the bottom of the screen would be the largest y value.
@@ -83,7 +83,7 @@ That's because in computer coordinates, y increases from top to bottom, meaning 
 
 Feel free to talk this through a mentor more until it makes sense.
 
-###Try it!###
+### Try it!###
 
 To get more familiar with the coordinate system, go ahead and make some more shapes using rect.
 
@@ -92,7 +92,7 @@ Once you have the handle on that, try the [ellipse](http://py.processing.org/ref
 If you want to go crazy, you could even make something like this!
 ![](https://raw.githubusercontent.com/StreetCodeAcademy/programming-fundamentals/master/python-curriculum/pygame_lesson1/drawing.png)
 
-##Combining drawing with loops##
+## Combining drawing with loops##
 Okay, if you tried to make the example above using only what we learned so far, it might take you hundreds of lines of code.
 
 What if I told you that I was able to make that drawing using only around 4 lines of code?
@@ -130,19 +130,19 @@ If you pop that into your code and run it, you should see something like this:
 
 Go ahead and talk with a mentor and see if you can figure out how this is working.
 
-###Your Turn!###
+### Your Turn!###
 Okay, here's a challenge. See if you can create something that looks like this:
 
 ![](https://raw.githubusercontent.com/StreetCodeAcademy/programming-fundamentals/master/python-curriculum/pygame_lesson1/rectline.png)
 
-###Bonus Challenge###
+### Bonus Challenge###
 Once you finish that, if you want a challenge, see if you can create something like this:
 
 ![](https://raw.githubusercontent.com/StreetCodeAcademy/programming-fundamentals/master/python-curriculum/pygame_lesson1/manyrects.png)
 
 > Hint: How could you repeat the code you created in the earlier part, and have it run multiple times with different x values?
 
-###Bonus Bonus Challenge###
+### Bonus Bonus Challenge###
 
 If you want to have some fun, see if you could figure out how to do this?
 
