@@ -45,7 +45,7 @@ If you get any errors here, ask a mentor for help. Otherwise, you're ready to ge
 
 ## Drawing Shapes in Processing
 ### Drawing your first shape
-Go ahead and add these lines of code below to the end of your code.
+Go ahead and add these lines of code below to the bottom of your code.
 
     fill(255, 165, 0)
     rect(200, 100, 200, 100)
@@ -64,7 +64,7 @@ Let's go ahead and dive into how the code works for this:
 
 What does this first line of code mean?
 
-If you look at the documentation for this function [here](http://py.processing.org/reference/rect.html), (By the way, you can find even more documentation [here](http://py.processing.org/reference/)!), you'll notice that each of the numbers in the parentheses control a different aspect of the rectangle we made.
+If you look at the documentation for this function [here](http://py.processing.org/reference/rect.html), (you can find more documentation [here](http://py.processing.org/reference/) if you're curious), you'll notice that each of the numbers in the parentheses control a different aspect of the rectangle we made.
 
 Specifically in this order:
 
@@ -93,7 +93,7 @@ Pretty much, each of these three numbers determine how much red, green, and blue
 
 
 ## Computer Coordinate Systems
-As you're looking through all these numbers, if you've learned geometry before, all of them might make sense except for the y coordinate.
+As you're looking through all these numbers, if you've learned geometry before, the y coordinate might have been a bit confusing.
 
 That's because in computer coordinates, y increases from top to bottom, meaning that the top of the screen is where y = 0, then the bottom of the screen would be the largest y value.
 
@@ -133,7 +133,7 @@ Go ahead and try adding this to your code.
     	print(i)
     
 
-When you should see the numbers 0-9 in increasing order print out on the bottom of your screen like this:
+Then you should see the numbers 0-9 in increasing order print out on the bottom of your screen like this:
 
 ![](console.png)
 
