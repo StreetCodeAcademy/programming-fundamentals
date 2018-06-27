@@ -130,6 +130,64 @@ That's it! Feel free to move on to the Keyboard Events section, or try some of t
 - Try to move multiple shapes at once but at different speeds
 - Make a finish line (draw a new long skinny rectangle), and have the box stop at the finish line
 
+## Mouse Events 
+In many games you play, you use the mouse! Many games involve using the mouse for shooting, picking up powerups and more. There are many things that a mouse can be used for in a game. For now we will do some simple tasks. 
+
+#### Playing around with a mouse
+First, let's try to move a rectangle around with the mouse. Let's look back at how to make a rectangle.
+
+	rect(x-coordinate,y-coordinate,width,height)
+
+So we want the rectangle to follow the current position of the mouse. We want to track the X and Y coordinate of the mouse. Luckily we have two functions that can track the mouse. [mouseX](http://py.processing.org/reference/mouseX.html) and [mouseY](http://py.processing.org/reference/mouseY.html)
+
+mouseX tracks the X position of the mouse and mouseY tracks the Y position
+
+Let's look at some code on how to move the rectangle
+
+	def draw():
+    	background(0,0,0)
+    	fill(255,255,255)
+       rect(mouseX,mouseY,15,15)
+       
+You can see an example below
+
+![](mouseMove.gif)
+
+
+There are functions you can use in an if statement to check when [mouse is Pressed](http://py.processing.org/reference/mousePressed_var.html). To find out when the left or right button are being pressed. You use: [mouseButton](http://py.processing.org/reference/mouseButton.html) along with mousePressed. 
+
+#### Give it a Try!
+To play around with the mouse events, let's continue with the rectangle. Once again let's manipulate the draw function. You may start with a rectangle any where on the screen. Continuing on from the previous example, we want to use mousePressed to change the background color. Let's look at an example.
+
+	def draw():
+    background(0,0,0)
+    fill(255,255,255)
+    if mousePressed:
+        background(255,0,0)
+    rect(mouseX,mouseY,15,15) 
+    
+    
+We should see something an example below
+
+![](mouseClick.gif)
+
+Let's breakdown the code. 
+
+	if mousePressed:
+        background(255,0,0)
+
+This piece of code is how the background changes color. Notice since it is an if statement, the background will only change if the mouse is pressed.  
+Go ahead and try to do some cool stuff, like changing the shape of the rectangle when the mouse is pressed. 
+
+![](mouseClickChangeShape.gif)
+
+You can look at more mouse functions [here](http://py.processing.org/reference/).
+
+####Challenges
+
+-Try to change the color of the shape as well when you click, but have the shape become white after you release the mouse
+
+
 ## Keyboard Events
 Alright, now we've learned how to make objects on the move. However right now
 our game just does whatever it wants to, without letting the player interact
@@ -158,28 +216,7 @@ Now you should be able to do something like this: ![](https://raw.githubusercont
   `fill(..)`)* to change the color of a shape
 - Make your box move faster if the SHIFT key is being pressed
 
-
-## Mouse Events 
-In some games you play, you don't only use the keyboard, but also the mouse! You might let the player move their character around the screen using the keyboard and shoot using the mouse, or maybe let them pick up special powerups. Using the mouse in Processing is very similar to the keyboard. 
-
-There are functions you can use in an if statement to check when [mouse is Pressed](http://py.processing.org/reference/mousePressed_var.html). To find out when the left or right button are being pressed. You use: [mouseButton](http://py.processing.org/reference/mouseButton.html) along with mousePressed. 
-There are also two more functions that you might find useful, one to get the current position of the mouse(both [X](http://py.processing.org/reference/mouseX.html) and [Y](http://py.processing.org/reference/mouseY.html)).
-
-#### Give it a Try!
-To play around with the mouse events, lets make a simple circle that changes color when we hover over it, and jumps to a new position when we click on it. Once again let's manipulate the draw function. You may start with a rectangle any where on the screen.
-
-Using the mousePressed you can change the rectangles color, position or shape. You may have separate if statements for right and left mouse:
-
-	if((mousePressed) and (mouseButton == LEFT)):
-		...
-	elif((mousePressed) and (mouseButton == RIGHT)):
-		...
- 
-Go ahead and try to do some cool stuff, like moving a circle where your mouse is. Make a another shape when mouse is clicked. 
-
-You can look at more mouse functions [here](http://py.processing.org/reference/).
-
 > You can look at more examples and tutorials in processing [here](http://py.processing.org/tutorials/interactivity/). Try to replicate them without looking at the code. 
 
-Note:
-> KeyBoard and Mouse Events are a very important tool programmers use especially in game development. Make sure you understand this before moving on. Ask a mentor for any clarifications. 
+
+ 
