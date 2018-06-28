@@ -27,6 +27,7 @@ or this!
 ## Animations
 
 ### Setup
+
 Let's start with the setup of your program.
 Go ahead and add these lines to your code:
 
@@ -131,30 +132,44 @@ That's it! Feel free to move on to the Keyboard Events section, or try some of t
 - Make a finish line (draw a new long skinny rectangle), and have the box stop at the finish line
 
 ## Mouse Events 
-In many games you play, you use the mouse! Many games involve using the mouse for shooting, picking up powerups and more. There are many things that a mouse can be used for in a game. For now we will do some simple tasks. 
+In many games you play, you use the mouse! Many games involve using the mouse for shooting, picking up powerups and more. Here, we'll start learning how to make our programs interact with the mouse in Processing.
 
-#### Playing around with a mouse
-First, let's try to move a rectangle around with the mouse. Let's look back at how to make a rectangle.
+### Make the square follow your mouse
+First, let's try to move a rectangle around with the mouse. Let's look back at how to make a [rectangle](http://py.processing.org/reference/rect.html) in Processing.
 
-	rect(x-coordinate,y-coordinate,width,height)
+	rect(x,y,width,height)
+	
+> Of course, when we do it, we'd replace each of these with the numbers/variables we want those values to equal.
 
-So we want the rectangle to follow the current position of the mouse. We want to track the X and Y coordinate of the mouse. Luckily we have two functions that can track the mouse. [mouseX](http://py.processing.org/reference/mouseX.html) and [mouseY](http://py.processing.org/reference/mouseY.html)
+If we want the rectangle to follow the current position of the mouse, we'll have to track its X and Y coordinates. Luckily we Processing has two special variables tha can help us with this: [mouseX](http://py.processing.org/reference/mouseX.html) and [mouseY](http://py.processing.org/reference/mouseY.html).
 
-mouseX tracks the X position of the mouse and mouseY tracks the Y position
+Here's how they work: at any time, the variable, `mouseX` will equal the X coordinate of the mouse, while `mouseY` will equal the Y coordinate of the mouse.
 
-Let's look at some code on how to move the rectangle
+This means we can use these to make a rectangle follow our mouse around the screen. Try pasting this code into your window and running it.
 
 	def draw():
-    	background(0,0,0)
-    	fill(255,255,255)
-       rect(mouseX,mouseY,15,15)
-       
-You can see an example below
+		background(0,0,0)
+		rect(mouseX,mouseY,15,15)
+
+and you should see something like this:
 
 ![](mouseMove.gif)
 
+### Make things happen when you click
 
-There are functions you can use in an if statement to check when [mouse is Pressed](http://py.processing.org/reference/mousePressed_var.html). To find out when the left or right button are being pressed. You use: [mouseButton](http://py.processing.org/reference/mouseButton.html) along with mousePressed. 
+Now, let's find out how to make things happen when the user clicks the mouse. To do that, we'll need to learn how to use the [mouseIsPressed](http://py.processing.org/reference/mousePressed_var.html) variable. 
+
+<!--
+To find out when the left or right button are being pressed. You use: [mouseButton](http://py.processing.org/reference/mouseButton.html) along with mousePressed. 
+-->
+
+Let's modify our code to look like this:
+
+	def draw():
+		background(0,0,0)
+		if mousePressed:
+			background(255,0,0)
+		rect(mouseX,mouseY,15,15) 
 
 #### Give it a Try!
 To play around with the mouse events, let's continue with the rectangle. Once again let's manipulate the draw function. You may start with a rectangle any where on the screen. Continuing on from the previous example, we want to use mousePressed to change the background color. Let's look at an example.
