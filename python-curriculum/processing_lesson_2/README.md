@@ -157,7 +157,7 @@ and you should see something like this:
 
 ### Make things happen when you click
 
-Now, let's find out how to make things happen when the user clicks the mouse. To do that, we'll need to learn how to use the [mouseIsPressed](http://py.processing.org/reference/mousePressed_var.html) variable. 
+Now, let's find out how to make things happen when the user clicks the mouse. To do that, we'll need to learn how to use the [mouseIsPressed](http://py.processing.org/reference/mousePressed_var.html) variable. To illustrate that, we'll do an example where we'll change the background color whenever we click.
 
 <!--
 To find out when the left or right button are being pressed. You use: [mouseButton](http://py.processing.org/reference/mouseButton.html) along with mousePressed. 
@@ -170,19 +170,8 @@ Let's modify our code to look like this:
 		if mousePressed:
 			background(255,0,0)
 		rect(mouseX,mouseY,15,15) 
-
-#### Give it a Try!
-To play around with the mouse events, let's continue with the rectangle. Once again let's manipulate the draw function. You may start with a rectangle any where on the screen. Continuing on from the previous example, we want to use mousePressed to change the background color. Let's look at an example.
-
-	def draw():
-    background(0,0,0)
-    fill(255,255,255)
-    if mousePressed:
-        background(255,0,0)
-    rect(mouseX,mouseY,15,15) 
     
-    
-We should see something an example below
+Now when you run your code, you should see something like this:
 
 ![](mouseClick.gif)
 
@@ -191,18 +180,26 @@ Let's breakdown the code.
 	if mousePressed:
         background(255,0,0)
 
-This piece of code is how the background changes color. Notice since it is an if statement, the background will only change if the mouse is pressed. 
- 
+Here, the `mousePressed` variable is only `true` when your mouse is held down. Since this is in an if statement, the background will only change if the mouse is pressed. 
 
-Go ahead and try to do some cool stuff, like changing the shape of the rectangle when the mouse is pressed. 
+### Your Turn
+
+Now it's your turn. See if you can modify your existing code such that whenever you hold down the mouse button, you see a circle instead of a square.
 
 ![](mouseClickChangeShape.gif)
 
-You can look at more mouse functions [here](http://py.processing.org/reference/).
+> Note: The first time you try this, you might see both a circle and a square. To solve this problem, you might need to use an `else` statement with your `if` statement.
+> 
+> If you either haven't learned what an else statement is yet or forgot, you can read about how they work [here](https://www.w3resource.com/python/python-if-else-statements.php). Be sure to talk it over with a mentor if it doesn't make sense.
 
-####Challenges
+### Challenges
 
--Try to change the color of the shape as well when you click, but have the shape become white after you release the mouse
+* Try to change the color of the shape as well when you click, but have the shape become white after you release the mouse.
+* Make it so that the shape becomes a different color if you click the right versus left mouse button. Hint: learning how to use [mouseButton](http://py.processing.org/reference/mouseButton.html) will be useful for this.
+* Make it so that the shape stays on the opposite side of the screen from your mouse and moves in the opposite directions.
+
+As always, feel free to experiment and try something new. If you want to learn more about what you can do with the mouse, feel free to look at the Processing [reference manual](http://py.processing.org/reference/).
+
 
 ## Keyboard Events
 Alright, now we've learned how to make objects on the move. We also learned how to mainpulate the rectangle using our own inputs. Now we are going to be using the keyboard to manipulate the rectangle. 
