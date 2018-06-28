@@ -176,7 +176,8 @@ Let's breakdown the code.
 	if mousePressed:
         background(255,0,0)
 
-This piece of code is how the background changes color. Notice since it is an if statement, the background will only change if the mouse is pressed.  
+This piece of code is how the background changes color. Notice since it is an if statement, the background will only change if the mouse is pressed. 
+ 
 Go ahead and try to do some cool stuff, like changing the shape of the rectangle when the mouse is pressed. 
 
 ![](mouseClickChangeShape.gif)
@@ -189,9 +190,7 @@ You can look at more mouse functions [here](http://py.processing.org/reference/)
 
 
 ## Keyboard Events
-Alright, now we've learned how to make objects on the move. However right now
-our game just does whatever it wants to, without letting the player interact
-with it. That's pretty much just a movie, not a game!
+Alright, now we've learned how to make objects on the move. We also learned how to mainpulate the rectangle using our own inputs. Now we are going to be using the keyboard to manipulate the rectangle. 
 
 Lets start by making our box from the last section move to the right again, but
 only when we are pressing a key on the keyboard. Remember, the inside of the
@@ -200,23 +199,40 @@ something when a key is pressed, we want to see if the key is being pressed
 during that frame of the game.
 
 #### Give it a Try!
-Now you will be able to check when the keyboard key is [pressed](http://py.processing.org/reference/keyPressed.html) or [released](http://py.processing.org/reference/keyReleased.html), among other things. The keyPressed function returns 'True' if the key is pressed in the current frame. Inside the draw function add the following line of code:
+Now you will be able to check when the keyboard key is [pressed](http://py.processing.org/reference/keyPressed.html) or [released](http://py.processing.org/reference/keyReleased.html), among other things. The keyPressed function returns 'True' if the key is pressed in the current frame. Let's make the rectangle move to the right. Inside the draw function add the following line of code: 
 
-	if((keyPressed) and (keyCode == UP)):
+	if((keyPressed):
 		...
 
-The above statement will be true when you press the 'UP' arrow on your keyboard, and then it will run the code inside the if-loop. 
+The above statement will be true when you press any key on your keyboard, and then it will run the code inside the if-loop. The key could be the up key, down key, d key, any key will make the rectangle move.
 You can use Alphabets, Numerical Values and other coded keys in processing. For all the ASCII(alphabets and numerical values) keys you will use [key](http://py.processing.org/reference/key.html) and [keyCode](http://py.processing.org/reference/keyCode.html) for the remaining. 
+
+But we want the rectangle to move to the right only when we press the right key. How we are going to do this is using a nested if statement:
+
+	if((keyPressed):
+		if(keyCode == RIGHT):
+			...
+		
+		
+What is an nested if statement? The program will first run through the first if statement which is the if((keyPressed):, then if the condition is true, it will run through to the second if statement which is the if(keyCode == RIGHT): statement. Now why would we want to use a nested if statement?
+
+A nested if statement is useful if we have multiple conditions we want to fulfill. The multiple conditions we want to fulfill is if a key is pressed, and if it is the right key. If both if statements are true, then the rectangle moves right shown below.
+
+![](RectangleMovingRight.gif)
+
+Congrats! Now let's make the rectangle move in all 4 directions as shown below. Use the code from above to make the rectangle move in all four directions! 
 
 Now you should be able to do something like this: ![](https://raw.githubusercontent.com/StreetCodeAcademy/programming-fundamentals/master/python-curriculum/pygame_lesson2/controlbox.gif)
 
 **Challenges**:
 
-- Make your box change color by pressing the SPACE key. *(Hint: you can use
+- Make your box change to a *random* color by pressing the SHIFT key. *(Hint: you can use
   `fill(..)`)* to change the color of a shape
-- Make your box move faster if the SHIFT key is being pressed
+  
+- Look up how to get a random number in python
+
+- Make your box move faster if the CONTROL key is being pressed
 
 > You can look at more examples and tutorials in processing [here](http://py.processing.org/tutorials/interactivity/). Try to replicate them without looking at the code. 
 
 
- 
