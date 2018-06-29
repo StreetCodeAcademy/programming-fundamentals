@@ -80,11 +80,11 @@ Were you right? Talk with a mentor and see if you can make sense of what happene
 
 Okay, now for the cool part. Try replacing the code you had with this:
 
-	x_pos = 0
+	x = 0
 	def draw():
-	    global x_pos
-	    rect(x_pos, 20, 15, 15)
-	    x_pos = x_pos + 5
+	    global x
+	    rect(x, 20, 15, 15)
+	    x = x + 5
 	    
 Your code should now look something like this: 
 
@@ -157,7 +157,7 @@ and you should see something like this:
 
 ### Make things happen when you click
 
-Now, let's find out how to make things happen when the user clicks the mouse. To do that, we'll need to learn how to use the [mouseIsPressed](http://py.processing.org/reference/mousePressed_var.html) variable. To illustrate that, we'll do an example where we'll change the background color whenever we click.
+Now, let's find out how to make things happen when the user clicks the mouse. To do that, we'll need to learn how to use the [mouseIsPressed](http://py.processing.org/reference/mousePressed_var.html) variable. To illustrate that, we'll code an example where we'll change the background color whenever we click.
 
 <!--
 To find out when the left or right button are being pressed. You use: [mouseButton](http://py.processing.org/reference/mouseButton.html) along with mousePressed. 
@@ -202,47 +202,94 @@ As always, feel free to experiment and try something new. If you want to learn m
 
 
 ## Keyboard Events
-Alright, now we've learned how to make objects on the move. We also learned how to mainpulate the rectangle using our own inputs. Now we are going to be using the keyboard to manipulate the rectangle. 
 
-Lets start by making our box from the last section move to the right again, but
-only when we are pressing a key on the keyboard. Remember, the inside of the
-draw function is run once for every *frame* of the game. To be able to do
-something when a key is pressed, we want to see if the key is being pressed
-during that frame of the game.
 
-#### Give it a Try!
-Now you will be able to check when the keyboard key is [pressed](http://py.processing.org/reference/keyPressed.html) or [released](http://py.processing.org/reference/keyReleased.html), among other things. The keyPressed function returns 'True' if the key is pressed in the current frame. Let's make the rectangle move to the right. Inside the draw function add the following line of code: 
+Alright, now we've learned how to make objects not just move, but also respond to the user's mouse. Next we'll learn how to use the keyboard to manipulate the rectangle. 
 
-	if((keyPressed):
-		...
+First, let's start by pulling up some of the code we wrote in the first section. If you didn't have it saved from before, you can go ahead and paste this code into your editor:
 
-The above statement will be true when you press any key on your keyboard, and then it will run the code inside the if-loop. The key could be the up key, down key, d key, any key will make the rectangle move.
-You can use Alphabets, Numerical Values and other coded keys in processing. For all the ASCII(alphabets and numerical values) keys you will use [key](http://py.processing.org/reference/key.html) and [keyCode](http://py.processing.org/reference/keyCode.html) for the remaining. 
+	def setup():
+		size(600, 600)
 
-But we want the rectangle to move to the right only when we press the right key. How we are going to do this is using a nested if statement:
+	x = 0
 
-	if((keyPressed):
-		if(keyCode == RIGHT):
-			...
+	def draw():
+	    global x
+	    background(0,0,0)
+	    rect(x, 20, 15, 15)
+	    x = x + 5
+	    
+and run it just to make sure it works.
+	    
+As a quick review, in this exercise, the line of code:
+
+	x = x + 5
+	
+is responsible for moving the square. That's because each time the draw loop repeats, this line of code adds 5 to the variable, `x`, which is used to control where the rectangle's X coordinate is.
+
+### Responding to Keys Pressed
+
+Now, let's introduce a special variable in Processing that's actually very similar to the `mousePresed` variable we learned about earier. 
+
+This variable is called [keyPressed](http://py.processing.org/reference/keyPressed_var.html), and in the same way that `mousePressed` is true whenever the mouse is pressed, `keyPressed` is true whenever any key on the keyboard is down.
+
+Now, let's modify the code we wrote earlier to look like this:
+	
+	def draw():
+		global x
+		rect(x, 20, 15, 15)
+		if keyPressed:
+			x = x + 5
+			
+How do you think this will change things? When you ran it, did it have the result you thought?
+
+Similar to our `mousePressed` example, the if statement:
+
+	if keyPressed:
+		x = x + 5
+		
+makes it so that the code:
+
+	x = x + 5
+	
+runs only when `keyPressed` is `true`. That means the square will only move when the user presses a key down. Feel free to talk it through with another student or a mentor if this doesn't make sense.
+
+### Responding to Specific Keys Pressed
+
+Now, `keyPressed` will be true when you press any key on your keyboard. The key could be the up key, down key, d key; any key will make the rectangle move.
+
+However, what if we want the rectangle to move to the right only when we press the right key? To do this, we'll have to introduce another special variable in Processing: the `keyCode` variable. 
+
+We'll also have to use something called a **nested if statement** - pretty much, an if statement inside of an if statement. 
+
+Try modifying the if statement to look like this:
+
+	if keyPressed:
+		if keyCode == RIGHT:
+			x = x + 5
 		
 		
-What is an nested if statement? The program will first run through the first if statement which is the if((keyPressed):, then if the condition is true, it will run through to the second if statement which is the if(keyCode == RIGHT): statement. Now why would we want to use a nested if statement?
-
-A nested if statement is useful if we have multiple conditions we want to fulfill. The multiple conditions we want to fulfill is if a key is pressed, and if it is the right key. If both if statements are true, then the rectangle moves right shown below.
+Now, the program will first run through the first if statement which is the `if keyPressed:`, then if the condition is true, it will run through to the second if statement which is the `if keyCode == RIGHT:` statement.
 
 ![](RectangleMovingRight.gif)
 
-Congrats! Now let's make the rectangle move in all 4 directions as shown below. Use the code from above to make the rectangle move in all four directions! 
+Like keyPressed, [keyCode](http://py.processing.org/reference/keyCode.html) is a special variable that will tell us what key was pressed. We can check if it was `UP`, `DOWN`, `LEFT`, or `RIGHT` using those directions spelled out exactly like that in all caps.
 
-Now you should be able to do something like this: ![](https://raw.githubusercontent.com/StreetCodeAcademy/programming-fundamentals/master/python-curriculum/pygame_lesson2/controlbox.gif)
+> To detect letters being pressed, the easiest way would be to instead use the [key](http://py.processing.org/reference/key.html) variable.
+ 
+### Your Turn
+
+Congrats on getting the right arrow key working with movement! 
+
+Now let's see if we can make the rectangle move in **all 4 directions** as shown below. Modify the code from above to make the rectangle move in all four directions.
+
+Once you're finished, you should be able to do something like this: 
+
+![](https://raw.githubusercontent.com/StreetCodeAcademy/programming-fundamentals/master/python-curriculum/pygame_lesson2/controlbox.gif)
 
 **Challenges**:
 
-- Make your box change to a *random* color by pressing the SHIFT key. *(Hint: you can use
-  `fill(..)`)* to change the color of a shape
-  
-- Look up how to get a random number in python
-
+- Make your box change to a *random* color by pressing the SHIFT key. *(Hint: you can use `fill(..)`)* to change the color of a shape and combine it with random numbers to randomize the color. You may need to Google how to create random numbers in Python to do this.
 - Make your box move faster if the CONTROL key is being pressed
 
-> You can look at more examples and tutorials in processing [here](http://py.processing.org/tutorials/interactivity/). Try to replicate them without looking at the code. 
+> You can look at more examples and tutorials in processing [here](http://py.processing.org/tutorials/interactivity/). See if you can replicate them without looking at the code. 
