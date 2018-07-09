@@ -3,13 +3,14 @@
 **To start this lesson, students should:**
 
 - Be familiar with if statements, while loops, and functions
-- Have some practice/famliarity with Processing's coordinate system and how to draw shapes in Processing
+- Understand how Processing's `draw` loop works
+- Have some practice/famliarity with Processing's coordinate system and how to draw and animate shapes in Processing
 
 **By completing this lesson, students will learn:**
 
 - Velocity
 - Bouncing
-
+<!-- todo: flesh these out -->
  
 ##Velocity
 
