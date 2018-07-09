@@ -176,9 +176,9 @@ If you want to have some fun, see if you could figure out how to do this?
 
 ![](https://raw.githubusercontent.com/StreetCodeAcademy/programming-fundamentals/master/python-curriculum/pygame_lesson1/challengechallenge.png)
 
->Hint: You can also make your own color using fill(R,G,B) where you substitute R, G, and B with different Red, Green, and Blue values ranging from 0-255.
+>Hint: You can also make shapes be a different color using the [fill](http://py.processing.org/reference/fill.html) function.
 >
->If you do some quick Googling, you can figure out how to combine that with random numbers - try googling something like "python random numbers".
+>If you do some quick Googling, you can figure out how to combine that with random numbers. Remember, [Google is your friend](http://lmgtfy.com/?q=python+random+numbers) when it comes to coding!
 
 Anyways, that's it for this lesson!
 

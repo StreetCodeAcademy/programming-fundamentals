@@ -70,7 +70,9 @@ Before you run that, let me explain the line:
 
 	global x
 	
-This probably doesn't make sense at the moment. What this line of code is doing is telling the code below it in the draw function to treat the variable, x, as a **global variable**. You can read about what global variables are [here](http://py.processing.org/reference/globals.html). Make sure to talk it over with a mentor if it doesn't make sense because we'll be using these a lot.
+This probably doesn't make sense at the moment. What this line of code is doing is telling the code below it in the draw function to treat the variable, x, as a **global variable**. You can read about what global variables are [here](http://py.processing.org/reference/globals.html). Pretty much, global variables are variables that can be accessed through all of your code instead of in just one function.
+
+Make sure to talk it over with a mentor if it doesn't make sense because we'll be using these a lot.
 
 Before you run your code, see if you can figure out what it will print, then go ahead and run it.
 
@@ -110,7 +112,7 @@ If you run it now, you should see something like this:
 
 Awesome! We have our moving square. If you remember the [fill](http://py.processing.org/reference/fill.html) function from last lesson, you can try messing with the color of the square as well.
 
-Why does this all work? If you remember in the previous examples, since the `draw` loop repeats over and over and is adding to the variable, `x_pos` each time. This causes the square to get drawn further to the right each time since the variable, `x_pos` , controls the x position of the square.
+Why does this all work? If you remember in the previous examples, since the `draw` loop repeats over and over and is adding to the variable, `x` each time. This causes the square to get drawn further to the right each time since the variable, `x` , controls the x position of the square.
 
 Go ahead and talk this over with a mentor or partner if it doesn't make sense.
 
