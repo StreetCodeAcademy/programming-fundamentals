@@ -8,9 +8,9 @@
 
 **By completing this lesson, students will learn:**
 
-- Velocity
-- Bouncing
-<!-- todo: flesh these out -->
+- How to conceptualize velocity in Processing and implement it using variables.
+- How to implement shapes bouncing off walls in Processing.
+- An overall better understanding of positioning and movement in Processing.
  
 ## Velocity
 
@@ -141,7 +141,7 @@ You'll notice the only difference with this code is this if statement:
 	if x + 10 >= 600:
 	    	velocity = 0
 	    	
-Here, the computer checks if the edge of the circle is up to the edge of the wall (which it is greater than or equal 600 since we set the width of the window as 600).
+Here, the computer checks if the edge of the circle is up to the edge of the wall (which is when its x coordinate is greater than or equal 600 since we set the width of the window as 600).
 
 > `>=` in computer science means "greater than or equal to"
 
