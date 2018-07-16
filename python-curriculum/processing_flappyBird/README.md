@@ -130,26 +130,28 @@ We want this section to create the pipes. Now we are going to do a little math. 
  
 This piece of code randomizes the height for the top pipe. Now that I have given you the code for this part, let's make the bottom pipe.
 
+The bottom pipe's math is a bit easier. Keep in mind we should have the height of the top pipe and the space in between, so it's just a matter of using math to find the height of the bottom pipe. 
+
 
 ### pipeMove()
 
-We want the pipe to move to the left. 
+We want the pipe to move to the left. So we to change the x position and move the pipe to the left. 
 
 
-###pipePass()
+### pipePass()
 
-This section checks to see if the pipe we created has moved all the way to the left, and if it has, we want to create a new pipe.
+This section checks to see if the pipe we created has moved all the way to the left, and if it has, we want to create a new pipe. Use a global variable to keep track of when the pipe is gone. 
 
 ### moveBird()
 
-Moves the flappy bird. Since we have gravity, the bird should fall and should jump if the SHIFT key is pressed. 
+Moves the flappy bird. Since we have gravity, the bird should fall and should jump if the SHIFT key is pressed. Try to remember keyEvents. 
  
 ### endGame()
 
-If the bird hits the pipe or the ground, the game should end. 
+If the bird hits the pipe or the ground, the game should end. This will deal with object collision so review the object collision portions. 
 
  
-###Tips and tricks
+### Tips and tricks
 
 There are several concepts that you need to understand if you are going to finish this game.
 
