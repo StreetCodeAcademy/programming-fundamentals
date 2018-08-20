@@ -92,6 +92,8 @@ def turn_right():
 
 This exercise also introduce the commands `take()` and `put()`. Reeborg can pick up objects with `take()` and put down objects it is carrying with `put()`. Reeborg can only pick up objects when it is standing on the cell the object is in. Reeborg can only put down an object if it is already carrying the object.
 
+Note that though it is not explicit in the task instructions, Reeborg must put the newspaper down on the goal and then return to the starting point.
+
 Have your student try to complete the newspaper delivery exercise. You'll notice that the code for it is a little redundant, so you may want to introduce some decomposition with functions if the student shows a good understanding of `turn_right()`. 
 
 ### *Optional Exercise: Tokens 4
