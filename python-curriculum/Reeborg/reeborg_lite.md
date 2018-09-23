@@ -4,7 +4,7 @@ This reader is for students who would prefer to work through Reeborg by jumping 
 
 ##How to get to Reeborg
 Link: http://reeborg.ca/reeborg.html  
-![You should see this screen if it is your first time visiting the site](https://photos.google.com/search/_tra_/photo/AF1QipO6J37b34ffDQXuG7ULFpab5YC_V5dX8g5_A9J0)  
+![You should see this screen if it is your first time visiting the site](https://photos.app.goo.gl/ueKrauPUTQ8psTcd9)  
 Click the **Go to introduction Reeborg** button. 
 
 ##How to set up Reeborg with the correct configuration
