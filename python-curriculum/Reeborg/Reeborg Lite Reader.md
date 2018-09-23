@@ -33,6 +33,7 @@ You can now code away in the right hand area, your coding space.
 * The icons that look like a **music player** help you run the code you've writen in your coding space. When you're ready, hit play to run, fast forward and rewind to go back or ahead in the code, pause to pause the run on the line you're on, stop to end the run, and refresh to reset Reeborg at the starting point (you must reset to run the code again from the beginning).  
 ![enter image description here](https://lh3.googleusercontent.com/iK6H3xk5biGnoz75gFDONRBL6xAt8ntdaHSkIgKnzBhcw4pyYQLNuKpSewjd-eNT0YzcohtPpF7L)  
 
+## Exercises
 The list of exercises, **in the order that you should work through them:**  
 1. Introduction to Commands
    1. Home 1
