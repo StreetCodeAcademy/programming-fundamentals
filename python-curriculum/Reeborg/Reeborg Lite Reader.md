@@ -15,7 +15,7 @@ Set the language click down bar to Python.
 ![enter image description here](https://lh3.googleusercontent.com/r-Z9hJCCjcGm5CjSZnzmDAqDqZOjbRBEvMU-CJpUvgoK_iorGZEKzYVK96HW0G1ycmdUbdKkPPt1)   
 
 You will now be in the exercise called Alone. Each of the Reeborg worlds gives you various tasks to code up and have Reeborg perform.    
-**IMPORTANT: Do not start with Alone. Use the click down bar in the top right corner to go to the Home 1 exercise to start!**.  
+**IMPORTANT: Do not start with Alone. Use the click down bar in the top right corner to go to the Home 1 exercise to start!**  
   ![enter image description here](https://lh3.googleusercontent.com/C_yQzUMv_HMBeerKn81UyP1vXtxwCAzgB5U_vNhBPyxSzyvY96Eb_4J2lBkcop54g7O7Z00F17f1)
 
 You can now code away in the right hand area, your coding space.
