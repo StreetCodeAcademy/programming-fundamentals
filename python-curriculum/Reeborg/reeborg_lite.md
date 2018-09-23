@@ -8,7 +8,7 @@ Link: http://reeborg.ca/reeborg.html
 Click the **Go to introduction Reeborg** button. 
 
 ## How to set up Reeborg with the correct configuration
-Set the langugae click down bar to Python.  
+Set the language click down bar to Python.  
 ![Here is what the click down bar looks like](https://photos.google.com/search/_tra_/photo/AF1QipOl7O5KZNIij7oDn09ko_Wzh71PTGyQs7Zjd_LZ)   
 You will now be in the exercise called Alone. Each of the Reeborg worlds gives you various tasks to code up and have Reeborg perform.    
 **IMPORTANT: Do not start with Alone. Use the click down bar in the top right corner to go to the Home 1 exercise to start!**.  
