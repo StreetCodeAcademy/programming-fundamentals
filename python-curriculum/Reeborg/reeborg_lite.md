@@ -1,13 +1,13 @@
-#Welcome to the Reeborg Lite Reader
+# Welcome to the Reeborg Lite Reader
 
 This reader is for students who would prefer to work through Reeborg by jumping into the exercises. Here are the must read parts, with none of the extra details. If you're interested in getting more information, check out the Reeborg Wordy Reader.
 
-##How to get to Reeborg
+## How to get to Reeborg
 Link: http://reeborg.ca/reeborg.html  
 ![You should see this screen if it is your first time visiting the site](https://photos.app.goo.gl/ueKrauPUTQ8psTcd9)  
 Click the **Go to introduction Reeborg** button. 
 
-##How to set up Reeborg with the correct configuration
+## How to set up Reeborg with the correct configuration
 Set the langugae click down bar to Python.  
 ![Here is what the click down bar looks like](https://photos.google.com/search/_tra_/photo/AF1QipOl7O5KZNIij7oDn09ko_Wzh71PTGyQs7Zjd_LZ)   
 You will now be in the exercise called Alone. Each of the Reeborg worlds gives you various tasks to code up and have Reeborg perform.    
@@ -15,7 +15,7 @@ You will now be in the exercise called Alone. Each of the Reeborg worlds gives y
 ![Here is what the click down bar looks like](https://photos.google.com/search/_tra_/photo/AF1QipPJcir9eoVEtZRm1WekknOQtECeTokgiducQ0fu)  
 You can now code away in the right hand area, your coding space.
 
-###Reeborg navigation tips (extra credit reading...you can figure this out along the way if you would prefer)
+### Reeborg navigation tips (extra credit reading...you can figure this out along the way if you would prefer)
 * The **World Info** button in the top bar provides details on the task goal in each exercise. This will tell you what you are supposed to get Reeborg to do. Generally, the goal is to get Reeborg to travel to the house/flag, but sometimes it gets a bit more complicated. It may also provide hints about what commands to use.  
 ![Here is what that button looks like](https://photos.google.com/search/_tra_/photo/AF1QipP4Y1seftsxnwajisSux20K_fw1hu-lqYNeWuUe)   
 * The **Reeborg's keyboard** button in the top bar provides a comprehensive list of all the commands Reeborg understands. You can use any of these commands in the right hand coding space and the program will understand them when you run it. Reeborg's world only understands this set of commands, though most coding languages will have more commands. It also provides conditions you can check for.    
