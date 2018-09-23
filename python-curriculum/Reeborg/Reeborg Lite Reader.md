@@ -26,9 +26,9 @@ You can now code away in the right hand area, your coding space.
 ![enter image description here](https://lh3.googleusercontent.com/DiLku_SbfhtYhE6dF_Pi0-d_B1zftw5V4O_HxCTWJvPyrPGy_IhMVViNvqOU5P_TXCUyGXODd_w-)
 
 * The **Reeborg's keyboard** button in the top bar provides a comprehensive list of all the commands Reeborg understands. You can use any of these commands in the right hand coding space and the program will understand them when you run it. Reeborg's world only understands this set of commands, though most coding languages will have more commands. It also provides conditions you can check for.    
-![enter image description here](https://lh3.googleusercontent.com/EbhKh4FUism_iArFfcTvuWJWqbH4tV0zj12SWkYzxobfHkP1vCAPLgg42Oo0C9HVPK2HkSA_BGH4)
+![enter image description here](https://lh3.googleusercontent.com/EbhKh4FUism_iArFfcTvuWJWqbH4tV0zj12SWkYzxobfHkP1vCAPLgg42Oo0C9HVPK2HkSA_BGH4)  
 ![enter image description here](https://lh3.googleusercontent.com/lBzhaGg7hMXVeLS_7G2ge9zOokHASKAeKrKBgs-qi7dFsqoBAEfYq1m9gfKGleUJ-K4LhhXVXeHT)  
-![enter image description here](https://lh3.googleusercontent.com/gpAIgGbDvryVCq5JvcJSY4Qga5T4IWIHTvERcOkuUn9FbSaEQAV6EmxCpu9JSMYdhMhzC_nPtoq7)
+![enter image description here](https://lh3.googleusercontent.com/gpAIgGbDvryVCq5JvcJSY4Qga5T4IWIHTvERcOkuUn9FbSaEQAV6EmxCpu9JSMYdhMhzC_nPtoq7)  
 
 * The icons that look like a **music player** help you run the code you've writen in your coding space. When you're ready, hit play to run, fast forward and rewind to go back or ahead in the code, pause to pause the run on the line you're on, stop to end the run, and refresh to reset Reeborg at the starting point (you must reset to run the code again from the beginning).  
 ![enter image description here](https://lh3.googleusercontent.com/iK6H3xk5biGnoz75gFDONRBL6xAt8ntdaHSkIgKnzBhcw4pyYQLNuKpSewjd-eNT0YzcohtPpF7L)  
