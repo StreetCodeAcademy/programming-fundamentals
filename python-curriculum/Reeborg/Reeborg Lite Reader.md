@@ -47,7 +47,7 @@ The list of exercises, **in the order that you should work through them:**
 4. While Loops
     1. Around 1 - variable
     2. Hurdle 2
-    3. Optional Exercises: Tokens 1-5
+    3. Optional Exercises: Tokens 1-5 (rework these challenges using while loops for generalized solutions)
 5. Advanced Conditions
    1. Hurdle 3
    2. Hurdle 4
