@@ -1,4 +1,8 @@
 # Reeborg Sequence
+
+
+To find a less verbose version of this lesson, go **[here](Reeborg\ Lite\ Reader.md)**.
+
 ![around](http://rur-ple.sourceforge.net/images/around1.png)
 ## Introduction
 This sequence serves as an outline for guiding students in Intro To Hack through Reeborg activities. To reach the Reeborg website, go to: **[http://reeborg.ca/reeborg.html](http://reeborg.ca/reeborg.html)**.
