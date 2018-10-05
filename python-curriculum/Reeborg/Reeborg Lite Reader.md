@@ -38,7 +38,8 @@ The list of exercises, **in the order that you should work through them:**
 1. Introduction to Commands
    1. Home 1
    2. Home 3
-   3. Optional Exercise: Tokens 4 (to solidify understanding of `take()` and `put()` commands for more complicated coding exercises later on)
+   4. Newspaper
+   5. Optional Exercise: Tokens 4 (to solidify understanding of `take()` and `put()` commands for more complicated coding exercises later on)
 2. For Loops/Repeats
    1. Around 1
    2. Hurdle 1
