@@ -34,30 +34,33 @@ You can now code away in the right hand area, your coding space.
 ![enter image description here](https://lh3.googleusercontent.com/iK6H3xk5biGnoz75gFDONRBL6xAt8ntdaHSkIgKnzBhcw4pyYQLNuKpSewjd-eNT0YzcohtPpF7L)  
 
 ## Exercises
-The list of exercises, **in the order that you should work through them:**  
+Below is the list of exercises, **in the order that you should work through them:**  
+
+Next to each exercise are the new concepts you'll need to learn to complete these exercises - you can learn about these concepts from a mentor or on the [Reeborg Wordy Reader](README.md).
+
 1. Introduction to Commands
-   1. Home 1
-   2. Home 3
-   4. Newspaper
-   5. Optional Exercise: Tokens 4 (to solidify understanding of `take()` and `put()` commands for more complicated coding exercises later on)
+   1. **Home 1** - move()
+   2. **Home 3** - turn_left()
+   4. **Newspaper** - take(), put(), bonus: defining functions like turn_right()
+   5. *Optional Exercise*: **Tokens 4** (to solidify understanding of `take()` and `put()` commands for more complicated coding exercises later on)
 2. For Loops/Repeats
-   1. Around 1
-   2. Hurdle 1
+   1. **Around 1** - repeat/for loops
+   2. **Hurdle 1**
 3. Basic Conditions Using the If Statement
-   1. Around 1 - apple
+   1. **Around 1 - apple** - if statements, object_here()
 4. While Loops
-    1. Around 1 - variable
-    2. Hurdle 2
-    3. Optional Exercises: Tokens 1-5 (rework these challenges using while loops for generalized solutions)
+    1. **Around 1 - variable** - while loops, front\_is\_clear()
+    2. **Hurdle 2** - at_goal(), either done() or "not"
+    3. *Optional Exercises*: **Tokens 1-5** (rework these challenges using while loops for generalized solutions)
 5. Advanced Conditions
-   1. Hurdle 3
-   2. Hurdle 4
+   1. **Hurdle 3** 
+   2. **Hurdle 4**
 6. Challenges...for food prizes
-   1. Storm 1
-   2. Storm 2
-   3. Center 1
+   1. **Storm 1** - toss(), carries_object()
+   2. **Storm 2**
+   3. **Center 1**
 7. Even Harder Challenges...for more prizes
-   1. Maze
-   2. Checkerboard: the challenges (To find this exercise, first click, "Other Worlds", then click "Go to Challenges". After that you will find "Checkerboard: the challenge".)
+   1. **Maze**
+   2. **Checkerboard**: the challenges (To find this exercise, first click, "Other Worlds", then click "Go to Challenges". After that you will find "Checkerboard: the challenge".)
 
 
