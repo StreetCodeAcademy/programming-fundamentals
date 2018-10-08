@@ -1,6 +1,6 @@
-﻿# Welcome to the Reeborg Lite Reader
+# Welcome to the Reeborg Lite Reader
 
-This reader is for students who would prefer to work through Reeborg by jumping into the exercises. Here are the must read parts, with none of the extra details. If you're interested in getting more information, check out the Reeborg Wordy Reader.
+This reader is for students who would prefer to work through Reeborg by jumping into the exercises. Here are the must read parts, with none of the extra details. If you're interested in getting more information, check out the [Reeborg Wordy Reader](README.md).
 
 ## How to get to Reeborg
 Link to Reeborg: http://reeborg.ca/reeborg.html  
