@@ -1,7 +1,7 @@
 # Reeborg Sequence
 
 
-To find a less verbose version of this lesson, go [here](\Reeborg\ Lite\ Reader.md).
+To find a less verbose version of this lesson, go [here](https://github.com/StreetCodeAcademy/programming-fundamentals/blob/master/python-curriculum/Reeborg/Reeborg%20Lite%20Reader.md).
 
 ![around](http://rur-ple.sourceforge.net/images/around1.png)
 ## Introduction
