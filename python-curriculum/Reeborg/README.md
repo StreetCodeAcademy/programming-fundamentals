@@ -46,8 +46,8 @@ You'll also see **play, pause, stop and rewind buttons** at the top of the world
 Introduce the idea of a command/function to the student. 
 Consider using analogies like: "Think about how a cook uses a recipe from a cookbook to make food. These recipes give you instructions on how you complete a task, namely, baking a cake or boiling pasta. Similarly, the commands in a function give instructions that direct the computer in completing a task. You tell it what to do". Or be creative and finding an interesting way to convey the information!
 
-Here are some formal definitions if they are helpful for guiding instruction.
-**Command:** A  _command_  is an instruction given by a user telling a  computer to do something, such a run a single program or a group of linked programs.
+Here are some formal definitions if they are helpful for guiding instruction.  
+**Command:** A  _command_  is an instruction given by a user telling a  computer to do something, such a run a single program or a group of linked programs.  
 **Program:** A _program_ is a sequence of instructions that is understandable by a CPU (central processing unit), the main logic unit of a computer. (http://www.linfo.org/program.html)  
 
 ### Exercise: Home 1
