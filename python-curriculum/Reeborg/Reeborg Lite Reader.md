@@ -40,9 +40,14 @@ Next to each exercise are the new concepts you'll need to learn to complete thes
 
 1. Introduction to Commands
    1. **Home 1** - move()
+   * `move()` causes Reeborg to move one square unit in the direction that Reeborg is facing
+   * the program reads from the top to the bottom, so the command written on line 2 occurs after the command written on line 1, but before a command written on line 3
+   * the () after each command are part of the command -- in the Python language, you can put arguments inside these parentheses, but in Reeborg, the parentheses are left where they are
    2. **Home 3** - turn_left()
-   4. **Newspaper** - take(), put(), bonus: defining functions like turn_right()
-   5. *Optional Exercise*: **Tokens 4** (to solidify understanding of `take()` and `put()` commands for more complicated coding exercises later on)
+   * `turn_left()` causes Reeborg to turn left from the direction Reeborg is facing -- notice that Reeborg does not move from the square they are on after turning left, you must use `move()` any time you want Reeborg to move to the next square
+   3. **Newspaper** - take(), put(), bonus: defining functions like turn_right()
+   * notice that in this exercise, Reeborg must turn right to get up the steps, but there is no built in `turn_right()` command
+   4. *Optional Exercise*: **Tokens 4** (to solidify understanding of `take()` and `put()` commands for more complicated coding exercises later on)
 2. For Loops/Repeats
    1. **Around 1** - repeat/for loops
    2. **Hurdle 1**
