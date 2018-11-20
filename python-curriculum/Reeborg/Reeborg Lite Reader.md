@@ -58,18 +58,10 @@ Next to each exercise are the new concepts you'll need to learn to complete thes
 2. For Loops/Repeats
 There are two ways to write a loop that repeats certain lines of code:
 Option 1 (in Python language, a bit harder to grasp)
-
-```python
-for i in range(5):
-	#commands to repeat
-```
-
+```python for i in range(5):```
 Option 2 (only in Reeborg language, easier to grasp)
-
-```python
-repeat 5:
-	#commands to repeat
-```
+```python repeat 5: ```
+   
    1. **Around 1** - repeat/for loops
    2. **Hurdle 1**
 
