@@ -56,11 +56,7 @@ Next to each exercise are the new concepts you'll need to learn to complete thes
    4. *Optional Exercise*: **Tokens 4** (to solidify understanding of `take()` and `put()` commands for more complicated coding exercises later on)
 
 2. For Loops/Repeats
-There are two ways to write a loop that repeats certain lines of code: 
-Option 1 (in Python language, a bit harder to grasp) 
-```for i in range(5):``` 
-Option 2 (only in Reeborg language, easier to grasp) 
-```repeat 5: ``` 
+There are two ways to write a loop that repeats certain lines of code: ```for i in range(5):, repeat 5: ``` 
    
    1. **Around 1** - repeat/for loops
    2. **Hurdle 1**
