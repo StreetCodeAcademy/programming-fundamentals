@@ -47,23 +47,50 @@ Next to each exercise are the new concepts you'll need to learn to complete thes
    * `turn_left()` causes Reeborg to turn left from the direction Reeborg is facing -- notice that Reeborg does not move from the square they are on after turning left, you must use `move()` any time you want Reeborg to move to the next square
    3. **Newspaper** - take(), put(), bonus: defining functions like turn_right()
    * notice that in this exercise, Reeborg must turn right to get up the steps, but there is no built in `turn_right()` command
+   Here's a start:
+   ```python
+   def turn_right():
+     ...
+   ```
+   * if you finish building the `turn_right()` function for this exercise, think about other functions you can build to make it easier for Reeborg to complete the exercise (hint: which parts of the exercise world look similar, what move are repeated?)
    4. *Optional Exercise*: **Tokens 4** (to solidify understanding of `take()` and `put()` commands for more complicated coding exercises later on)
+
 2. For Loops/Repeats
+There are two ways to write a loop that repeats certain lines of code:
+Option 1 (in Python language, a bit harder to grasp)
+
+```python
+for i in range(5):
+	#commands to repeat
+```
+
+Option 2 (only in Reeborg language, easier to grasp)
+
+```python
+repeat 5:
+	#commands to repeat
+```
+
    1. **Around 1** - repeat/for loops
    2. **Hurdle 1**
+
 3. Basic Conditions Using the If Statement
    1. **Around 1 - apple** - if statements, object_here()
-4. While Loops
+
+4. While Loops (aka a loop with a condition)
     1. **Around 1 - variable** - while loops, front\_is\_clear()
     2. **Hurdle 2** - at_goal(), either done() or "not"
     3. *Optional Exercises*: **Tokens 1-5** (rework these challenges using while loops for generalized solutions)
+
 5. Advanced Conditions
    1. **Hurdle 3** 
    2. **Hurdle 4**
+
 6. Challenges...for food prizes
    1. **Storm 1** - toss(), carries_object()
    2. **Storm 2**
    3. **Center 1**
+
 7. Even Harder Challenges...for more prizes
    1. **Maze**
    2. **Checkerboard**: the challenges (To find this exercise, first click, "Other Worlds", then click "Go to Challenges". After that you will find "Checkerboard: the challenge".)
