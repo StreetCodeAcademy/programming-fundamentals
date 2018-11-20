@@ -70,7 +70,6 @@ Option 2 (only in Reeborg language, easier to grasp)
 repeat 5:
 	#commands to repeat
 ```
-
    1. **Around 1** - repeat/for loops
    2. **Hurdle 1**
 
