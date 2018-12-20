@@ -62,13 +62,15 @@ Next to each exercise are the new concepts you'll need to learn to complete thes
 2. For Loops/Repeats
 There are two ways to write a loop that repeats certain lines of code: 
    ```python
-   #Both of these ways of writing a for loop in Reeborg work. The code written INSIDE the for loop (aka in a coding block tabbed one level in) will repeat 5 times in the following examples. You can change the number parameter to repeat a different number of times.
+   #Both of these ways of writing a for loop in Reeborg work. 
+   #The code written INSIDE the for loop (aka in a coding block tabbed one level in) 
+   will repeat the specified number of times (5 times in these examples).
    
-   #Option 1
+   #Option 1 (more traditional, works in Python too)
    for i in range(5):
     ...
     
-   #Option 2
+   #Option 2 (simpler, works only in Reeborg)
    repeat 5:
     ...
    ```
