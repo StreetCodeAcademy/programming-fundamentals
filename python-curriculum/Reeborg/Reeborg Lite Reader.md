@@ -117,7 +117,7 @@ There are two ways to write a loop that repeats certain lines of code:
     3. *Optional Exercises*: **Tokens 1-5**
     * Rework these challenges using while loops for generalized solutions.
 
-5. Advanced Conditions
+5. Advanced Conditions  
 Congrats! These are the final required Reeborg exercises. You'll use all of the skills you've learned in parts 1-4 to complete them. It can seem like the goal would be to finish this as fast as possible. In past quarters, students often tried to rush through them, but struggled with later material because they missed some of the core insights from these challenges. I encourage you to take your time to solve them. Please ask clarifying questions and talk to mentors about areas of confusion.
 
    1. **Hurdle 3**
