@@ -73,11 +73,36 @@ There are two ways to write a loop that repeats certain lines of code:
     ...
    ```
    
-   1. **Around 1** - repeat/for loops
-   2. **Hurdle 1**
-
+   1. **Around 1** - for loops
+   2. **Hurdle 1** - for loops, defining functions
+   * How can we leverage for loops and functions to write cleaner code to solve Hurdle 1? Think about the repeatitive task of hurde jumping. Could you define a function `jump()` and repeat it multiple times?
+   
 3. Basic Conditions Using the If Statement
    1. **Around 1 - apple** - if statements, object_here()
+   * The if statement executes a block of code if the specific condition checked is true. It can also be paired with an else statement (if/else) or an else if (elif). Here are some examples to illustrate the concept (keep in mind the allowable conditions in Reeborg are all listed in the Reeborg's keyboard under Conditions, while those used below are imaginary conditions and commands).
+   
+   ```python
+   #A simple if statement, which executes the command only IF it is raining (it's_raining is TRUE)
+   if it's_raining():
+    bring_umbrella()
+   
+   #An if/else statement, which executes the command under the IF statement if it's_a_weekday is TRUE
+   #and the command under the ELSE statement if it's_a_weekday is FALSE
+   if it's_a_weekday():
+    go_to_school/work()
+   else:
+    sleep_in()
+    
+   #An if/elif statement that always allows you to win at rock/paper/scissors!
+   if opponent_picks_paper():
+    pick_scissors()
+   elif opponent_picks_scissors()
+    pick_rock()
+   elif opponent_picks_rock() #Notice here, the elif is not strictly necessary. Why?
+    pick_paper()
+   ```
+   
+   * Recall that in Around 1, we used a for loop to have Reeborg move around the square path. We can reuse that code and build off of it to have Reeborg move around the square path and collect apples along the way.
 
 4. While Loops (aka a loop with a condition)
     1. **Around 1 - variable** - while loops, front\_is\_clear()
