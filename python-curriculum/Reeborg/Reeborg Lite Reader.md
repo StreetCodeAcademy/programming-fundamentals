@@ -40,23 +40,38 @@ Next to each exercise are the new concepts you'll need to learn to complete thes
 
 1. Introduction to Commands
    1. **Home 1** - move()
-   * `move()` causes Reeborg to move one square unit in the direction that Reeborg is facing
-   * The program reads from the top to the bottom, so the command written on line 2 occurs after the command written on line 1, but before a command written on line 3
-   * The () after each command are part of the command -- in the Python language, you can put arguments inside these parentheses, but in Reeborg, the parentheses are left where they are
+   * `move()` causes Reeborg to move one square unit in the direction that Reeborg is facing.
+   * The code you write will run line by line, from top to bottom. One command goes on each line. Reeborg will only understand commands written with the correct syntax (aka commands that follow the details/rules of the coding language).
+   
    2. **Home 3** - turn_left()
-   * `turn_left()` causes Reeborg to turn left from the direction Reeborg is facing -- notice that Reeborg does not move from the square they are on after turning left, you must use `move()` any time you want Reeborg to move to the next square
+   * `turn_left()` causes Reeborg to turn left from the direction Reeborg is facing -- notice that Reeborg does not move from the square they are on after turning left, you must use `move()` any time you want Reeborg to move to the next square.
+   
    3. **Newspaper** - take(), put(), bonus: defining functions like turn_right()
-   * Notice that in this exercise, Reeborg must turn right to get up the steps, but there is no built in `turn_right()` command  
-   Here's a start:
+   * Notice that in this exercise, Reeborg must turn right to get up the steps, but there is no built in `turn_right()` command. We'll write the `turn_right()` function below to help you out.
    ```python
    def turn_right():
-     ...
+     turn_left()
+     turn_left()
+     turn_left()
    ```
    * If you finish building the `turn_right()` function for this exercise, think about other functions you can build to make it easier for Reeborg to complete the exercise (hint: which parts of the exercise world look similar, what move are repeated?)
-   4. *Optional Exercise*: **Tokens 4** (to solidify understanding of `take()` and `put()` commands for more complicated coding exercises later on)
+   
+   4. *Optional Exercise*: **Tokens 4**
+   * This exercise will help to solidify understanding of `take()` and `put()` commands for more complicated coding exercises later on.
 
 2. For Loops/Repeats
-There are two ways to write a loop that repeats certain lines of code: ```for i in range(5):, repeat 5: ``` 
+There are two ways to write a loop that repeats certain lines of code: 
+   ```python
+   #Both of these ways of writing a for loop in Reeborg work. The code written INSIDE the for loop (aka in a coding block tabbed one level in) will repeat 5 times in the following examples. You can change the number parameter to repeat a different number of times.
+   
+   #Option 1
+   for i in range(5):
+    ...
+    
+   #Option 2
+   repeat 5:
+    ...
+   ```
    
    1. **Around 1** - repeat/for loops
    2. **Hurdle 1**
@@ -81,5 +96,3 @@ There are two ways to write a loop that repeats certain lines of code: ```for i 
 7. Even Harder Challenges...for more prizes
    1. **Maze**
    2. **Checkerboard**: the challenges (To find this exercise, first click, "Other Worlds", then click "Go to Challenges". After that you will find "Checkerboard: the challenge".)
-
-
