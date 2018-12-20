@@ -37,14 +37,15 @@ Below is the list of exercises, **in the order that you should work through them
 Next to each exercise are the new concepts you'll need to learn to complete these exercises - you can learn about these concepts from a mentor or on the [Reeborg Wordy Reader](README.md).
 
 1. Introduction to Commands
-   1. **Home 1** - move()
+   1. **Home 1** - `move()`
    * `move()` causes Reeborg to move one square unit in the direction that Reeborg is facing.
    * The code you write will run line by line, from top to bottom. One command goes on each line. Reeborg will only understand commands written with the correct syntax (aka commands that follow the details/rules of the coding language).
    
-   2. **Home 3** - turn_left()
+   2. **Home 3** - `turn_left()`
    * `turn_left()` causes Reeborg to turn left from the direction Reeborg is facing -- notice that Reeborg does not move from the square they are on after turning left, you must use `move()` any time you want Reeborg to move to the next square.
    
-   3. **Newspaper** - take(), put(), bonus: defining functions like turn_right()
+   3. **Newspaper** - `take()`, `put()`, defining functions like `turn_right()`
+   * NOTE: In this exercise, Reeborg must drop off the newspapers at the top of the steps and return to where Reeborg started!
    * Notice that in this exercise, Reeborg must turn right to get up the steps, but there is no built in `turn_right()` command. We'll write the `turn_right()` function below to help you out.
    ```python
    def turn_right():
@@ -74,11 +75,12 @@ There are two ways to write a loop that repeats certain lines of code:
    ```
    
    1. **Around 1** - for loops
+   
    2. **Hurdle 1** - for loops, defining functions
    * How can we leverage for loops and functions to write cleaner code to solve Hurdle 1? Think about the repeatitive task of hurde jumping. Could you define a function `jump()` and repeat it multiple times?
    
 3. Basic Conditions Using the If Statement
-   1. **Around 1 - apple** - if statements, object_here()
+   1. **Around 1 - apple** - if statements, `object_here()`
    * The if statement executes a block of code if the specific condition checked is true. It can also be paired with an else statement (if/else) or an else if (elif). Here are some examples to illustrate the concept (keep in mind the allowable conditions in Reeborg are all listed in the Reeborg's keyboard under Conditions, while those used below are imaginary conditions and commands).
    
    ```python
@@ -93,7 +95,7 @@ There are two ways to write a loop that repeats certain lines of code:
    else:
     sleep_in()
     
-   #An if/elif statement that always allows you to win at rock/paper/scissors!
+   #An if/elif statement that always allows you to win at rock/paper/scissors! This is helpful when you want to write code that checks for more than two conditions.
    if opponent_picks_paper():
     pick_scissors()
    elif opponent_picks_scissors()
@@ -105,13 +107,24 @@ There are two ways to write a loop that repeats certain lines of code:
    * Recall that in Around 1, we used a for loop to have Reeborg move around the square path. We can reuse that code and build off of it to have Reeborg move around the square path and collect apples along the way.
 
 4. While Loops (aka a loop with a condition)
-    1. **Around 1 - variable** - while loops, front\_is\_clear()
-    2. **Hurdle 2** - at_goal(), either done() or "not"
-    3. *Optional Exercises*: **Tokens 1-5** (rework these challenges using while loops for generalized solutions)
+    1. **Around 1 - variable** - while loops, `front_is_clear()`
+    * NOTE: In this exercise, the size of Reeborg's world changes on each run.
+    
+    2. **Hurdle 2** - `at_goal()`, `done()`, `not` in front of a condition
+    * NOTE: In this exercise, the position of the ending flag changes on each run.
+    * To negate a condition, add the word not in front of it. For example, `while not front_is_clear()` will check whether there's a wall blocking Reeborg rather than checking whether the area in front of Reeborg is clear.
+    
+    3. *Optional Exercises*: **Tokens 1-5**
+    * Rework these challenges using while loops for generalized solutions.
 
 5. Advanced Conditions
-   1. **Hurdle 3** 
+Congrats! These are the final required Reeborg exercises. You'll use all of the skills you've learned in parts 1-4 to complete them. It can seem like the goal would be to finish this as fast as possible. In past quarters, students often tried to rush through them, but struggled with later material because they missed some of the core insights from these challenges. I encourage you to take your time to solve them. Please ask clarifying questions and talk to mentors about areas of confusion.
+
+   1. **Hurdle 3**
+   * NOTE: In this exercise, the lengths between the hurdles change.
+   
    2. **Hurdle 4**
+   * NOTE: In this exercise, the lengths between the hurdles and the height of the hurdles change.
 
 6. Challenges...for food prizes
    1. **Storm 1** - toss(), carries_object()
@@ -120,4 +133,5 @@ There are two ways to write a loop that repeats certain lines of code:
 
 7. Even Harder Challenges...for more prizes
    1. **Maze**
-   2. **Checkerboard**: the challenges (To find this exercise, first click, "Other Worlds", then click "Go to Challenges". After that you will find "Checkerboard: the challenge".)
+   2. **Checkerboard**: the challenge
+   * To find this exercise, first click, "Other Worlds", then click "Go to Challenges". After that you will find "Checkerboard: the challenge".
