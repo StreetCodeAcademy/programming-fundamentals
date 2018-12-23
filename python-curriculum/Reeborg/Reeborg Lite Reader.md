@@ -120,16 +120,15 @@ There are two ways to write a loop that repeats certain lines of code:
 5. Advanced Conditions  
 Congrats! These are the final required Reeborg exercises. You'll use all of the skills you've learned in parts 1-4 to complete them. It can seem like the goal would be to finish this as fast as possible. In past quarters, students often tried to rush through them, but struggled with later material because they missed some of the core insights from these challenges. I encourage you to take your time to solve them. Please ask clarifying questions and talk to mentors about areas of confusion.
 
-   1. **Hurdle 3**
+   1. **Hurdle 3** - `while front_is_clear()`, `at_goal()`
    * NOTE: In this exercise, the lengths between the hurdles change.
    
-   2. **Hurdle 4**
+   2. **Hurdle 4** - `while front_is_clear()`, `while wall_on_right()`, `at_goal()`
    * NOTE: In this exercise, the lengths between the hurdles and the height of the hurdles change.
 
 6. Challenges...for food prizes
-   1. **Storm 1** - toss(), carries_object()
-   2. **Storm 2**
-   3. **Center 1**
+   1. **Storm 2** - `toss()`, `carries_object()`
+   2. **Center 1**
 
 7. Even Harder Challenges...for more prizes
    1. **Maze**
