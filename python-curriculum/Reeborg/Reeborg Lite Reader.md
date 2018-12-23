@@ -54,9 +54,6 @@ Next to each exercise are the new concepts you'll need to learn to complete thes
      turn_left()
    ```
    * If you finish building the `turn_right()` function for this exercise, think about other functions you can build to make it easier for Reeborg to complete the exercise (hint: which parts of the exercise world look similar, what move are repeated?)
-   
-   4. *Optional Exercise*: **Tokens 4**
-   * This exercise will help to solidify understanding of `take()` and `put()` commands for more complicated coding exercises later on.
 
 2. For Loops/Repeats
 There are two ways to write a loop that repeats certain lines of code: 
@@ -77,7 +74,10 @@ There are two ways to write a loop that repeats certain lines of code:
    1. **Around 1** - for loops
    
    2. **Hurdle 1** - for loops, defining functions
-   * How can we leverage for loops and functions to write cleaner code to solve Hurdle 1? Think about the repeatitive task of hurde jumping. Could you define a function `jump()` and repeat it multiple times?
+   * How can we leverage for loops and functions to write cleaner code to solve Hurdle 1? Think about the repeatitive task of hurdle jumping. Could you define a function `jump()` and repeat it multiple times?
+   
+   3. *Optional Exercise*: **Tokens 4**
+   * This exercise will help to solidify understanding of `take()` and `put()` commands for more complicated coding exercises later on.
    
 3. Basic Conditions Using the If Statement
    1. **Around 1 - apple** - if statements, `object_here()`
@@ -109,6 +109,7 @@ There are two ways to write a loop that repeats certain lines of code:
 4. While Loops (aka a loop with a condition)
     1. **Around 1 - variable** - while loops, `front_is_clear()`
     * NOTE: In this exercise, the size of Reeborg's world changes on each run.
+    * Additionally, note that the exercise requires that Reeborg returns to its starting point
     
     2. **Hurdle 2** - `at_goal()`, `done()`, `not` in front of a condition
     * NOTE: In this exercise, the position of the ending flag changes on each run.
