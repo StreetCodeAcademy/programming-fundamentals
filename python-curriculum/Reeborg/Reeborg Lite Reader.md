@@ -44,7 +44,7 @@ Next to each exercise are the new concepts you'll need to learn to complete thes
    2. **Home 3** - `turn_left()`
    * `turn_left()` causes Reeborg to turn left from the direction Reeborg is facing -- notice that Reeborg does not move from the square they are on after turning left, you must use `move()` any time you want Reeborg to move to the next square.
    
-   3. **Newspaper** - `take()`, `put()`, defining functions like `turn_right()`
+   3. **Newspaper 0** - `take()`, `put()`, defining functions like `turn_right()`
    * NOTE: In this exercise, Reeborg must drop off the newspapers at the top of the steps and return to where Reeborg started!
    * Notice that in this exercise, Reeborg must turn right to get up the steps, but there is no built in `turn_right()` command. We'll write the `turn_right()` function below to help you out.
    ```python
