@@ -136,7 +136,7 @@ Congrats! These are the final required Reeborg exercises. You'll use all of the 
    1. **Maze**
    * NOTE: In this exercise, the maze changes each time your solution is run. To solve the exercise, write a program that solves every possible maze!
    * A helpful hint for this exercise is the "right hand rule". Imagine that Reeborg's right hand begins on the wall to Reeborg's right at the starting point. To solve the maze, make sure Reeborg's right hand continues to touch the wall as Reeborg walks. If after moving forward there ceases to be a wall, have Reeborg turn right to keep Reeborg's right hand on the wall.
-    * Here's a fascinating article about maze solving algorithms if you're interested: http://theconversation.com/how-to-escape-a-maze-according-to-maths-71582
+   * Here's a fascinating article about maze solving algorithms if you're interested: http://theconversation.com/how-to-escape-a-maze-according-to-maths-71582
    
    2. **Checkerboard**: the challenge
    * To find this exercise, first click, "Other Worlds", then click "Go to Challenges". After that you will find "Checkerboard: the challenge".
