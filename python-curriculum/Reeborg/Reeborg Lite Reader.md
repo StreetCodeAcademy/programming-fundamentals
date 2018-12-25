@@ -116,7 +116,7 @@ There are two ways to write a loop that repeats certain lines of code:
     * To negate a condition, add the word not in front of it. For example, `while not front_is_clear()` will check whether there's a wall blocking Reeborg rather than checking whether the area in front of Reeborg is clear.
     
     3. *Optional Exercises*: **Tokens 1-5**
-    * Rework these challenges using while loops for generalized solutions.
+    * Rework these challenges using while loops for generalized solutions. It's possible to create a solution that solves all five worlds at once. Since Tokens 5 has the most special conditions, a generalized solution for 5 should solve all the previous worlds too.
 
 5. Advanced Conditions  
 Congrats! These are the final required Reeborg exercises. You'll use all of the skills you've learned in parts 1-4 to complete them. It can seem like the goal would be to finish this as fast as possible. In past quarters, students often tried to rush through them, but struggled with later material because they missed some of the core insights from these challenges. I encourage you to take your time to solve them. Please ask clarifying questions and talk to mentors about areas of confusion.
@@ -129,9 +129,14 @@ Congrats! These are the final required Reeborg exercises. You'll use all of the 
 
 6. Challenges...for food prizes
    1. **Storm 2** - `toss()`, `carries_object()`
-   2. **Center 1**
+   2. **Center 1** - `object_here()`, `front_is_clear()`
+   * Though the World Info tab suggests a strategy that requires two tokens, remember that Reeborg has unlimited tokens, so you can use a strategy that requires more tokens if that is easier.
 
 7. Even Harder Challenges...for more prizes
    1. **Maze**
+   * NOTE: In this exercise, the maze changes each time your solution is run. To solve the exercise, write a program that solves every possible maze!
+   * A helpful hint for this exercise is the "right hand rule". Imagine that Reeborg's right hand begins on the wall to Reeborg's right at the starting point. To solve the maze, make sure Reeborg's right hand continues to touch the wall as Reeborg walks. If after moving forward there ceases to be a wall, have Reeborg turn right to keep Reeborg's right hand on the wall.
+    * Here's a fascinating article about maze solving algorithms if you're interested: http://theconversation.com/how-to-escape-a-maze-according-to-maths-71582
+   
    2. **Checkerboard**: the challenge
    * To find this exercise, first click, "Other Worlds", then click "Go to Challenges". After that you will find "Checkerboard: the challenge".
