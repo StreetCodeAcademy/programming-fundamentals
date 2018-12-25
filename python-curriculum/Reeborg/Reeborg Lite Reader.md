@@ -55,7 +55,7 @@ Next to each exercise are the new concepts you'll need to learn to complete thes
    ```
    * If you finish building the `turn_right()` function for this exercise, think about other functions you can build to make it easier for Reeborg to complete the exercise (hint: which parts of the exercise world look similar, what move are repeated?)
 
-2. For Loops/Repeats
+2. For Loops/Repeats   
 There are two ways to write a loop that repeats certain lines of code: 
    ```python
    #Both of these ways of writing a for loop in Reeborg work. 
