@@ -43,8 +43,16 @@ Now, save this file onto your computer. Feel free to ask your teacher for help! 
 
 If it doesn't, ask one of the teachers for help. If it does, congrats :). You just wrote your first line of Python! Your on your way to creating whatever you want on a computer!
 
-# Syntax
-Now, we have to talk about Syntax - or the way lines of Python code are put together. The first piece of syntax we're going to talk about is how to define **variables**. A variable is a way to store information - the different things you want to remember in your code. For example, if you wanted your code to "remember" your first and last name, you would write something like this: 
+# Variables
+We'll begin by discussing introductory syntax. Syntax describes the rules dictating how code should be written (in order to be understood by the computer), similar to the definition of syntax in the English language.  
+
+The first piece of syntax we're going to talk about is how to define **variables**.  
+
+**Variable:** A variable is a way to store information - the different things you want to remember in your code. You can think of it like a storage unit or a box that holds something.  
+
+![Variable Storage](variables_concept_image.jpg)
+
+For example, if you wanted your code to "remember" your first and last name, you would write something like this: 
 
 ```python 
 FirstName = "Diwakar"
@@ -52,7 +60,7 @@ LastName = "Ganesan"
 ```
 
 Notice the structure to each line. To create a **variable** in python, use the following pattern:
-<span style="color:blue">variable_name</span> = <span style="color:red">value</span>. The equal sign in Python means something a little different than what you're used to in math. By saying <code>my_name = "Jack"</code>, I'm assigning  "Jack" to the variable my_name. You could imagine a box labled `my_name` that we put the word, "Jack" into. 
+variable_name = value. The equal sign in Python means something a little different than what you're used to in math. By saying <code>my_name = "Jack"</code>, I'm assigning  "Jack" to the variable my_name. You could imagine a box labled `my_name` that we put the word, "Jack" into. 
 
 **Remember that the equal sign assigns variables in Python** Variable names have a few rules. First, you can't have spaces in a variable name. So, you _can't_ do this: 
 
