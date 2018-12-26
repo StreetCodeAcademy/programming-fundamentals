@@ -100,14 +100,6 @@ Note that though it is not explicit in the task instructions, Reeborg must put t
 
 Have your student try to complete the newspaper delivery exercise. You'll notice that the code for it is a little redundant, so you may want to introduce some decomposition with functions if the student shows a good understanding of `turn_right()`. 
 
-### *Optional Exercise: Tokens 4
-
-![](Tokens4.png)
-
-> Skip and go on to **2. For Loops/Repeats** if student shows solid understanding of this material
-
-For more practice with `take()` and `put()`, have your student try Token 4. The more advanced section of the instructions encourages a generalized solution for all the token worlds. For now, you can ignore this unless a student shows interest. We'll come back to this stuff.
-
 ## 2. For Loops/Repeats
 
 ### Exercise: Around 1
@@ -173,6 +165,12 @@ turn_left()
 - Remind them to save this code, as it may come in handy for future exercises.
 
 > As a review of functions you could encourage them to try decomposing their code to use a `jump_hurdle` function instead of putting all the code in the repeat statement. Give them a chance to write the code without the function first though.
+
+### *Optional Exercise: Tokens 4
+
+![](Tokens4.png)
+
+For more practice with `take()` and `put()`, have your student try Token 4. The more advanced section of the instructions encourages a generalized solution for all the token worlds. For now, you can ignore this unless a student shows interest. We'll come back to this stuff.
 
 ## 3. Basic Conditions/If Statements
 
