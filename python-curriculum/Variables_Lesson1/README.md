@@ -1,5 +1,5 @@
 # Introduction to Python
-<p> Hello! And welcome to Streetcode!! It's great to have you here! If you're reading this, you're in the Intro to Hack class, ready to learn Python! We're going to start by showing you what Python is, and why we learn it! </p>
+<p> Hello! And welcome to Streetcode!! It's great to have you here! If you're reading this, you're in the Intro to Hack B class, ready to learn Python! We're going to start by showing you what Python is, and why we learn it! </p>
 
 # What is Python?
 <p> Have you ever wondered how people build apps, or create websites? Everything on your computer is powered by lines of instructions that tell the computer exactly what to do. We call these lines of instructions "code", and "coding" is nothing but the process of writing those instructions out one-by-one. Python is one of the "languages" used to give the computer instructions - and it's definitely one of the better ones! Here's what Python "code" looks like:
@@ -23,7 +23,7 @@ One of the hardest parts of programming is getting your computer to run your cod
 
 [IDLE]: IDLE.png
 
-IDLE is a program that "runs" your Python program. To get it to run a series of Python instructions (an instruction is just a line of code) that you wrote, click "File" and then "New File". This should open up a window like this: 
+IDLE is a program that "runs" your Python code. To get it to run a series of Python instructions (an instruction is just a line of code) that you wrote, click "File" and then "New File". This should open up a window like this: 
 
 ![What a New File Looks like][newfile]
 
