@@ -31,10 +31,34 @@ You can now code away in the right hand area, your coding space.
 * The icons that look like a **music player** help you run the code you've writen in your coding space. When you're ready, hit play to run, fast forward and rewind to go back or ahead in the code, pause to pause the run on the line you're on, stop to end the run, and refresh to reset Reeborg at the starting point (you must reset to run the code again from the beginning).  
 ![enter image description here](https://lh3.googleusercontent.com/iK6H3xk5biGnoz75gFDONRBL6xAt8ntdaHSkIgKnzBhcw4pyYQLNuKpSewjd-eNT0YzcohtPpF7L)  
 
-## Exercises
-Below is the list of exercises, **in the order that you should work through them:**  
+## To New Knowledge and Learning...
+Generally, students learn using one/a combination of the following three methods:
+1. With the Reeborg Lite Reader below (keep scrolling for the exercises and the essential lesson material)
+2. With the [Reeborg Wordy Reader](README.md) for more context/content
+3. With a "rogue" approach (aka by jumping right in), the shortlist of exercises without any extra commentary included here:
 
-Next to each exercise are the new concepts you'll need to learn to complete these exercises - you can learn about these concepts from a mentor or on the [Reeborg Wordy Reader](README.md).
+Should Complete   
+- Home 1
+- Home 3
+- Newspaper 0
+- Around 1
+- Hurdle 1
+- Tokens 4 (optional)
+- Around 1 - apple
+- Around 1 - variable
+- Hurdle 2
+- Tokens 1-5 (optional, read the Lite Reader for details on how we want you to implement the solution)
+- Hurdle 3
+- Hurdle 4
+
+Could Complete As Challenges  
+- Storm 2
+- Center 1
+- Maze
+- Checkerboard: the challenge
+
+## Exercises
+Below is the list of exercises, **in the order that you should work through them:**. They are separated into 7 sections based on concept. Each exercise is listed in bold and matches one of the exercises in the Reeborg world drop down menu. Next to each exercise are the new concepts you'll need to learn to complete these exercises.
 
 ### 1. Introduction to Commands
 **Home 1** - `move()`   
