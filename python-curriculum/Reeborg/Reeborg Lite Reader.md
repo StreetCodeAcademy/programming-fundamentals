@@ -139,4 +139,5 @@ Congrats! These are the final required Reeborg exercises. You'll use all of the 
    * Here's a fascinating article about maze solving algorithms if you're interested: http://theconversation.com/how-to-escape-a-maze-according-to-maths-71582
    
    2. **Checkerboard**: the challenge
-   * To find this exercise, first click, "Other Worlds", then click "Go to Challenges". After that you will find "Checkerboard: the challenge".
+   * NOTE: To find this exercise, first click, "Other Worlds", then click "Go to Challenges". After that you will find "Checkerboard: the challenge".
+   * To solve this exercise, it may be helpful to think about all the different tokening patterns that make occur in a randomly generated checkboard. Is your solution general enough for each case?
