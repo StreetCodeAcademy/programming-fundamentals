@@ -45,7 +45,7 @@ Next to each exercise are the new concepts you'll need to learn to complete thes
    * `turn_left()` causes Reeborg to turn left from the direction Reeborg is facing -- notice that Reeborg does not move from the square they are on after turning left, you must use `move()` any time you want Reeborg to move to the next square.
    
    3. **Newspaper 0** - `take()`, `put()`, defining functions like `turn_right()`
-   * NOTE: In this exercise, Reeborg must drop off the newspapers at the top of the steps and return to where Reeborg started!
+   > NOTE: In this exercise, Reeborg must drop off the newspapers at the top of the steps and return to where Reeborg started!
    * Notice that in this exercise, Reeborg must turn right to get up the steps, but there is no built in `turn_right()` command. We'll write the `turn_right()` function below to help you out.
    ```python
    def turn_right():
@@ -69,8 +69,7 @@ There are two ways to write a loop that repeats certain lines of code:
    #Option 2 (simpler, works only in Reeborg)
    repeat 5:
     ...
-   ```
-   
+   ```   
    1. **Around 1** - for loops
    
    2. **Hurdle 1** - for loops, defining functions
@@ -108,11 +107,11 @@ There are two ways to write a loop that repeats certain lines of code:
 
 4. While Loops (aka a loop with a condition)
     1. **Around 1 - variable** - while loops, `front_is_clear()`
-    * NOTE: In this exercise, the size of Reeborg's world changes on each run.
+    > NOTE: In this exercise, the size of Reeborg's world changes on each run.
     * Additionally, note that the exercise requires that Reeborg returns to its starting point
     
     2. **Hurdle 2** - `at_goal()`, `done()`, `not` in front of a condition
-    * NOTE: In this exercise, the position of the ending flag changes on each run.
+    > NOTE: In this exercise, the position of the ending flag changes on each run.
     * To negate a condition, add the word not in front of it. For example, `while not front_is_clear()` will check whether there's a wall blocking Reeborg rather than checking whether the area in front of Reeborg is clear.
     
     3. *Optional Exercises*: **Tokens 1-5**
@@ -122,10 +121,10 @@ There are two ways to write a loop that repeats certain lines of code:
 Congrats! These are the final required Reeborg exercises. You'll use all of the skills you've learned in parts 1-4 to complete them. It can seem like the goal would be to finish this as fast as possible. In past quarters, students often tried to rush through them, but struggled with later material because they missed some of the core insights from these challenges. I encourage you to take your time to solve them. Please ask clarifying questions and talk to mentors about areas of confusion.
 
    1. **Hurdle 3** - `while front_is_clear()`, `at_goal()`
-   * NOTE: In this exercise, the lengths between the hurdles change.
+   > NOTE: In this exercise, the lengths between the hurdles change.
    
    2. **Hurdle 4** - `while front_is_clear()`, `while wall_on_right()`, `at_goal()`
-   * NOTE: In this exercise, the lengths between the hurdles and the height of the hurdles change.
+   > NOTE: In this exercise, the lengths between the hurdles and the height of the hurdles change.
 
 6. Challenges...for food prizes
    1. **Storm 2** - `toss()`, `carries_object()`
@@ -134,10 +133,10 @@ Congrats! These are the final required Reeborg exercises. You'll use all of the 
 
 7. Even Harder Challenges...for more prizes
    1. **Maze**
-   * NOTE: In this exercise, the maze changes each time your solution is run. To solve the exercise, write a program that solves every possible maze!
+   > NOTE: In this exercise, the maze changes each time your solution is run. To solve the exercise, write a program that solves every possible maze!
    * A helpful hint for this exercise is the "right hand rule". Imagine that Reeborg's right hand begins on the wall to Reeborg's right at the starting point. To solve the maze, make sure Reeborg's right hand continues to touch the wall as Reeborg walks. If after moving forward there ceases to be a wall, have Reeborg turn right to keep Reeborg's right hand on the wall.
    * Here's a fascinating article about maze solving algorithms if you're interested: http://theconversation.com/how-to-escape-a-maze-according-to-maths-71582
    
    2. **Checkerboard**: the challenge
-   * NOTE: To find this exercise, first click, "Other Worlds", then click "Go to Challenges". After that you will find "Checkerboard: the challenge".
+   > NOTE: To find this exercise, first click, "Other Worlds", then click "Go to Challenges". After that you will find "Checkerboard: the challenge".
    * To solve this exercise, it may be helpful to think about all the different tokening patterns that make occur in a randomly generated checkboard. Is your solution general enough for each case?
