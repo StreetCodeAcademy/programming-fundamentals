@@ -215,7 +215,7 @@ print(first_prompt + "dark green")
 
 Now, use your answer to the first prompt and the remaining prompts to print out your unique responses. If you want to get more practice, ask your mentor for their answers to the above prompts and print out their responses as full sentences as well. As an extra consideration, think about whether you want to reuse variables you've already created and simply reassign them to new values for the mentor responses, or whether you want to create new variables.
 
-## Print Statements
+# Print Statements
 We're now going to talk about `print` statements! Remember the first line of code you wrote in this exercise? `print ("Hello, World')` as well as the times we printed out some of our variables. This line of code is called a print statement. A print statement is used to output lines of information to your screen! For example, if I write the following lines of code:
 
 ![Sample Code][multiple_print]
@@ -267,7 +267,7 @@ color_6 = "Indigo"
 color_7 = "Yellow"
 ```
 
-## Taking user input
+# Taking User Input
 
 Now that we've learned how to use variables, we'll teach you how you can get user input and store it in a variable.
 
@@ -298,7 +298,7 @@ In the following screenshots, you'll see that I typed Autumn into the console an
 **Python 2: `variable_name = raw_input("prompt")`**   
 **Python 3: `variable_name = input("prompt")`**   
 
-## Exercise 4
+### Exercise 4
 
 Work with a mentor to build out one of the following project ideas. 
 
