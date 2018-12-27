@@ -43,7 +43,7 @@ Now, save this file onto your computer. Feel free to ask your teacher for help! 
 
 If it doesn't, ask one of the teachers for help. If it does, congrats :). You just wrote your first line of Python! Your on your way to creating whatever you want on a computer!
 
-**To reiterate, the place you write your code is called a file. The other window that prints output is called the console. You'll write your code in a file (which can be saved and edited like a word document. You'll look for any output printed in the separate console window.**
+To review, you write your code in a  **file**. You can save and edit the code in the file, similar to the way you can update and change a word document. If you use `print()` in your code, this tells the computer to output the things you've specified should be printed when you **run** your program. You'll look for any output printed in the other window that opens on starting IDLE; the **console**.
 
 # Variables
 We'll begin by discussing introductory syntax. Syntax describes the rules dictating how code should be written (in order to be understood by the computer), similar to the definition of syntax in the English language.  
