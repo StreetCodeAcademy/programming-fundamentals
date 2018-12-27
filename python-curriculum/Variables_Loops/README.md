@@ -200,7 +200,7 @@ else:
 ```
 
 Answer: Will the fisherman add a fish here? YES! That's because we go fishing if we have less than 5 fish, which is true (we have 4 fish). We know this because of the value assigned to the variable, `my_fish`.
-> Can you guess what would happen if I assigned `my_fish = 10` instead of `my_fish = 4` and ran the code again?
+* Can you guess what would happen if I assigned `my_fish = 10` instead of `my_fish = 4` and ran the code again?
 
 You can use `if` statements on any **condition**, or question you ask. The question (usually set up with a comparison operator) will result in either `True` or `False`. Of course, you can also use the other variants of the if statement (if else, if elseif), which also depend on checking conditions, as described above. Here are some examples of things you could put after an `if`:
 
