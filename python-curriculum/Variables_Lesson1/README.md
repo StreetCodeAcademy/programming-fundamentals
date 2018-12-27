@@ -282,7 +282,17 @@ birthday_season = input("Which season does your birthday fall in? ")
 
 ```
 
-To ask for user input, use the `input()` method. In the parentheses, write a string **argument** that specifies the question/prompt you want to appear on the console screen when your program runs. When you run the program, in the above example, Which season does your birthday fall in? will appear on the console screen and wait for user input. In the following screenshots, you'll see that I typed Autumn into the console and hit **Enter**. Then, the program stores the **string** "Autumn" in the **variable** `birthday_season`. Now, the **value** of `birthday_season` is the **string** `"Autumn"`.
+To ask for user input, use the `input()` method. In the parentheses, write a string **argument** that specifies the question/prompt you want to appear on the console screen when your program runs. The `input()` method "returns" whatever the user types in the console as a **string** and we store this **string** in the **variable** we've created using the equals sign to assign a **value** to the **variable**.  
+
+![Input Example](input_example.png)
+
+When you run the program, in the above example, Which season does your birthday fall in? will appear on the console screen and wait for user input.  
+
+![Input Example Console](input_example_console.png)
+
+In the following screenshots, you'll see that I typed Autumn into the console and hit **Enter**. Then, the program stores the **string** "Autumn" in the **variable** `birthday_season`. Now, the **value** of `birthday_season` is the **string** `"Autumn"`. Since in our code, the last line is `print(birthday_season)`, the console also prints the **string** stored in the variable `birthday_season()`, which in this case is `"Autumn"`.
+
+![Input Example Full](input_example_console_full.png)
 
 ### To ask for user input in Python and assign the user's input to a **variable**, use the following pattern:
 **Python 2: `variable_name = raw_input("prompt")`**   
