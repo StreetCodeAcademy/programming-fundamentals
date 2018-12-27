@@ -159,7 +159,7 @@ Name = FirstName + " " + LastName
 
 Then, `Name` will contain the string `"Diwakar Ganesan"`. The last line of code used the **+** symbol to combine together three strings: `FirstName`, `" "` (a space character), and `LastName`. The plus character can string together any number of strings (aka variables that hold text values) that you want. We call this **concatenation**.
 
-### Always remember: **text in Python must be surrounded by quotes**.  
+#### Always remember: **text in Python must be surrounded by quotes**.  
 
 Once again, after writing all the above code, you can test and see what your variable is storing by running:
 
