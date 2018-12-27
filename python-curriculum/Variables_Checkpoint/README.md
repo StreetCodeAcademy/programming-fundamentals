@@ -2,7 +2,7 @@
 
 In this lesson, we'll really test our metal with variables and really make sure that we understand how to use them. While the lesson might seem repetitive and even boring, it's very important that you complete this lesson earnestly because variables are one of the underpinnings of coding and they should come to you as second nature. Imagine, we are learning to play the piano and we are solidifying our fundamentals. 
 
-### Exercise 1: Commenting & Variable Assignment
+### Exercise 1: Commenting & Code Tracing
 Copy the code from the following code into IDLE window. 
 Add a comment above each line of code that explains exactly what that line does and what each variable will be. If you don't know what a comment is, ask your instructor to help you. 
 
