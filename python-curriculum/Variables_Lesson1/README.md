@@ -168,7 +168,6 @@ Once again, after writing all the above code, you can test and see what your var
 ```python
 print(Name)
 ```
-> Feel free to try this with the other variables as well!
 
 ### Exercise 2
 
