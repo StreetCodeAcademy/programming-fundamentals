@@ -85,7 +85,19 @@ Notice the "_" character? It's called an underscore, and it can be used to repla
 
 2. Variable names _can't_ start with a number. So, this wouldn't fly: `2Cool4School = "Me"`.
 
-3-ish. The names of variables describe what kind of information it holds. Though this is not a strict requirement like the first two rules, it's a good practice for writing clear and readable code!
+3. The names of variables describe what kind of information it holds. Though this is not a strict requirement like the first two rules, it's a good practice for writing clear and readable code! 
+
+For example:
+
+```python
+#This is an intuitive way to name a variable
+dog_breed = "Beagle"
+
+#This is an unintuitive way to name a variable
+cat_breed = "Beagle"
+```
+
+Though the variable holds the information, `"Beagle"`, it makes more sense and it is preferable to call the variable `dog_breed`, as opposed to `cat_breed`, since `"Beagle"` is a breed of dog. However, since the variable name simply refers to the name of the box holding the information (recall the picture from above), in either case, you've created a variable holding `"Beagle"`.
 
 # Values: What kinds of information can we assign to variables?
 
