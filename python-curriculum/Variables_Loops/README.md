@@ -213,8 +213,7 @@ Here are some things you can't ask in an `if` statement. Can you identify why? D
 * ```my_age```
 * ```height = 5```
 * ```"I like pie"```
-
-**Go ahead and run through a couple more examples with a mentor here before moving on.**
+> Go ahead and run through a couple more examples with a mentor here before moving on.  
 
 # Loops
 
@@ -287,7 +286,7 @@ To make the code in the block run 2 times, we'd use `for i in range(2):`. To hav
 
 #### The structure of a `for` loop:
 #### We have the keyword, `for`, and then counter variable (often named i), followed by the keywords `in range`, and a number as the argument in the parentheses.
-#### The number specifies the number of times the code block inside the loop runs. Implicitly, the for loop adds 1 to the counter variable (by 1 if the third argument is not specified) each time the code block runs and the for statement checks whether the counter variable is less than the range argument specified. If the comparison evaluates to True, the loop runs again. If the comparison evaluates to False, the loop exits.
+#### The number specifies the number of times the code block inside the loop runs. Implicitly, the for loop adds 1 to the counter variable (or another number if the third argument is specified) each time the code block runs and the for statement checks whether the counter variable is less than the range argument specified. If the comparison evaluates to True, the loop runs again. If the comparison evaluates to False, the loop exits.
 
 **The Nitty Gritty on For Loops**   
 
