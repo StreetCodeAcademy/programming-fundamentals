@@ -284,7 +284,13 @@ for i in range(number):
 
 To make the code in the block run 2 times, we'd use `for i in range(2):`. To have it run 10 times, we'd use `for i in range(100):`, and so on...  
 
-**The Nitty Gritty on For Loops**
+
+#### The structure of a `for` loop:
+#### We have the keyword, `for`, and then counter variable (often named i), followed by the keywords `in range`, and a number as the argument in the parentheses.
+#### The number specifies the number of times the code block inside the loop runs. Implicitly, the for loop adds 1 to the counter variable (by 1 if the third argument is not specified) each time the code block runs and the for statement checks whether the counter variable is less than the range argument specified. If the comparison evaluates to True, the loop runs again. If the comparison evaluates to False, the loop exits.
+
+**The Nitty Gritty on For Loops**   
+
 Since i is always initialized to 0 in the beginning, `for i in range(2):`, `i = 0` before entering the loop. Since 0 < 2, the code inside the for loop runs. Once the loop executes one time, `i = 1`. Since 1 < 2, the code inside the for loop runs again. Now, `i = 2`, but 2 < 2 is `False`, so the loop STOPS. 
 
 If we don’t want the i to start from 0, however, we will have to specify the starting number (**inclusive**) and the ending number (**exclusive**) we want. These words carry the same meaning when we talk about ranges of numbers in math class. For example, "x is between 10 and 20, inclusive" in a word problem means that x can take on all numbers between 10 and 20, or 10 or 20.  
