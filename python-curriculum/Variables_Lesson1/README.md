@@ -200,7 +200,8 @@ I'll give you a start.
 first_prompt = "My favorite color is"
 first_answer = "dark green"
 
-#The following solutions will all print "My favorite color is dark green", as desired. Talk to your mentor about why each one works.
+#The following solutions will all print "My favorite color is dark green", as desired. 
+#Talk to your mentor about why each one works.
 
 #Option 1
 print(first_prompt + first_answer)
