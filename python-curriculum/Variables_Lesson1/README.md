@@ -149,7 +149,9 @@ Even though you followed the usual convention (`variable_name = value`), text ne
 name = "Diwakar Ganesan"
 ```
 
-You can also add together variables that contain text. For example, if I write:
+You can also add together variables that contain text.  
+
+For example, if I write:
 
 ```python
 FirstName = "Diwakar"
