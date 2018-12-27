@@ -30,7 +30,7 @@ print("We need to put about", average_passengers_per_car, "in each car.")
 
 Make sure that your code runs before moving on. 
 
-### Exercise 2: MOAR Assigment and Debugging
+### Exercise 2: Debugging
 ```
 cars = 100
 space_in_a_car = 4.0
@@ -53,14 +53,3 @@ print("We need to put about", average_passengers_per_car, "in each car.")
 Copy the above code into IDLE and run it. Notice that IDLE/Python reports an error and your code doesn't run. Why is that? When you know why, clearly explain the "why" and then fix it. **FIGURE IT OUT BY YOURSELF**
 
 If you've completed the exercise, congratulations, you've debugged your code. Debugging is a very important skill. In fact, it's so important that a well known rule of thumb in software development is _"Writing code takes is a 1/4 of development while 3/4 is debugging"_. 
-
-
-### Exercise 3: Job Interview AI
-```
-person = input('Enter your name: ')
-print('Hello', person)
-```
-
-Run the program above in IDLE. Notice that it prompts you for your name and then prints `Hello Darth Vader` (Yeah, that's my real name). 
-
-Your last task is to write a program that interviews a potential job candidate. Your program will welcome the candidate, ask them a series of questions (name, age, eye color, number of siblings, years of work experience, motivation level .... etc), run a series of secret computations, and then tell the candidate if they are hired or if they've gotta keep looking. 
