@@ -64,8 +64,8 @@ LastName = "Ganesan"
 We say we're **assigning a value to a variable** in the above example. Note the structure of the example. The equal sign in Python means something a little different than what you're used to in math. By saying `FirstName = "Diwakar"`, I'm assigning  "Diwakar" to the variable FirstName. You'll follow a similar structure to assign future variables in your own code.
 
 ### To create a **variable** in Python, use the following pattern:
-**`variable_name = value`**
-**Remember that the equal sign assigns variables in Python.**
+**`variable_name = value`**  
+**Remember that the equal sign assigns variables in Python.**  
 
 ### Some More Rules About Variables
 
@@ -159,7 +159,7 @@ Name = FirstName + " " + LastName
 
 Then, `Name` will contain the string `"Diwakar Ganesan"`. The last line of code used the **+** symbol to combine together three strings: `FirstName`, `" "` (a space character), and `LastName`. The plus character can string together any number of strings (aka variables that hold text values) that you want. We call this **concatenation**.
 
-### Always remember: **text in python must be surrounded by quotes**. 
+### Always remember: **text in Python must be surrounded by quotes**.  
 
 Once again, after writing all the above code, you can test and see what your variable is storing by running:
 
@@ -272,8 +272,8 @@ birthday_season = input("Which season does your birthday fall in? ")
 To ask for user input, use the `input()` method. In the parentheses, write a string **argument** that specifies the question/prompt you want to appear on the console screen when your program runs. When you run the program, in the above example, Which season does your birthday fall in? will appear on the console screen and wait for user input. In the following screenshots, you'll see that I typed Autumn into the console and hit **Enter**. Then, the program stores the **string** "Autumn" in the **variable** `birthday_season`. Now, the **value** of `birthday_season` is the **string** `"Autumn"`.
 
 ### To ask for user input in Python and assign the user's input to a **variable**, use the following pattern:
-**Python 2: `variable_name = raw_input("prompt")`**
-**Python 3: `variable_name = input("prompt")`**
+**Python 2: `variable_name = raw_input("prompt")`**   
+**Python 3: `variable_name = input("prompt")`**   
 
 ## Exercise 4
 
