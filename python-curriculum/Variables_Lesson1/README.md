@@ -97,7 +97,7 @@ dog_breed = "Beagle"
 cat_breed = "Beagle"
 ```
 
-Though the variable holds the information, `"Beagle"`, it makes more sense and it is preferable to call the variable `dog_breed`, as opposed to `cat_breed`, since `"Beagle"` is a breed of dog. However, since the variable name simply refers to the name of the box holding the information (recall the picture from above), in either case, you've created a variable holding `"Beagle"`.
+Though the variable holds the information, `"Beagle"`, it makes more sense to call the variable `dog_breed`, as opposed to `cat_breed`, since `"Beagle"` is a breed of dog. However, since the variable name simply refers to the name of the box holding the information (recall the picture from above), in either case, you've created a variable holding `"Beagle"`.
 
 # Values: What kinds of information can we assign to variables?
 
