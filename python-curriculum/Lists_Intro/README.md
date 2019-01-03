@@ -6,7 +6,7 @@ If you're planning on moving on to the [**Processing Lessons**](https://github.c
 
 **List:** A list is a _data structure_.  
 
-Remember how we said that a **variable** also stores data? In a similar way, a list stores data; however, it's even more interesting because it can store more than one piece of data and even more than one type of data at once! Building on our box analogy about variables, you can imagine that a list is a row of boxes, each of which holds a different data point that you could otherwise store into separate variables.  
+Remember how we said that a **variable** stores data? In a similar way, a list also stores data; however, it's even more interesting because it can store more than one piece of data and even more than one type of data at once! Building on our box analogy about variables, you can imagine that a list is a row of boxes, each of which holds a different data point that you could otherwise store into separate variables.  
 
 To access what a specific box is holding, the list cleverly has an address/name for each box in the row, like a house address in a neighborhood.  
 
@@ -74,6 +74,9 @@ print("My favorite city is " + favorites[0] + " .")
 ### Printing a List
 Sometimes, if you just want to see all of the elements in a list, rather than printing each element out through accessing, you can simply call `print()`, passing in the name of your list as an argument. For example, `print(favorites)`.  
 
+### Length of a List
+At times, I'm even too lazy to print out the entire list. When I just want to know how many elements are in the list, I'll use the `len()` method, which gives me the count of the elements in a list when I pass the list name as an argument. What do you expect `print(len(favorites))` to print? Try it out and see if the result matches what you predicted!  
+
 ### Deleting Elements in a List
 To delete elements from a list, you can use the **method** `clear()` to remove all of the elements in a list. You'll have an empty list if you call this method on a list.  
 
@@ -98,3 +101,58 @@ favorites.insert(0, "Zadie Smith")
 ```
 
 What's the order of elements now? Why don't you try thinking about what you'd expect? If you've been following along with all the code above, you should see: `["Zadie Smith", "Chicago", 24]`.
+
+### More Methods
+If you're interested in learning more about built-in Python methods for lists, see: https://docs.python.org/3/tutorial/datastructures.html. This link will take you to the official Python documentation on lists. This is a super helpful skill to learn, as most programmers read documentation regularly in their day to day jobs.
+
+# Lists and Loops
+Now that you know how to work with a list, we're going to talk about how to **iterate** through a list with a **for loop**. This means that we're going to use a **for loop** to go through a list and access each of the elements in the list, in the order that they are stored in the list.  
+
+Using the `favorites` list from above, we access each element like this:
+
+```python
+for i in favorites:
+```
+
+Or in general:
+
+```python
+for i in list_name:
+```
+
+The `i` variable, which we previously called the **counter variable**, now holds the next **element** from the list each time it runs through the for loop (which we call an **iteration**). This means the first time the for loop runs in the example above, `i` stores the string `"Zadie Smith"`, since `"Zadie Smith"` is stored in the first box of the `favorites` list, at the address `favorites[0]`. Can you walk through what `i` stores on the second and third iteration with your mentor?  
+
+Once there are no more elements in the list, the **for loop** stops. This is very similar to how the typical **for loop** works under the hood. For example, `for i in range(3):` creates a list like so `[0, 1, 2]`, which starts at 0 and counts up to but does not include 3. Then, `i` takes on each consecutive value in the list in each iteration of the loop, stopping when it runs out of elements. Pretty cool right?
+
+### Exercise 1
+Let's start with a simple exercise to get you acquainted with how to use a loop with a list.  
+
+I'm a big fan of the TV show Grey's Anatomy. Since's the show has been on air for a long time, many of my favorite characters have come and gone from Grey's. The show's producers gave me a list of some of the most popular characters from Grey's, in the order that they departed from the show. How would I print out the name of the characters in the list, from earliest departure to latest departure?
+
+```python
+old_ga_characters = ["Preston Burke", "George O' Malley", "Izzie Stevens", "Addison Montgomery", "Lexie Grey", "Mark Sloan", "Cristina Yang", "Derek Shepherd", "Callie Torres", "April Kepner", "Arizona Robbins"]
+
+#your code here
+```
+
+### Exercise 2
+Your friend started watching Grey's Anatomy recently and she wants to know which characters she will get to watch for the longest before they leave the show. This time, print the names of the characters, from the latest departure to the earliest departure.  
+
+**Hint 1:** There are several good ways to solve this problem. Try using the `len()` method to determine how many elements are in the list. This problem is also solvable with the `reverse()` method in Python, but try to solve it with ONLY what you've learned so far.  
+
+**Hint 2:** Loops may also be useful for this question. Review the [**Loops and Variables Lesson**](https://github.com/StreetCodeAcademy/programming-fundamentals/tree/master/python-curriculum/Variables_Loops) to figure out how to count **backwards** in a **for loop**.  
+
+### Exercise 3
+You have two lists, one with vowels and one with consonants. Print out all of the letters in both lists, such that each letter is printed only once and all the consonants are printed first, followed by all of the vowels.  
+
+```python
+vowels = ["a", "e", "i", "o", "u"]
+consonants = ["c", "h", "j", "m", "t"]
+
+#your code here
+```
+
+### Exercise 4
+Use the two lists from **Exercise 3**. Print out all of the letters in both lists, such each letter is printed only once and the vowels and consonants in the output alternate (a vowel is always followed by a consonant and vis versa).  
+
+**Hint:** A plain **for loop** could be more handy here.  
