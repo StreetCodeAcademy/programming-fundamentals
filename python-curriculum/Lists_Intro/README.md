@@ -127,7 +127,7 @@ Once there are no more elements in the list, the **for loop** stops. This is ver
 ### Exercise 1
 Let's start with a simple exercise to get you acquainted with how to use a loop with a list.  
 
-I'm a big fan of the TV show Grey's Anatomy. Since's the show has been on air for a long time, many of my favorite characters have come and gone from Grey's. The show's producers gave me a list of some of the most popular characters from Grey's, in the order that they departed from the show. How would I print out the name of the characters in the list, from earliest departure to latest departure?
+I'm a big fan of the TV show Grey's Anatomy. Since's the show has been on air for a long time, many of my favorite characters have come and gone from Grey's. The show's producers gave me a list of some of the most popular characters from Grey's, in the order that they departed from the show. How would I print out the name of the characters in the list, from **earliest departure to latest departure**?
 
 ```python
 old_ga_characters = ["Preston Burke", "George O' Malley", "Izzie Stevens", "Addison Montgomery", "Lexie Grey", "Mark Sloan", "Cristina Yang", "Derek Shepherd", "Callie Torres", "April Kepner", "Arizona Robbins"]
@@ -136,7 +136,7 @@ old_ga_characters = ["Preston Burke", "George O' Malley", "Izzie Stevens", "Addi
 ```
 
 ### Exercise 2
-Your friend started watching Grey's Anatomy recently and she wants to know which characters she will get to watch for the longest before they leave the show. This time, print the names of the characters, from the latest departure to the earliest departure.  
+Your friend started watching Grey's Anatomy recently and she wants to know which characters she will get to watch for the longest before they leave the show. This time, print the names of the characters, from the **latest departure to the earliest departure**, using the list created in **Exercise 1**. 
 
 **Hint 1:** There are several good ways to solve this problem. Try using the `len()` method to determine how many elements are in the list. This problem is also solvable with the `reverse()` method in Python, but try to solve it with ONLY what you've learned so far.  
 
