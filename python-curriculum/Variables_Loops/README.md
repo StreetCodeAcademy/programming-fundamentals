@@ -21,7 +21,7 @@ Notice that `my_favorite_number` has a decimal point (the period), but `your_fav
 
 ### Exercise 1
 
-See if you can write a program to print `My name is (your name here) and I am (your age here) years old!`, where `name` and `age` are stored as **variables**. Try to solve this without looking at Variables Lesson 1.
+See if you can write a program to print `My name is (your name here) and I am (your age here) years old!`, where `name` and `age` are stored as **variables**. Try to solve this without looking at [**Variables Intro**](https://github.com/StreetCodeAcademy/programming-fundamentals/tree/master/python-curriculum/Variables_Lesson1), but go back and review if you need a refresher.
 
 **Hint 1:** When declaring variables, consider what type of variables make sense for storing name and age. How are strings different from numbers?
 
