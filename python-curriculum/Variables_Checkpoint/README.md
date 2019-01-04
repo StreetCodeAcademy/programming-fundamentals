@@ -9,8 +9,6 @@ For each of the variables after the `#####` line, **comment** what you predict t
 
 By the end, see if you can tell what the code will print out before you run it. Walking through what you think your code will do and "imagining" what is going on with the variables/functions (either in your head or on paper) is called **code tracing**.
 
-* Also, note that these print statements take **multiple** string arguments, instead of just one, and they seem to **concatenate** the strings WITHOUT using the `+` operator. This is another way to concatenate and print strings. Observe that the output is formatted to include white spaces between each string argument, which is very convenient in some cases.
-
 ```python
 cars = 100
 space_in_a_car = 4.0
@@ -31,6 +29,8 @@ print("We can transport", carpool_capacity, "people today.")
 print("We have", passengers, "to carpool today.")
 print("We need to put about", average_passengers_per_car, "in each car.")
 ```
+
+Also, note that these print statements take **multiple** string arguments, instead of just one, and they seem to **concatenate** the strings WITHOUT using the `+` operator. This is another way to concatenate and print strings. Observe that the output is formatted to include white spaces between each string argument, which is very convenient in some cases.
 
 **Make sure that your code runs before moving on.**    
 
@@ -88,7 +88,8 @@ print("We can transport", carpool_capacity, "people today.")
 print("We have", passengers, "to carpool today.")
 print("We need to put about", average_passengers_per_car, "in each car.")
 ```
-3) Click 'Visualize Execution' and use the 'Forward' and 'Back' buttons in the bottom left to run through the code line by line. The arrows on the left bar clearly show which line is executing. The area under the Frame title keeps track of the variables in your code, so you can see their values after each line executes.
+3) Click 'Visualize Execution' and use the 'Forward' and 'Back' buttons in the bottom left to run through the code line by line. The arrows on the left bar clearly show which line is executing. The area under the Frame title keeps track of the variables in your code, so you can see their values after each line executes.  
 
-* Running this code in the Python debugger allows you to see what's being stored inside the variables and get a better understanding of the code flow. But your code trace from **Exercise 1** and the print statements included in each of these exercises also probably led you to similar conclusions. Keep in mind you can use **print statements**, **commenting**, **code tracing**, **error messages**, **debuggers** and MORE to work through troubles in your code at any point!
-* This tool will come in handy as you learn more advanced topics, including loops with variables, and you write more functions independently. You can always come back to this website if you find it helpful.
+Running this code in the Python debugger allows you to see what's being stored inside the variables and get a better understanding of the code flow. But your code trace from **Exercise 1** and the print statements included in each of these exercises also probably led you to similar conclusions. Keep in mind you can use **print statements**, **commenting**, **code tracing**, **error messages**, **debuggers** and MORE to work through troubles in your code at any point!  
+
+This tool will come in handy as you learn more advanced topics, including loops with variables, and you write more functions independently. You can always come back to this website if you find it helpful.  
