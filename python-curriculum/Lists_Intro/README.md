@@ -57,9 +57,9 @@ To access elements, let's return to the address analogy. Let's pretend the name 
 In our `favorites` list example, since we added my favorite city first, `favorites[0]` stores `"Chicago"`. Since we added my favorite coffee order next, `favorites[1]` stores `"cold brew"`. Since we added my favorite number last, `favorite[2]` stores `24`.  
 
 In memory, the list actually looks a lot like the boxes in a row we described.  
-Label | favorites[0] | favorites[1] | favorites[2]
---- | --- | ---
-Data | "Chicago" | "cold brew" | 24
+|Label | favorites[0] | favorites[1] | favorites[2]|  
+|--- | --- | --- |  
+| Data | "Chicago" | "cold brew" | 24 |  
 
 You can reference the data stores in the list using **indexing** and do anything you would usually do with a variable with that data in your code.
 
