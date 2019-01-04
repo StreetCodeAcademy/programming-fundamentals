@@ -61,6 +61,7 @@ In memory, the list actually looks a lot like the boxes in a row we described.
 | Label | favorites[0] | favorites[1]| favorites[2] |
 | :----:|:------------:|:-----------:|:------------:|
 | Data  | "Chicago"    | "cold brew" | 24           |
+| :----:|:------------:|:-----------:|:------------:|
 
 You can reference the data stores in the list using **indexing** and do anything you would usually do with a variable with that data in your code.
 
