@@ -85,7 +85,8 @@ favorites[0] = "Seattle"
 print("My favorite city is " + favorites[0] + " .")
 ```
 
-Now, in memory, the `favorites` list look like this. 
+Now, in memory, the `favorites` list look like this.  
+
 | Label    | favorites[0] | favorites[1]| favorites[2] |
 | :-------:|:------------:|:-----------:|:------------:|
 | **Data** | "Seattle"    | "cold brew" | 24           |
@@ -114,6 +115,7 @@ print(len(favorites)) #this should now print 2, instead of 3
 ```
 
 Another look at memory:  
+
 | Label    | favorites[0] | favorites[1]|
 | :-------:|:------------:|:-----------:|
 | **Data** | "Seattle"    | 24          |
@@ -129,6 +131,7 @@ favorites.insert(0, "Zadie Smith")
 What's the order of elements now? Why don't you try thinking about what you'd expect? If you've been following along with all the code above, you should see: `["Zadie Smith", "Seattle", 24]` when you print out the list. Notice that `"Seattle"`, which was originally at the `favorites[0]` address has been moved down to the `favorites[1]` address.
 
 One last look at memory:  
+
 | Label    | favorites[0] | favorites[1]| favorites[2] |
 | :-------:|:------------:|:-----------:|:------------:|
 | **Data** | "Zadie Smith"| "Seattle"   | 24           |
