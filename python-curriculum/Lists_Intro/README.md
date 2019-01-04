@@ -85,10 +85,10 @@ favorites[0] = "Seattle"
 print("My favorite city is " + favorites[0] + " .")
 ```
 
-Now, in memory, the `favorites` list look like this.  
-Label | favorites[0] | favorites[1] | favorites[2]
---- | --- | ---
-Data | "Seattle" | "cold brew" | 24
+Now, in memory, the `favorites` list look like this. 
+| Label    | favorites[0] | favorites[1]| favorites[2] |
+| :-------:|:------------:|:-----------:|:------------:|
+| **Data** | "Seattle"    | "cold brew" | 24           |
 
 ### Printing a List
 Sometimes, if you just want to see all of the elements in a list, rather than printing each element out through accessing, you can simply call `print()`, passing in the name of your list as an argument. For example, `print(favorites)`.  
@@ -114,9 +114,10 @@ print(len(favorites)) #this should now print 2, instead of 3
 ```
 
 Another look at memory:  
-Label | favorites[0] | favorites[1]
---- | --- | ---
-Data | "Seattle" | 24
+| Label    | favorites[0] | favorites[1]|
+| :-------:|:------------:|:-----------:|
+| **Data** | "Seattle"    | 24          |
+
 
 ### Inserting Elements
 You may have noticed that when you add elements with `append()`, the element is added to the end of the list. To insert elements in other places in the list, use `insert()`. Similar to the `pop()` method, the `insert()` method will scoot down boxes after the specified index to "make room" for the next box. Say I want to insert the name of my favorite author into the `favorites[0]` position in my list:
@@ -128,9 +129,9 @@ favorites.insert(0, "Zadie Smith")
 What's the order of elements now? Why don't you try thinking about what you'd expect? If you've been following along with all the code above, you should see: `["Zadie Smith", "Seattle", 24]` when you print out the list. Notice that `"Seattle"`, which was originally at the `favorites[0]` address has been moved down to the `favorites[1]` address.
 
 One last look at memory:  
-Label | favorites[0] | favorites[1] | favorites[2]
---- | --- | ---
-Data | "Zadie Smith" | "Seattle" | 24
+| Label    | favorites[0] | favorites[1]| favorites[2] |
+| :-------:|:------------:|:-----------:|:------------:|
+| **Data** | "Zadie Smith"| "Seattle"   | 24           |
 
 ### More Methods
 If you're interested in learning more about built-in Python methods for lists, see: https://docs.python.org/3/tutorial/datastructures.html. This link will take you to the official Python documentation on lists. This is a super helpful skill to learn, as most programmers read documentation regularly in their day to day jobs.
