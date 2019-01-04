@@ -56,8 +56,9 @@ To access elements, let's return to the address analogy. Let's pretend the name 
 
 In our `favorites` list example, since we added my favorite city first, `favorites[0]` stores `"Chicago"`. Since we added my favorite coffee order next, `favorites[1]` stores `"cold brew"`. Since we added my favorite number last, `favorite[2]` stores `24`.  
 
-In memory, the list actually looks a lot like the boxes in a row we described.
+In memory, the list actually looks a lot like the boxes in a row we described.  
 Label | favorites[0] | favorites[1] | favorites[2]
+--- | --- | ---
 Data | "Chicago" | "cold brew" | 24
 
 You can reference the data stores in the list using **indexing** and do anything you would usually do with a variable with that data in your code.
@@ -85,6 +86,7 @@ print("My favorite city is " + favorites[0] + " .")
 
 Now, in memory, the `favorites` list look like this.  
 Label | favorites[0] | favorites[1] | favorites[2]
+--- | --- | ---
 Data | "Seattle" | "cold brew" | 24
 
 ### Printing a List
@@ -110,8 +112,9 @@ print(temp) #this should now print cold brew
 print(len(favorites)) #this should now print 2, instead of 3
 ```
 
-Another look at memory:
+Another look at memory:  
 Label | favorites[0] | favorites[1]
+--- | --- | ---
 Data | "Seattle" | 24
 
 ### Inserting Elements
@@ -123,8 +126,9 @@ favorites.insert(0, "Zadie Smith")
 
 What's the order of elements now? Why don't you try thinking about what you'd expect? If you've been following along with all the code above, you should see: `["Zadie Smith", "Seattle", 24]` when you print out the list. Notice that `"Seattle"`, which was originally at the `favorites[0]` address has been moved down to the `favorites[1]` address.
 
-One last look at memory:
+One last look at memory:  
 Label | favorites[0] | favorites[1] | favorites[2]
+--- | --- | ---
 Data | "Zadie Smith" | "Seattle" | 24
 
 ### More Methods
@@ -180,4 +184,6 @@ consonants = ["c", "h", "j", "m", "t"]
 ### Exercise 4
 Use the two lists from **Exercise 3**. Print out all of the letters in both lists, such each letter is printed only once and the vowels and consonants in the output alternate (a vowel is always followed by a consonant and vis versa).  
 
-**Hint:** A plain **for loop** could be more handy here.  
+**Hint:** A plain **for loop** could be more handy here.   
+> **Note to mentors:** Try drawing out the physical representation of the list like the memory diagrams above to help students visualize the layout of each list.
+
