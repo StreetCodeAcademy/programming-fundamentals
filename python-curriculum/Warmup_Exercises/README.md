@@ -61,11 +61,24 @@ Think of the function with the return value as a passenger on a boat, who throws
 For example, the following piece of code **defines** a function called `function_4()`, which returns 1. The `number` variable "catches" the return value from **calling** function_4() in the main program. Then, it prints the value now stored in number, which is 1.  
 
 ```python
+#Incorrect way to test function_4
+def function_4():
+  return 1
+
+function_4()
+
+#Correct way to test function_4, with output to console
 def function_4():
   return 1
 
 number = function_4()
 print(number)
+
+#Another correct way to test function_4, with output to console
+def function_4():
+  return 1
+
+print(function_4())
 ```
 
 #### On Function Scope
@@ -106,7 +119,7 @@ result = function_7(one, two, three)
 Only one of these two functions works. Why? In `function_6()`, `one`, `two` and `three` are passed in the values of the local variables `a`, `b`, `c` in `function_6()`. Within `function_6()`, only the local variables `a`, `b`, `c` are available, so the function does not recognize references to `one`, `two` and `three`, even though they are initialized in the main program. `function_7()` works because even though the main program variables are name `one`, `two` and `three`, when they are passed in, the local variable `a` is assigned the value of `one` (`"hi"`), the local variable `b` is assigned the value of `two` (`"hola"`), and the local variable `c` is assigned the value of `three` (`"ni hao"`).
 
 > **Challenge**
-> What if the last line was replaced with `result = function_7(two, one, three)`? What would be printed out? What would the final value of result be?
+> What if the last line was replaced with `result = function_7(two, one, three)`? What would be printed out? What would the final value of `result` be?
 > This might be a good place to use the debugger we introduced previously: http://www.pythontutor.com/visualize.html#mode=edit
 
 **Note to mentor:** This is a great place to stop and check-in with your students. Make sure they understand this concept. It is a stumbling block for many students.
