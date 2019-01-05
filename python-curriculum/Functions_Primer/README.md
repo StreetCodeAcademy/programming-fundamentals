@@ -104,7 +104,8 @@ In `function_6()`, `one`, `two` and `three` are passed in the values of the loca
 `function_7()` works because even though the main program variables are name `one`, `two` and `three`, when they are passed in, the local variable `a` is assigned the value of `one` (`"hi"`), the local variable `b` is assigned the value of `two` (`"hola"`), and the local variable `c` is assigned the value of `three` (`"ni hao"`).
 
 > **Challenge**
-> What if the last line was replaced with `result = function_7(two, one, three)`? What would be printed out? What would the final value of `result` be?
+> What if the last line was replaced with `result = function_7(two, one, three)`? What would be printed out? What would the final value of `result` be?  
+
 > This might be a good place to use the debugger we introduced previously: http://www.pythontutor.com/visualize.html#mode=edit
 
 ## On Function Scope
