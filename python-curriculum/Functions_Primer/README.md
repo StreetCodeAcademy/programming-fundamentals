@@ -156,7 +156,7 @@ result = sleep_in(weekday, vacation) #passes in test variables, calls function, 
 print(result) #prints the return value stored in result to compare with expected output from test case
 ```
 
-#### Test Case:
+#### Test Cases:
 * sleep_in(False, False) -> return True  
 * sleep_in(True, False) -> return False   
 * sleep_in(False, True) -> return True   
