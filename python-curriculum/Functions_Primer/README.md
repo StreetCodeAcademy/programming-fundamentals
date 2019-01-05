@@ -106,10 +106,15 @@ In `function_6()`, `one`, `two` and `three` are passed in the values of the loca
 > **Challenge**
 > What if the last line was replaced with `result = function_7(two, one, three)`? What would be printed out? What would the final value of `result` be?  
 
-> This might be a good place to use the debugger we introduced previously: http://www.pythontutor.com/visualize.html#mode=edit
+> This might be a good place to use the debugger we introduced previously to trace variable names and their corresponding values inside each scope: http://www.pythontutor.com/visualize.html#mode=edit
 
 ## On Function Scope
-Only variables created inside the scope of a function or parameters of the function are accessible INSIDE the function. Observe the following:
+Only variables created inside the scope of a function or parameters of the function are accessible INSIDE the function. 
+
+### Exercise 2
+Which line in the above code needs to be commented out to prevent an error when the code runs?  
+
+> This might be a good place to use the debugger we introduced previously to run through the entire program line by line and examine the variables present inside different scopes: http://www.pythontutor.com/visualize.html#mode=edit
 
 ```python
 def function_5(y):
@@ -123,10 +128,6 @@ function_5(y)
 print(y)
 print(z)
 ```
-
-### Exercise 2
-Which line in the above code needs to be commented out to prevent an error when the code runs?  
-> This might be a good place to use the debugger we introduced previously to run through the entire program line by line and examine the variables present inside different scopes: http://www.pythontutor.com/visualize.html#mode=edit
 
 This piece of code does something interesting. The **global variable** `y` is passed into `function_5()` as an argument, to a **local variable** also called `y`. This **local variable** `y` now stores the value 100, the value stored in the **global variable** `y`. The first line inside the function re-assigns the value of `y` to -100. Inside of the function, a **local variable** `z` is also created and both -100 and 73 are printed when `function_5(y)` is called. But, when we try to print y and z after the function exits, Python prints the value stored in the **global variable** `y`, 100. Notice the **local variable** `y` with value -100 does not persist when the function returns! The program runs an error when we try to print `z`, since there is no **global variable** named `z`.
 
@@ -156,16 +157,16 @@ print(result) #prints the return value stored in result to compare with expected
 ```
 
 #### Test Case:
-sleep_in(False, False) -> return True
-sleep_in(True, False) -> return False
-sleep_in(False, True) -> return True
+* sleep_in(False, False) -> return True  
+* sleep_in(True, False) -> return False   
+* sleep_in(False, True) -> return True   
 
 **Hint 1 (checklist for testing your function in IDLE):** 
-* **Define** your sleep in function with the header we provided you at the TOP of a new file (remember we always define functions before we use them in any kind of code we write). 
-* Fill in the function body and make sure your last line **returns** a boolean value. Create new **variables** to hold test case values (should be booleans) for the weekday and vacation parameters of your function. 
-* **Call** your function, making sure to **pass in** the new variables you created as parameters, and assign a new **variable** the return value from `sleep_in()` (if you're not sure about how to do this, look at the example right above this exercise). 
-* **Print** the variable holding the return value accesible in the scope of the main program to check that the output is what you'd expect for that given test case. 
-* **Re-assign the values** of the weekday and vacation variables to create a new test case and call your function again to keep testing!
+1. **Define** your sleep in function with the header we provided you at the TOP of a new file (remember we always define functions before we use them in any kind of code we write). 
+2. Fill in the function body and make sure your last line **returns** a boolean value. Create new **variables** to hold test case values (should be booleans) for the weekday and vacation parameters of your function. 
+3. **Call** your function, making sure to **pass in** the new variables you created as parameters, and assign a new **variable** the return value from `sleep_in()` (if you're not sure about how to do this, look at the example right above this exercise). 
+4. **Print** the variable holding the return value accesible in the scope of the main program to check that the output is what you'd expect for that given test case. 
+5. **Re-assign the values** of the weekday and vacation variables to create a new test case and call your function again to keep testing!
 
 **Hint 2:** Which key word is capitalized in the exercise prompt? What kind of statement would you use to check for the conditions listed? Which operator do you use to check for equality?
 
