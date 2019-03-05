@@ -101,12 +101,12 @@ Here's the really cool part: you can do this SAME thing with ALL of the four **m
 
 ### Exercise 2
 
-I've made a variable for you called `students_at_streetcode`. Tunde just announced that the number of StreetCode students DOUBLED this year! Make a new variable called `students_updated` that has doubles the number, using the variable `students_at_streetcode`. Print this new number to the console.  
+I've made a variable for you called `students_at_streetcode`. Tunde just announced that the number of StreetCode students DOUBLED this year! Figure out how to update `students_at_streetcode` to reflect this. Print this new number to the console.  
 
 You can do this using the long form notation or the shorthand notation (both of which you can reference above). Bonus points if you can do both :).
 
 ```python
-students_at_streetcode_2017 = 120
+students_at_streetcode = 120
 # Your code here
 ```
 
