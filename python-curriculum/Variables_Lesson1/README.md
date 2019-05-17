@@ -1,5 +1,5 @@
 # Introduction to Python
-<p> Hello! And welcome to Streetcode!! It's great to have you here! If you're reading this, you're in the Intro to Hack class, ready to learn Python! We're going to start by showing you what Python is, and why we learn it! </p>
+<p> Hello! And welcome to Streetcode!! It's great to have you here! If you're reading this, you're in the Intro to Hack B class, ready to learn Python! We're going to start by showing you what Python is, and why we learn it! </p>
 
 # What is Python?
 <p> Have you ever wondered how people build apps, or create websites? Everything on your computer is powered by lines of instructions that tell the computer exactly what to do. We call these lines of instructions "code", and "coding" is nothing but the process of writing those instructions out one-by-one. Python is one of the "languages" used to give the computer instructions - and it's definitely one of the better ones! Here's what Python "code" looks like:
@@ -23,7 +23,7 @@ One of the hardest parts of programming is getting your computer to run your cod
 
 [IDLE]: IDLE.png
 
-IDLE is a program that "runs" your Python program. To get it to run a series of Python instructions (an instruction is just a line of code) that you wrote, click "File" and then "New File". This should open up a window like this: 
+IDLE is a program that "runs" your Python code. To get it to run a series of Python instructions (an instruction is just a line of code) that you wrote, click "File" and then "New File". This should open up a window like this: 
 
 ![What a New File Looks like][newfile]
 
@@ -43,18 +43,33 @@ Now, save this file onto your computer. Feel free to ask your teacher for help! 
 
 If it doesn't, ask one of the teachers for help. If it does, congrats :). You just wrote your first line of Python! Your on your way to creating whatever you want on a computer!
 
-# Syntax
-Now, we have to talk about Syntax - or the way lines of Python code are put together. The first piece of syntax we're going to talk about is how to define **variables**. A variable is a way to store information - the different things you want to remember in your code. For example, if you wanted your code to "remember" your first and last name, you would write something like this: 
+To review, you write your code in a  **file**. You can save and edit the code in the file, similar to the way you can update and change a word document. If you use `print()` in your code, this tells the computer to output the things you've specified should be printed when you **run** your program. You'll look for any output printed in the other window that opens on starting IDLE; the **console**.
+
+# Variables
+We'll begin by discussing introductory syntax. Syntax describes the rules dictating how code should be written (in order to be understood by the computer), similar to the definition of syntax in the English language.  
+
+The first piece of syntax we're going to talk about is how to define **variables**.  
+
+**Variable:** A variable is a way to store information - the different things you want to remember in your code. You can think of it like a storage unit or a box that holds something.  
+
+![Variable Storage](variables_concept_image.jpg)
+
+For example, if you wanted your code to "remember" your first and last name, you would write something like this: 
 
 ```python 
 FirstName = "Diwakar"
 LastName = "Ganesan"
 ```
 
-Notice the structure to each line. To create a **variable** in python, use the following pattern:
-<span style="color:blue">variable_name</span> = <span style="color:red">value</span>. The equal sign in Python means something a little different than what you're used to in math. By saying <code>my_name = "Jack"</code>, I'm assigning  "Jack" to the variable my_name. You could imagine a box labled `my_name` that we put the word, "Jack" into. 
+We say we're **assigning a value to a variable** in the above example. Note the structure of the example. The equal sign in Python means something a little different than what you're used to in math. By saying `FirstName = "Diwakar"`, I'm assigning  "Diwakar" to the variable FirstName. You'll follow a similar structure to assign future variables in your own code.
 
-**Remember that the equal sign assigns variables in Python** Variable names have a few rules. First, you can't have spaces in a variable name. So, you _can't_ do this: 
+### To create a **variable** in Python, use the following pattern:
+**`variable_name = value`**  
+**Remember that the equal sign assigns variables in Python.**  
+
+### Some More Rules About Variables
+
+1. You can't have spaces in a variable name. So, you _can't_ do this: 
 
 ```python 
 First Name = "Diwakar"
@@ -68,9 +83,25 @@ First_Name = "Diwakar"
 
 Notice the "_" character? It's called an underscore, and it can be used to replace spaces whenever you want spaces in your variable name. 
 
-Additionally, variable names **can't** start with a number. So, this wouldn't fly: `2Cool4Me = 5`. 
+2. Variable names _can't_ start with a number. So, this wouldn't fly: `2Cool4School = "Me"`.
 
-Now, what can we store in variables? There are really only two different kinds of variables we can store in python: **numbers** and **text**. 
+3. The names of variables describe what kind of information it holds. Though this is not a strict requirement like the first two rules, it's a good practice for writing clear and readable code! 
+
+For example:
+
+```python
+#This is an intuitive way to name a variable
+dog_breed = "Beagle"
+
+#This is an unintuitive way to name a variable
+cat_breed = "Beagle"
+```
+
+Though the variable holds the information, `"Beagle"`, it makes more sense to call the variable `dog_breed`, as opposed to `cat_breed`, since `"Beagle"` is a breed of dog. However, since the variable name simply refers to the name of the box holding the information (recall the picture from above), in either case, you've created a variable holding `"Beagle"`.
+
+# Values: What kinds of information can we assign to variables?
+
+Now, what can we store in variables? There are really only two different kinds of variables we can store in Python: **numbers** and **text**.  
 
 ## Numbers
 The most important thing you'd want your program to remember are numbers. To remember numbers in Python, you can use code like this: 
@@ -78,20 +109,19 @@ The most important thing you'd want your program to remember are numbers. To rem
 ```python 
 my_age = 18
 favorite_number = 32
-temperature = 76.5
 ```
 
-Notice how the names of the variables describe what kind of data it holds. 
+You can also write expressions with variables that involve numbers and assign values to new variables using previously defined variables!  
 
-You can also write expressions with variables that involve numbers! For example, if I write:
+For example, if I write:
 
 ```python
 my_favorite_number = 15
 another_number = my_favorite_number * 2 - 10
 ```
-Then, `another_number` will equal 15 (the value in `my_favorite_number` times 2 minus 10, so (15 * 2 - 10), which is 20. Again, we're assigning `another_number` to equal `my_favorite_number * 2`.
+Then, `another_number` will equal 20 (the value in `my_favorite_number` times 2 minus 10, which is 20). Again, we're assigning `another_number` to equal `my_favorite_number * 2 - 10`.
 
-After writing all the code above, to test this all out, you could try:
+After writing all the code above in a file in IDLE, to test this all out, you could try:
 
 ```python
 print(another_number)
@@ -99,26 +129,41 @@ print(another_number)
 
 and see if it prints out what you expected.
 
-### Try it:
+### Exercise 1
 
-Go ahead and work with your mentor to make several variables that store numbers. Then try running your code and see if there are any errors. Once you define a couple of variables, you can try printing them out as well.
+Go ahead and work with your mentor to make several variables that store the above answers as variables. You may also need to create some new variables and assign them values using previously defined variables (like in the another_number example above). You can Google anything you need to answer the weather related questions.  
 
-> **Note to mentors:** It can be helpful to, on a seperate piece of paper, draw out boxes for each variable with the value stored in it.
+1. What's the expected high temperature today?
+2. What's the expected low temperature today?
+3. What's the average temperature today?  
+**Hint:** How do you calculate average? Try using the variables defined in parts 1 and 2.
+4. What's the percent humidity, expressed as a percentage?
+5. What's the percent humidity, expressed as a decimal?  
+**Hint:** Try using the variable defined in part 4 and recall that to convert a percetage to a decimal, we divide by 100.
+6. What's the temperature at this moment, in Fahrenheit?
+7. Here's a trickier one! What's the temperature at this moment, in Celsius?  
+**Hint:** T(°C) = (T(°F) - 32) × 5/9
+
+Print out the **value** stored in each **variable** (using `print(variable_name)` learned above) to make sure it matches your expectation.  
+
+> **Note to mentors:** It can be helpful to grab a piece of paper to visualize the idea of a variable. Draw out boxes for each variable labeled with the variable name and write the value currently stored in it. If variables are re-assigned to new values, cross out the old value and update it with the new value.
 
 ## Text
-Python also let's you remember short pieces of text, like your name! But, it's a bit tricky. You **can't** do this: 
+Python also let's you remember short pieces of text, like your name! But, it's a bit tricky. You _can't_ do this: 
 
 ```python
 name = Diwakar Ganesan
 ```
 
-Even though you followed the usual convention (<span style="color:blue">variable_name</span> = <span style="color:red">value</span>), text needs to be surrounded by **quotations**. Text that's surrounded by quotations is called a **string**. So, the following line of code would work:
+Even though you followed the usual convention (`variable_name = value`), text needs to be surrounded by **quotations**. Text that's surrounded by quotations is called a **string**. So, the following line of code would work:
 
 ```python
 name = "Diwakar Ganesan"
 ```
 
-You can also add together variables that contain text. For example, if I write:
+You can also add together variables that contain text.  
+
+For example, if I write:
 
 ```python
 FirstName = "Diwakar"
@@ -126,24 +171,53 @@ LastName =  "Ganesan"
 Name = FirstName + " " + LastName
 ```
 
-Then, `Name` will contain the string `"Diwakar Ganesan"`. The last line of code used the **+** symbol to combine together three strings: `FirstName`, `" "` (a space character), and `LastName`.
+Then, `Name` will contain the string `"Diwakar Ganesan"`. The last line of code used the **+** symbol to combine together three strings: `FirstName`, `" "` (a space character), and `LastName`. The plus character can string together any number of strings (aka variables that hold text values) that you want. We call this **concatenation**.
 
-Always remember: **text in python must be surrounded by quotes**. 
+#### Always remember: **text in Python must be surrounded by quotes**.  
 
 Once again, after writing all the above code, you can test and see what your variable is storing by running:
 
 ```python
 print(Name)
 ```
-> Feel free to try this with the other variables as well!
 
+### Exercise 2
 
-### Try it:
+Type the following code into a new file.
 
-Go ahead and work with your mentor to make several variables that store words or sentences this time. Again, try running your code and see if there are any errors. Then you can try printing your variables to see if they store what you think they do.
+```python
+first_prompt = "My favorite color is"
+second_prompt = "In my free time, I like to"
+third_prompt = "My favorite food is"
+fourth_prompt = "My favorite movie/TV show is"
+fifth_prompt = "I enjoy learning about"
+```
+Youre job is to create some new variables that store string values answering the prompts. Then, use the `+` character to print the full sentence prompt and answer.
 
-## Print Statements
-We're now going to talk about `print` statements! Remember the first line of code you wrote in this exercize? `print ("Hello, World')` as well as the times we printed out some of our variables. This line of code is called a print statement. A print statement is used to output lines of **text** to your screen! For example, if I write the following lines of code:
+I'll give you a start.
+
+```python
+first_prompt = "My favorite color is"
+first_answer = "dark green"
+
+#The following solutions will all print "My favorite color is dark green", as desired. 
+#Talk to your mentor about why each one works.
+
+#Option 1
+print(first_prompt + first_answer)
+
+#Option 2
+first_phrase = first_prompt + first_answer
+print(first_phrase)
+
+#Option 3
+print(first_prompt + "dark green")
+```
+
+Now, use your answer to the first prompt and the remaining prompts to print out your unique responses. If you want to get more practice, ask your mentor for their answers to the above prompts and print out their responses as full sentences as well. As an extra consideration, think about whether you want to reuse variables you've already created and simply reassign them to new values for the mentor responses, or whether you want to create new variables.
+
+# Print Statements
+We're now going to talk about `print` statements! Remember the first line of code you wrote in this exercise? `print ("Hello, World')` as well as the times we printed out some of our variables. This line of code is called a print statement. A print statement is used to output lines of information to your screen! For example, if I write the following lines of code:
 
 ![Sample Code][multiple_print]
 
@@ -161,48 +235,85 @@ Each print statement consists of **4** parts:
 
 - The word print: **<span style="color:blue">print</span>** 
 - An open parenthesis: **<span style="color:purple">(</span>** 
-- **Some Text**
+- **Some Value**
 - Close parenthesis: **<span style="color:purple">)</span>**
 
-The trickiest part is figuring out what goes inside the open and close parenthesis. In the list above, it says to place **some text** in between the parenthesis. What this means is that you can print out anything that counts as a string. Above, in the variables section, we said that strings are any lines of text contained in quotation marks. So, all of the following code is all valid.
+The trickiest part is figuring out what goes inside the open and close parenthesis. In the list above, it says to place **some value** in between the parenthesis. What this means is that you can print out anything that can be stored as a variable. 
 
+So, all of the following code is all valid.
 
 ```python
 print("Hello, World")
+favorite_number = 32
+print(favorite_number)
 FirstName = "Diwakar"
 LastName =  "Ganesan"
 print (FirstName + " " + LastName)
 print(FirstName + " is a G.")
 ```
 
-The last example may seem a little weird, but remember since `FirstName` and `LastName` are strings, you are allowed to print out the larger string `FirstName + " " + LastName`. 
+The last examples may seem a little weird, but remember since `FirstName` and `LastName` are strings, you are allowed to print out the larger string `FirstName + " " + LastName` or `FirstName + " is a G."`.  
 
-### Try it:
+### Exercise 3
 
-Feel free to copy and paste this code into your window to test it out and mess with it. Try making a couple more print statements and printing out various messages, both with and without variables.
+Copy the following code into a file. Figure out how to **print** the colors of the rainbow in an ordered (ROYGBIV), comma separated list on a single line, using only the variables already provided and assigned to strings describing colors.
 
-## Taking user input
+```python
+color_1 = "Orange"
+color_2 = "Blue"
+color_3 = "Green"
+color_4 = "Violet"
+color_5 = "Red"
+color_6 = "Indigo"
+color_7 = "Yellow"
+```
 
-Now that we've learned how to use variables, take a look [here](https://steemit.com/howto/@jackmanmania/python-programming-lesson-1-variables) to see how you can get user input and store it in a variable. You can skip the first part that repeats the things we already covered.
- 
-## Practice
+# Taking User Input
 
->Mentors: once again, it could be really helpful to use a seperate piece of paper with "boxes" for each variable that store a value.
+Now that we've learned how to use variables, we'll teach you how you can get user input and store it in a variable.
 
-Work with a mentor to use the variables you defined to print out various sentences. You can try printing the variables by themselves, printing them with other variables, and combining them with other pieces of text. After that try the same thing, but having the variables equal things that the user types in.
+> **Note to mentors:** Please check whether your student is running on Python 2 or Python 3 (you can look at the top of the IDLE console for this or as the lead teacher).
 
->**Hint:** use the `input` function to do this.
+If you're running Python 2, the built-in function (called a method) used to ask for user input on the console is `raw_input()`. If you're running Python 3, the method is called `input()`. I'll be using the Python 3 method in this lesson, but know that you can simply replace all occurences of `input()` with `raw_input()` in Python 2 and attain the same effects.
 
-**Some project ideas:** Make your own compliment generator! Ask the user their name, then have your computer make them blush by sweet talking them.
+This concept is best explained with an example.  
+
+```python
+birthday_season = input("Which season does your birthday fall in? ")
+
+```
+
+To ask for user input, use the `input()` method. In the parentheses, write a string **argument** that specifies the question/prompt you want to appear on the console screen when your program runs. The `input()` method "returns" whatever the user types in the console as a **string** and we store this **string** in the **variable** we've created using the equals sign to assign a **value** to the **variable**.  
+
+![Input Example](input_example.png)
+
+When you run the program, in the above example, Which season does your birthday fall in? will appear on the console screen and wait for user input.  
+
+![Input Example Console](input_example_console.png)
+
+In the following screenshots, you'll see that I typed Autumn into the console and hit **Enter**. Then, the program stores the **string** "Autumn" in the **variable** `birthday_season`. Now, the **value** of `birthday_season` is the **string** `"Autumn"`. Since in our code, the last line is `print(birthday_season)`, the console also prints the **string** stored in the variable `birthday_season()`, which in this case is `"Autumn"`.
+
+![Input Example Full](input_example_console_full.png)
+
+### To ask for user input in Python and assign the user's input to a **variable**, use the following pattern:
+**Python 2: `variable_name = raw_input("prompt")`**   
+**Python 3: `variable_name = input("prompt")`**   
+
+### Exercise 4
+
+Work with a mentor to build out one of the following project ideas. 
+
+* Make your own compliment generator! Ask the user their name, then have your computer make them blush by sweet talking them.
 
 ![](Compliments.png)
 
-Alternatively, you could build a roast generator:
+* Alternatively, you could build a roast generator:
 
 ![](Roasts.png)
 
+**Hint 1:** You'll want to ask the user interacting with your program for their name, using the `raw_input()` or `input()` method. You'll need to figure out how to **store** this input in a **variable** and then reuse it in the compliments/roasts.
 
-> **Tip:** You might end up with some weird results when you try to print out a variable that stores a number in combination with other things. Before your mentor tells you how to fix it, see if you can figure this out on your own by Googling it.
-> 
-> Googling is an important skill that you'll end up using a lot the more you program. A good place to start is pasting the error message you see when you ran the program into Google.
+**Hint 2:** To ouput the compliments/roasts to the console, you'll need the `print()` method and **concatentation** (`+`) to combine **strings**.
+
+> **Tip:** You might end up with some weird results when you try to print out a variable that stores a number concatenated with other things. Before your mentor tells you how to fix it, see if you can figure this out on your own by Googling it. Googling is an important skill that you'll end up using a lot the more you program. A good place to start is pasting the error message you see when you ran the program into Google.
  

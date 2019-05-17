@@ -1,10 +1,10 @@
 # Introduction to Variable Types
 
-Kudos for finishing the last lesson! Now that we've gotten our feet wet with python, we already know a lot: how to use the IDLE, how to create a variable, how to print a statement, and how to take user input. If you need a refresher, take a look at the [**Variables Lesson**](https://github.com/StreetCodeAcademy/programming-fundamentals/tree/master/python-curriculum/Variables_Lesson1), where we went over these concepts.
+Kudos for finishing the last lesson! Now that we've gotten our feet wet with Python, we already know a lot: how to use the IDLE, how to create a variable, how to print a statement, and how to take user input. If you need a refresher, take a look at the [**Variables Lesson 1**](https://github.com/StreetCodeAcademy/programming-fundamentals/tree/master/python-curriculum/Variables_Lesson1), where we went over these concepts.
 
 # Types of Variables: Numbers and Text
 
-In the previous lesson, we talked about two basic types of variables that we'll be using a lot in python: **numbers** and **text**. As a refresher, remember that some _number variables_ might look like this:
+In the previous lesson, we talked about two basic types of variables that we'll be using a lot in Python: **numbers** and **text**. As a refresher, remember that some _number variables_ might look like this:
 
 ```python
 my_favorite_number = 3.14
@@ -14,38 +14,32 @@ your_favorite_number = 7
 A _text variable_ might look like this:
 
 ```python
-the_best_academy = "StreetCode Academy"
+the_best_place = "StreetCode Academy"
 ```
 
-Notice that `my_favorite_number` has a decimal point (the period), but `your_favorite_number` doesn't. Why could that be? Well, in python, we actually have two types of numbers: **decimals** and **integers**. This might sound complicated, but it really isn't, so don't worry! Basically, decimals like 3.2, 9.0, and 1.234 aren't whole numbers, so money (like $4.25) is usually stored as a decimal value.
+Notice that `my_favorite_number` has a decimal point (the period), but `your_favorite_number` doesn't. Why could that be? Well, in Python, we actually have two types of numbers: **decimals** and **integers**. Decimals like 3.2, 9.0, and 1.234 aren't whole numbers, so money (like $4.25) is usually stored as a decimal value. Integers, on the other hand, are whole numbers, like 23, 100, and 5! Since Python automatically detects the type of variable you are storing, you don't need to specify that a variable is storing an **integer** or a **string** (though you might need to in another programming language).
 
-Integers, on the other hand, are whole numbers, like 23, 100, and 5! That means you'll never use periods with integers. Pretty easy to remember, right? Integers take up less space in the computer than decimals, so when we don't need to use decimals, we use integers. Integers are often useful for counting, which we'll soon see when we are counting the number of times we go through a loop.
+### Exercise 1
 
-## Your turn! Try it out:
+See if you can write a program to print `My name is (your name here) and I am (your age here) years old!`, where `name` and `age` are stored as **variables**. Try to solve this without looking at [**Variables Intro**](https://github.com/StreetCodeAcademy/programming-fundamentals/tree/master/python-curriculum/Variables_Lesson1), but go back and review if you need a refresher.
 
-Try printing some statements that involve integers, decimals, and strings. See if you can print these statements without looking at the previous material!
+**Hint 1:** When declaring variables, consider what type of variables make sense for storing name and age. How are strings different from numbers?
 
-The challenge: get your program to print ```My name is (your name here) and I am (your age here) years old!``` 
+**Hint 2:** You might need to use the `+` symbol to **concatenate** the parts of the sentence already written for you with the parts stored as variables you have created.
 
-The catch: your name and your age must be stored as variables: ```name``` and ```age```.
-
-
-
-# Types of Variables: Booleans
+# Another Type of Variable: Booleans
 
 Now we're getting into some fancier programming lingo. Are you ready to sound like a hacker???
 
-Booleans sound weird and scary, but they're really not: booleans are simply variables, just like numbers or text, but instead, they can only store two possible values: either ```True``` or ```False```. That's why we often make boolean variables that have ```is``` or ```has``` in them because we use them to answer questions we might have.
+Booleans sound weird and scary, but they're really not: booleans are simply variables, just like numbers or text, but instead, they can only store two possible values: either `True` or `False`. That's why we often make boolean variables that have `is` or `has` in the variable name because we can answer these sorts of conditional questions with a True or False.
 
-For example, when we were Reeborg, we had to check ```frontIsClear```. We ask Reeborg the question about whether the front is clear, and the answer can only be yes or no. That's why it's good to have boolean variables, because we can ask simple questions and get simple answers.
+For example, when we were Reeborg, we had to check `front_is_clear()`. We ask Reeborg the question about whether the front is clear, and the answer can only be yes or no (True or False).
 
 For example, I can make a boolean variable about myself:
 
 ```python
 juliaIsSuperCool = True
 ```
-
-
 
 # Operators
 
@@ -56,75 +50,69 @@ Now, let's move on to a concept that you might have seen before in math class: o
 * Which of these variables has a larger number inside?
 * Do both of these variables store true? Is only one of them true?
 
-The three main types of **operators** we'll be using are the **assignment** operator (hint: you've been using it already!), **math** operators (like ```+``` and ```-```), and **question** operators (like ```<``` and ```>=```).
+The three main types of **operators** we'll be using are the **assignment** operator (**Hint:** you've been using it already!), **math** operators (like `+` and `-`), and **comparison** operators (like `<` and `>=`).
 
 ### Assignment Operator
 
-Assignment operators in python and many other programming languages appear as the single ```=``` symbol that you've seen before. You've already seen this operator used when we made new variables!
+Assignment operators in Python and many other programming languages appear as the single `=` symbol that you've seen before. You've already seen this operator used when we made new variables!
 
-When I type ```name = "Morgan"```, for example, I'm _assigning_ the text value of ```"Morgan"``` _into_ the variable called ```name```. That's why it's called assignment!
+When I type `name = "Morgan"`, for example, I'm _assigning_ the text value of `"Morgan"` _to_ the variable called `name`. That's why it's called assignment!
 
-You'll use assignment whenever you are making new variables.
-
-
+#### You'll use assignment whenever you are making new variables.
 
 ### Math Operators
 
-Math operators in python are just like what you've seen in math class. There are four main **math operators** we will be using in our programs:
+Math operators in Python are just like what you've seen in math class. We use math operators when we're working with number type variables. There are four main **math operators** we will be using in our programs:
 
 * ```+``` for **adding** numbers (or text, if you want to be fancy) together
 * ```-``` for **subtracting** numbers
 * ```*``` for **multiplying** numbers
 * ```/``` for **dividing** numbers
 
-These operators are very important, so make sure you are familiar with them! Take a moment now with your mentor to practice what you expect the following code to print by thinking about what these operators do:
+These operators are very important, so make sure you are familiar with them! You've used these operators in the [**Variable Checkpoint Exercises**](https://github.com/StreetCodeAcademy/programming-fundamentals/tree/master/python-curriculum/Variables_Checkpoint). If you can't recall them, try to go back and try exercise 1 again.
 
-```python
-my_age = 20
-your_age = 5
-our_ages = my_age + your_age
-print(our_ages)
-print(my_age - your_age)
-print(our_ages / your_age)
-print(your_age * 2)
-```
-
-One reason we care about these operators is because we can change numbers. Remember how we said variables are just like boxes? Well, using what we've learned, we can actually change variables by changing what's inside of those boxes. Let's say you have 3 puppies:
+One reason we care about these operators is because we can use them to change numbers. Remember how we said variables are just like boxes? Well, using what we've learned, we can actually change variables by changing what's inside of those boxes. Let's say you have 3 puppies:
 
 ```python
 my_puppies = 3
 ```
 
-But you adopted another puppy today! Now, your variable isn't right anymore. How will we update ```my_puppies``` to be ```4``` without making a new variable? It turns out you can use another special type of **assignment** using the ```+=``` operator:
+But you adopted another puppy today! Now, your variable isn't right anymore. How will we update `my_puppies` to be `4` without making a new variable?  
 
-```python
-my_puppies += 1
-```
-
-Using what we've learned so far, this operator isn't too complicated. Here's all it's doing, in two simple steps: it takes the ```1``` on the right side and **adds** it to the current number inside ```my_puppies``` using the ```+``` sign. Then, using the ```=``` sign, it puts this new number **back into** ```my_puppies```. Now, ```my_puppies``` is a variable containing ```4```.
-
-This is the exact same thing as writing:
+It turns out you can **re-assign the value** using the `+` operator (note that the plus operator has a different effect on number variables and string variables! Talk to your mentor about why you think that is.):
 
 ```python
 my_puppies = my_puppies + 1
 ```
 
-Here's the really cool part: you can do this SAME thing with ALL of the four **math operators** we listed above! That means you can use ```+=```, ```-=```, ```*=```, and ```/=``` to change any number variable you want. Give it a try now!
+This code does what you would expect. As with regular math, we add 1 to the value of my_puppies (which is 3), resulting in the value 4. This number is assigned as the new value of my_puppies. Sometimes, you might hear programmers refer to adding to a value as **incrementing** a value and subtracting from a value as **decrementing** a value.
 
-#### Your turn! Try it out:
-
-I've made a variable for you called ```students_at_streetcode_2017```. Your challenge: Tunde just announced that the number of StreetCode students DOUBLED this year! Make a new variable called ```students_2018``` that has double the number inside ```students_at_streetcode_2017```.
+Since programmers are notoriously lazy, we created a shorthand for that line of code, which uses a special variant of the `=` **assignment** operator and the `+` **math** operator, called the "plus equals" operator: `+=`. The following line is equivalent to the line above, but it uses the plus equals operator.
 
 ```python
-students_at_streetcode_2017 = 120
+my_puppies += 1
+```
+
+Using what we've learned so far, this operator isn't too complicated. Here, it takes the `1` on the right side and _adds_ it to the current number stored in  `my_puppies` (which is 3) using the `+` sign. Then, using the `=` sign, it **assigns** this newly calculated number _back to_ `my_puppies`. Now, `my_puppies` is a variable containing `4`.
+
+Here's the really cool part: you can do this SAME thing with ALL of the four **math operators** we listed above!  
+
+#### That means you can use ```+=```, ```-=```, ```*=```, and ```/=``` to re-assign any number variable want.
+
+### Exercise 2
+
+I've made a variable for you called `students_at_streetcode`. Tunde just announced that the number of StreetCode students DOUBLED this year! Figure out how to update `students_at_streetcode` to reflect this. Print this new number to the console.  
+
+You can do this using the long form notation or the shorthand notation (both of which you can reference above). Bonus points if you can do both :).
+
+```python
+students_at_streetcode = 120
 # Your code here
 ```
 
+### Comparison Operators
 
-
-### Question Operators
-
-Question operators are used for asking questions about **number** and **boolean** variables. The operators we'll be using on _numbers_ are:
+Comparison operators are used for asking questions to compare **number** and **boolean** variables. The operators we'll be using on _numbers_ are:
 
 * ```>``` to ask whether the number on the left side is larger than the one on the right
 * ```<``` to ask whether the number on the left is smaller than the one on the right
@@ -133,17 +121,19 @@ Question operators are used for asking questions about **number** and **boolean*
 * ```==``` to ask whether two numbers are equal
 * ```!=``` to ask whether two numbers are _not_ equal
 
-
-
 The operators we'll be using on _booleans_ are:
 
 * ```and``` to ask if _both_ variables contain ```True```
 * ```or``` to ask if _one or both_ variables contain ```True```
 * ```not``` to ask the opposite of ```and``` or ```or```
 
-#### Your turn! Practice reading these operators:
+### Exercise 3
 
-This is a lot to be learning all at once, but remember, python was built so that the programs you type kind of look like English! So, for example, what do you think this would print out?
+This is a lot to be learning all at once, but remember, Python was built so that the programs you type kind of look like English!  
+
+**Hint:** Since we are dealing with comparison operators, the output for each comparison should be either `True` or `False`.  
+
+1. What does this program print?
 
 ```python
 jack_is_tall = True
@@ -151,7 +141,9 @@ jill_is_tall = False
 print(jack_is_tall and jill_is_tall) # what does this print?
 ```
 
-It would print ```False```, right? That's because it's not true that Jack and Jill are both tall. Let's try another:
+Answer: It would print `False`, right? That's because it's not true that Jack and Jill are both tall.  
+
+2. What does this program print?
 
 ```python
 my_secret_number = 8
@@ -160,79 +152,95 @@ print(my_secret_number == your_secret_number) # what does this print?
 print(my_secret_number < your_secret_number) # how about this one?
 ```
 
-Two things will be printed. What will they be? Well, if you answered ```False``` and ```True```, you're right! That's because ```my_secret_number``` is *not* equal (```!=```) to ```your_secret_number```, but it **is** true that ```my_secret_number``` is less than ```your_secret_number```. 
+Answer: Two things will be printed. What will they be? Well, if you answered `False` and `True`, you're right! That's because `my_secret_number` is _not_ equal to `your_secret_number`, so saying `my_secret_number == your_secret_number` is `False`, but it _is_ `True` that `my_secret_number` (which is 8) is less than `your_secret_number` (which is 200). 
 
-> Feel free to practice making several more of these booleans using the operators above if you're curious.
+> Feel free to practice making several more of these booleans using the operators above if you're curious. But keep in mind we have more practice questions for you to work through.
 
+# If Statements
 
+**A Review...**  
+Just like in English, the `if` statement is a condition. If I'm hungry, I will eat. If you're at StreetCode, then you're awesome.  
 
-# If Statements and Loops
+In programming, the exact same thing happens. An `if` statement checks if some condition is true and executes a certain block of code if the condition is true. An `if...else` statement checks if some condition is true, and executes one block of code if the condition is true and another block of code if the condition is false (notice that we'll be checking for `True` and `False` values, which are booleans!).
 
-Now that we have learned about types of variables and operators, we can start doing cool things with them! The first thing we're going to review is the ```if``` statement, but with a twist: we're going to use variables in them.
+Recall how we write an `if` statement:
 
-## If Statements
+```python
+#A simple if statement
+if some_condition is True: #the condition typically compares variable values with a comparison operator
+    do something here
+    
+#An if else statement
+if some_condition is True: #the condition typically compares variable values with a comparison operator
+    do something here
+else:
+    do something else instead
 
-Just like in English, the ```if``` statement is a condition. If I'm hungry, I will eat. If you're at StreetCode, then you're awesome. In programming, the exact same thing happens: ```if``` something is true, then do something else. For example, ```if``` I have less than 5 fish, I will go fishing. Otherwise (or ```else```), I will not go fishing. Let's take the fisherman as an example to understand how to use an ```if``` statement, using a **variable** that we created ourselves:
+#An if elseif statement (useful when we want different behavior for several different conditions)
+if some_condition is True: #the condition typically compares variable values with a comparison operator
+    do something here
+else if another_condition is True:
+    do something else different
+else if yet another_condition is True:
+    do something else totally different
+```
+
+As an example, `if` I have less than 5 fish, I will go fishing. Otherwise (or `else`), I will not go fishing. Let's take the fisherman as an example to understand how to use an `if` statement, using a **variable** that we created ourselves. Observe that we're using the comparison operator `<` in the line `my_fish < 5`. Since we're using a comparison operator, this means `my_fish < 5` should resolve to either `True` or `False`. The code directly under the `if` block executes if `my_fish < 5` resolves to `True`. If `my_fish < 5` resolves to `False`, the code directly under the `else` block executes **instead**.
+
+### Exercise 4
+
+What is the value of the `my_fish` variable after the program runs?  
 
 ```python
 my_fish = 4
 if my_fish < 5:
     my_fish += 1 # go fishing
 else:
-    print("I have 5 or more fish!")
+    print("I have 5 or more fish already, so I will NOT go fishing!")
 ```
 
-Will the fisherman add a fish here? YES! That's because we go fishing if we have less than 5 fish, which is true. We know this because of our variable, ```my_fish```. Recall how we write an ```if``` statement:
+Answer: Will the fisherman add a fish here? YES! That's because we go fishing if we have less than 5 fish, which is true (we have 4 fish). We know this because of the value assigned to the variable, `my_fish`.
+* Can you guess what would happen if I assigned `my_fish = 10` instead of `my_fish = 4` and ran the code again?
 
-```python
-if some_condition is True:
-    do something here!!!
-else:
-    do something else instead!
-```
-
-You can use ```if``` statements on any **condition**, or question you ask. The question will result in either ```True``` or ```False```, and if it's true, you'll do what's in the ```if``` statement, and if it's not true, it'll do what's in the ```else``` block. Here are some examples of things you could put after an ```if```:
+You can use `if` statements on any **condition**, or question you ask. The question (usually set up with a comparison operator) will result in either `True` or `False`. Of course, you can also use the other variants of the if statement (if else, if elseif), which also depend on checking conditions, as described above. Here are some examples of things you could put after an `if`:
 
 * ```my_age > your_age```
 * ```i_am_hungry and you_are_hungry```
 * ```mi_casa == tu_casa```
 
-Here are some things you can't ask in an ```if``` statement. Can you identify why? Discuss with your mentor.
+Here are some things you can't ask in an `if` statement. Can you identify why? Discuss with your mentor.
 
-* ```height = 5```
 * ```my_age```
+* ```height = 5```
 * ```"I like pie"```
+> Go ahead and run through a couple more examples with a mentor here before moving on.  
 
-**Go ahead and run through a couple more examples with a mentor here before moving on.**
+# Loops
 
-## Loops
+Now we’re going to review two very useful items in our programming toolbox: `while` loops and `for` loops.  
 
-Now we’re going to revisit two very useful items in our programming toolbox: ```while``` loops and ```for``` loops.
+The reason **loops** are called loops is that they do things (run a block of code) over and over again...in a loop! When we want things to happen again and again, we can use two types of loops: `while` and `for` loops.  
 
-To be a good programmer, we need to make efficient programs, and that means knowing how to best store and manipulate our data.
+## While Loops
 
-The important question we’ll be answering is: What if we want some of our commands to happen more than once? (That’s where loops come in!)
-
-The reason **loops** are called loops is that they do things over and over again...in a loop! When we want things to happen again and again, we can use two types of loops: ```while``` and ```for``` loops. Let's take a look at ```while``` loops first.
-
-### While Loops
-
-While loops are important for doing things over and over again until you reach a point where you want to stop. To put it into plain English, you might say, "while I still haven't reached a wall, keep moving forward." This is the same thing as saying, "keep moving forward until I hit a wall." A ```while``` loop can make this easy!
-
-There are two components of a ```while``` loop: the **condition**, or the question you ask, and the **command**, or what you do over and over again. Here's what it looks like in action:
+While loops are important for doing things over and over again _until_ you reach a point where you want to stop. To put it into plain English, you might say, "while I still haven't reached a wall, keep moving forward." If you recall, this could be replicated in Python in Reeborg's world with the line:
 
 ```python
 while front_is_clear():
     move()
 ```
 
-That's all there is to it! Make sure to remember how, just like with an ```if``` statement, we have the keyword, ```while```, and then a question (or condition) we ask Reeborg the robot, and then a colon ```:```, and inside the loop, we do whatever we want to do over and over until the condition we ask isn't true anymore.
-
 With just the code above, we would be able to get Reeborg to move all the way across an empty board because he will move until ```front_is_clear()``` is false, which is when he hits a wall. After running this loop, the board looks like this:
 
 ![](WhileLoop.PNG)
 
-This should look pretty familiar. But, now that we know what variables are and how to use them, we can make ```while``` loops using variables, too. For example, you could have a ```while``` loop that uses a variable you make, called ```my_number```:
+There are two components of a `while` loop: the **condition**, or the question you ask, and the **code block**, or what you do over and over again (notice that the condition part is similar to the if statement).  
+
+#### The structure of a `while` loop:
+#### We have the keyword, `while`, and then a condition (aka a question) we ask, usually with a comparison operator, followed by a colon `:`.
+#### Inside the loop, we do whatever write the code that we want to run over and over again until the condition we ask isn't true anymore.
+
+But, now that we know what variables are and how to use them, we can make `while` loops using variables, too. For example, you could have a `while` loop that uses a variable you make, called `my_number`:
 
 ```python
 # what does this program do?
@@ -241,109 +249,80 @@ while my_number >= 6:
     my_number -= 1
 ```
 
-Discuss this with your mentor: what does the above loop do? What is the value of my_number once this program is done running?
+Discuss this with your mentor: What does the above loop do? What is the value of my_number once this program is done running?
 
-### Your turn! Write a program that asks for a password:
+### Exercise 5
 
-Your challenge is to use the tools in your toolbox to write a program that asks the user for a ```password```, and keeps re-prompting them **until they get it right**. Recall the syntax for accepting user input:
+Write a program that asks the user for a `password`, and keeps re-prompting them **until they get it right**. Recall the method for accepting user input is `raw_input()` in Python 2 and `input()` in Python 3. If you're having trouble recalling how this method works, go back to [**Variables Lesson 1**](https://github.com/StreetCodeAcademy/programming-fundamentals/tree/master/python-curriculum/Variables_Lesson1) for a refresher.
 
-```python
-word = input("Give me a word! ")
-```
+**Hint:** What is the condition that you should put in your `while` loop? Which would you use to see if the password the guesser enters is equal to the correct one? Think about using a **comparison** operator. 
 
-This program stores the text that the user types into the variable ```word```.
+## For Loops
 
-> Hint: What is the condition that you should put in your ```while``` loop? What needs to happen for the word the user types to be the correct password? Think about using an operator. Which would you use to see if the password they enter is equal to the correct one?
+The second type of loop, as you'll recall from Reeborg, is the `for` loop (some of you also used the `repeat` syntax for this loop in Reeborg, though in Python, you'll have to use `for` as the keyword). 
 
+When we **know how many times we want to do something**, we can easily use a **for loop** that happens again and again until we tell it to stop.
 
-
-### For Loops
-
-The second type of important loop, as you'll recall, is the ```for``` loop. Remember how it's easy for us to get Reeborg to move by writing
+Below, I've written the code for the `turn_right()` function many of you wrote in Reeborg.  
 
 ```python
-while front_is_clear():
-    move()
-turn_left()
+for i in range(3):
+    turn_left()
 ```
 
-And then copying and pasting that text again and again to have Reeborg move around the board. This works for short programs, but there's a problem. Imagine if he needed to do that 100, 1000, or 10000 times! That would be way too time-consuming to type (or even copy-paste), and it’s very inefficient.
+Let’s break the for loop down into its components. First, we have the `for` keyword, which signals that we’re about to enter the loop. Next, we declare a variable that will be used as a "counter" in the loop. The **variable** we declare here, `i`, is commonly used for counting and indexing. In Python, the `in` literally means what you think it does — you are going to make `i` count up (can also cound down), and each time we loop, we check that `i` is still a value *in* that range.
 
-When we **know how many times we want to do something**, we can easily use a **for loop** that happens again and again until we tell it to stop. Inside of this loop, we can use a **counter variable** that changes each time, and we’ll use that changing variable to display how many fish we currently have.
+Another important concept is `range`. The `range` function takes up to three parameters.  
 
-Below, I've written the code that will let Reeborg move across the entire 10 x 10 board by going across every row! Don't worry if it looks difficult to understand; we're going to break it down line by line.
+The simplest version looks as follows:  
 
 ```python
-for i in range(5): # i is called a "counter variable"
-    while front_is_clear():
-        move()
-    turn_left()
-    move()
-    turn_left()
-    while front_is_clear():
-        move()
-    for i in range(3):
-        turn_left()
-    move()
-    for i in range(3):
-        turn_left()
+for i in range(number):
+    #code block
 ```
 
-Let’s break the for loop down into its components. First, we have the ```for```, which signals that we’re about to enter the loop. Next, we declare a variable that will be used as a counter in the loop. The **variable** we declare here, ```i```, is commonly used for indexing arrays. In Python, the ```in``` literally means what you think it does—you are going to make ```i``` loop over some range of numbers or elements of a list (which we’ll discuss later), and each time we loop, ```i``` will be a value *in* that list of numbers or elements.
+To make the code in the block run 2 times, we'd use `for i in range(2):`. To have it run 10 times, we'd use `for i in range(100):`, and so on...  
 
-Another important concept is ```range```. The ```range``` function requires one or two parameters. If you use ```range(2)```, for example, python creates a list of numbers starting from 0, adding each time by 1, and having the total length of the number you gave it. So, for example, ```range(2)``` would create the list [0, 1], since there are two elements and it starts counting from 0.
 
-If we don’t want the list to start from 0, however, we will have to specify the starting number (**inclusive**) and the ending number (**exclusive**) we want. Inclusive means you want this number in the list itself, while exclusive means that you don’t count this number in the list; it’ll only include the number before it.
+#### The structure of a `for` loop:
+#### We have the keyword, `for`, and then counter variable (often named i), followed by the keywords `in range`, and a number as the argument in the parentheses.
+#### The number specifies the number of times the code block inside the loop runs. Implicitly, the for loop adds 1 to the counter variable (or another number if the third argument is specified) each time the code block runs and the for statement checks whether the counter variable is less than the range argument specified. If the comparison evaluates to True, the loop runs again. If the comparison evaluates to False, the loop exits.
 
-If we specified ```range(1, 4)```, we would want our list to start from 1 and end at 3, since the second parameter, 4, is exclusive. So, our list will end up being [1, 2, 3] and we will loop over those values of ```i```.
+**The Nitty Gritty on For Loops**   
 
-Now, let's enter the loop!
+Since i is always initialized to 0 in the beginning, `for i in range(2):`, `i = 0` before entering the loop. Since 0 < 2, the code inside the for loop runs. Once the loop executes one time, `i = 1`. Since 1 < 2, the code inside the for loop runs again. Now, `i = 2`, but 2 < 2 is `False`, so the loop STOPS. 
 
-```python
-for i in range(5):
-    while front_is_clear(): # notice the tab indent in this line!
-        move()
-    turn_left()
-    move()
-    turn_left()
-    while front_is_clear():
-        move()
-    for i in range(3):
-        turn_left()
-    move()
-    for i in range(3):
-        turn_left()
-```
+If we don’t want the i to start from 0, however, we will have to specify the starting number (**inclusive**) and the ending number (**exclusive**) we want. These words carry the same meaning when we talk about ranges of numbers in math class. For example, "x is between 10 and 20, inclusive" in a word problem means that x can take on all numbers between 10 and 20, or 10 or 20.  
 
-Notice how, in the second line of our program, there is a **tab indent**. This indentation is how python recognizes **scope**—if you know other languages like Java or C++, you know that curly brackets, ```{}```, are used to define scope. While we won’t go too deep into scope here, what you need to know for this lesson is that scope dictates what part of the program you’re in, which affects whether programs can understand variable names you use. In this case, the scope of the variable ```i``` is inside the for loop. If you declare the variable and use it outside of this loop, it won’t be recognized.
+In terms of programming and for loops, inclusive means you want i (the counter variable) to take on this value, while exclusive means that you do not want i (the counter variable) to take on this value; it’ll only include the number before it.   
+For example, if we specified `for i in range(1, 4):`, i is assigned to store the value 1 initially and increment up 1 each time, with a final value of 3 when the loop stops, since the second parameter, 4, is **exclusive**.  
 
-Here, when we indent, we are going one level deeper into our **scope**. Everything you write with this indent will be run *inside of* the for loop, rather than after the entire loop has finished (which is when you backspace the indent after you’re done with typing everything want to run inside the loop). When you backspace your indent, you move out one level of scope, so make sure to keep the indents in line for good style, functionality, and readability.
+The for loop actually takes a third parameter, which is the incrementer. It controls **by how much** the counter variable increases or decreases on each execution of the loop. For example, `for i in range(0, 10, 2):` specifies that i is assigned the values 0, 2 (0 + 2), 4 (2 + 2), 6 (4 + 2), 8 (6 + 2), 10 (8 + 2), with each execution of the loop. We can also do super cool things like count backwards, using `for i in range(10, -1, -1):`, which means i takes on the values 10 down to 0 (recall the first argument is inclusive, the second argument is exclusive, the third argument decreases the value of i by 1 on each execution of the loop).
 
-Everything after line 2 will be run again and again for the number of times we told Reeborg, which is 5. So, we'll be running the inside of the program 5 times.
+# The Big Picture on If Statements and Loops
 
-#### Your turn! Figure out the code:
+## Tab Indents, Code Blocks and Scope
+Notice how, whenever we use keywords like `while` or `for` or `if`, there is a **tab indent**. This indentation is how Python recognizes **scope** — if you know other languages like Java or C++, you know that curly brackets, `{}`, are used to define scope. While we won’t go too deep into scope here, what you need to know is that scope dictates what part of the program you’re in, which affects whether programs can understand variable names you use. In this case, the scope of the variable `i` declared in `for i in range():` is inside the `for` loop. Similarly, variables declared/created/initialized _inside_ a loop code block or an if statement code block _will not_ be accessible OUTSIDE of that scope (aka, when the loop or if statement exits). The visual cue will be the tab indent to another level.  
 
-Much of the code after the first line of the for loop should look familiar to you. We're using a ``while`` loop to move until Reeborg hits a wall, and we're using ```for``` loops to turn left a certain number of times that we want Reeborg to turn (in this case, 3). Can you figure out why we need to run this code 5 times to have Reeborg run across the entire board?
+Here, when we indent, we are going one level deeper into our **scope**. Everything you write with this indent will be run *inside of* the loop or if statement, rather than after the loop or if statement has exited (which is when you backspace the indent after you’re done with typing everything want to run inside the loop or if statement). When you backspace your indent, you move out one level of scope, so make sure to keep the indents in line, so your code runs as you intend it to.  
 
-> Hint: Look at the final state of Reeborg in the While Loops section above. What code did we use to get there? How does that code relate to this code?
->
-> Another Hint: The final state of Reeborg after running this code is:
+#### It's important to remember, if you declare a variable and use it outside of its, it won’t be recognized.
 
-![](ForLoop.PNG)
+## While Loop vs. For Loop (Boxing Match)
 
-> Extra Hint: It turns out we need to make Reeborg move across two rows before repeating the entire process. The code inside the loop is making Reeborg move across two rows. Which statements get Reeborg to move across the first, and then the second row?
+Discuss this with your mentor the difference between a `while` loop and a `for` loop. How are both related to the `if` statement?
 
-### Important Point
+We use `while` loops when we don't know how many times for sure, but we know a **condition for when we want to stop**. If you can say "I want to do something until _____", there's a good chance you want to use a `while` loop.  
 
-It's important that we understand the difference between a ```for``` loop and a ```while``` loop. Discuss this with your mentor, as this is a crucial point! We use ```for``` loops when we **know how many times we want to do something**.
+We use `for` loops when we **know how many times we want to do something**.  
 
-We use ```while``` loops when we don't know how many times for sure, but we know a **condition for when we want to stop**. If you can say "I want to do something until ___", there's a good chance you want to use a ```while``` loop. Make sure you understand this distinction, because you'll need it later!
+In some special cases, you can use either kind of loop to solve your probably, but as is the case with many problems, there is often one solution that is more intuitive.  
 
-### Your turn again! Let's build a broken record:
+### Exercise 6
 
-Now that you've learned how ```if``` statements, ```for``` loops, and ```while``` loops interact with variables, let's try to build a broken record that says the same thing all the time...well, almost.
+Now that you've learned how `if` statements, `while` loops and `for` loops interact with variables, let's try to apply them to a solve a task.
 
-Let's pretend that you're a HUGE cat fan, and you're adopting a ton of cats today. In fact, you're adopting 100 cats all at once! Every time you adopt one cat, the adoption agency needs to print out how many cats you have total. So, we'd expect your output to look something like:
+I don't know about you, but I'm a huge cat fan. Today, I've decided to adopt many cats. In fact, I've decided I want to adopt 100 cats all at once! Every time you adopt one cat, the adoption agency needs to print out the updated number of cats you own to keep a record. So, we'd expect your output to look something like:
 
 ```python
 You now have 1 cat(s).
@@ -353,49 +332,15 @@ You now have 3 cat(s).
 You now have 100 cat(s).
 ```
 
-Work with your mentor and use a ```for``` loop to create a program that will print out these 100 statements. **Save this code, as you'll use it in an exercise further down on this page!**
+**Hint:** Try to use a `for` loop to solve this problem. Remember that in a for loop, the counter variable is initialized to 0. What tricks can we use to make sure the first number printed out is a 1 instead of a 0? Perhaps a handy math operator?  
 
-### Now, let's mix it up and loop over a list:
+**Save this code if you reach a stopping point here, as you'll use it in the following exercise.**
 
-Although we haven't covered this directly in our lessons so far, this is a great chance for us to interact with another kind of variable: a list. We're going to supply you a name of all the cats you got, and you just need to print them all out, one by one. The syntax for this is:
+### Exercise 7 (redesigning the while loop)
 
-```python
-for cat in list_of_cats:
-    # your code here
-```
+We learned earlier that `while` loops don't have **counter variables** like `for` loops do. But, it turns out, we can have them keep track of counter variables, if we want them to (recall that I said we can use both kinds of loops to solve certain problems). It's your task to build a `while` loop that has a counter variable that adds 1 every time you go through the loop! Complete **Exercise 6** by using a `while` loop instead of a `for` loop, and compare your code with the code you wrote earlier.
 
-This is almost exactly what you've done before, with two differences: ```i``` turned into ```cat```, and ```range(100)``` turned into ```list_of_cats```. Behind the scenes, python is doing the same thing, though; ```cat``` is a variable that represents the cat name you are currently printing, and ```list_of_cats``` is a list of all the possibilities you need to look at, which is the same thing as a list of numbers from 1 to 100, which is what you were using earlier with ```range()```! Check in with your mentor to make sure this makes sense.
-
-You can copy this statement here that creates the list of cats into the very beginning of your program, since we haven't covered lists yet:
-
-```python
-list_of_cats = ["Joe", "Lily", "Sammy G", "Nyan", "Mimi", "Sally", "Heidi", "Jones"]
-```
-
-### Redesigning the while loop
-
-We learned earlier that ```while``` loops don't have **counter variables** like ```for``` loops do. But, it turns out, we can *force* them to have counter variables, if we want them to. It's your task to build a ```while``` loop that has a counter variable that adds by 1 every time you go through the loop! Complete the "broken record" task above by using a ```while``` loop instead of a ```for``` loop, and compare your code with the code you wrote earlier.
-
-### An additional extravaganza!
-
-In this exercise, you're going to build a program that gets users to input numbers, and you're going to **add all of the numbers up and print out the sum** every time they input another number. For example, if the user inputs 1, then 2, then 3, then you're going to print out 1, then 3, then 6. Print out the sum immediately after the user inputs each number. End your program when the user inputs a 0. You can assume that none of the numbers are less than 0 (but you can check for that if you'd like an extra challenge)!
-
-If you're having trouble with getting python to see the user inputs as **integer numbers**, try the following command:
-
-```python
-number = int(input("Enter a number: "))
-```
-
-The ```int()``` command forces the input to be converted into a number.
-
-
-# And...Onward!
-
-Fantastic job!! You've just learned about the combination of different kinds of variables with different types of loops, the ```if``` statement, and different types of commands and questions (operators) that you can use to make your programs a lot more powerful.
-
-Onward to the [checkpoint exercise](https://github.com/StreetCodeAcademy/programming-fundamentals/tree/master/python-curriculum/guessing_game_checkpoint), where you'll build an interactive *guessing game*!
-
-### Bonus challenge:
+### Exercise 8 (optional)
 
 You're free to move on now, but if you want an extra challenge...
 
@@ -407,4 +352,4 @@ Go ahead and head back to [Reeborg](http://reeborg.ca/reeborg.html) and go to th
 
 Now that you know how to use variables, see if you can design a smarter way to solve this problem that only puts down one smiley face (the one in the middle). 
 
-> **Hint:** You should be able to solve this problem by only going across the world once, then coming back into the center. Think about how you could use a variable to keep track of the width of the world, then combine that with a for loop.
+> **Hint:** You should be able to solve this problem by only going across the world once, then coming back into the center. Think about how you could use a variable to keep track of the width of the world, then combine that with a `for` loop. It's incredible how concise and elegant the solution to this problem becomes when you can use variables.
