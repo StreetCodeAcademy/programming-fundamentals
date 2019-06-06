@@ -42,9 +42,15 @@ print(result) #prints the return value stored in result to compare with expected
 **Copy just the definition of the function into CodingBat to check your function for correctness against its test cases: https://codingbat.com/prob/p120546**.
 
 ### Exercise 2
-Write a function called `parrot_trouble()` that takes in two boolean arguments, `talking` and `hour`. Both of these two variables are booleans, so they can only stores the values `True` and `False`.
+Let's pretend that we purchased a parrot. Parrots are amazing and can talk at all hours of the day. However, if they talk at the wrong hours, the parrrot could get us into trouble.
 
-We have a loud talking parrot. The "hour" parameter is the current hour time in the range 0-23. We are in trouble if the parrot is talking and the hour is before 7 or after 20. Return `True` if we are in trouble.
+Write a function called `parrot_trouble()` that takes in two arguments, `talking` and `hour`. 
+
+`talking` is an argument that represents whether or not the parrot is talking. It is a boolean argument and therefore it can only take the values `True` and `False`.
+
+`hour` is an argument that represents the hour at which the parrot is talking. It is a numeric (number) argument with values from 0-23. 
+
+The parrot will get us in trouble if it is talking and the hour is before 7 or after 20. Write the code for `parrot_trouble` so that it returns `True` if we are in trouble.
 
 ```python
 def parrot_trouble(talking, hour):
