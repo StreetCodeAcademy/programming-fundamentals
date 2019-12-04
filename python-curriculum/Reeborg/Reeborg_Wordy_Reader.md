@@ -76,7 +76,7 @@ This exercise introduces the `turn_left()` command.  This command allows Reeborg
 
 Have your student try Home 3, using `move()` from Home 1 and `turn_left()` from this exercise.
 
-### Exercise: Newspaper
+### Exercise: Newspaper 0
 
 ![](Newspaper.png)
 
