@@ -93,7 +93,7 @@ You are going to be coding these two lines! The next section will be talking abo
 
 What is this pass inside the functions? Don't worry too much about those. Those are there to help you be able to test your code.
 
-###ballMove()
+### ballMove()
 
 What we want from this section, is to have the ball move. This should look familiar, you should have done something similar in lesson 3. Look over lesson 3 if you need a refresher. This controls how the ball should move. 
 
@@ -102,7 +102,7 @@ Tips for this section
  - Remember how velocity works
  - Look over lesson 3 if you are confused
 
-###paddleMove()
+### paddleMove()
 
 For this part of code, we want to move the paddle up and down. This section will deal with keyEvents so try to remember those. Remember we only want the paddle to move up and down.
 
@@ -112,7 +112,7 @@ Tips for this section
  - Remember how to use the keyboard for games
  - Look over lesson 2 if you are confused
 
-###wallCollision()
+### wallCollision()
 
 Now this gets interesting. Remember in lesson 3 how we had the ball bounce around if it hit the wall? Well now we are going to do it again. But remember, if the ball goes out of bounds on the left, it shouldn't bounce back.
 
@@ -122,7 +122,7 @@ Tips for this section
  - Understand collision
  - Look over lesson 3 if you are confused
 
-###paddleCollision()
+### paddleCollision()
 
 Now here is where the code might get difficult. We want the ball to bounce if it hits the paddle. I strongly suggest doing this after wallCollision, as understanding how wallCollision works will help with this one. 
 
@@ -134,15 +134,15 @@ Tips for this section
  - Understand if statements
 
  
-###resetGame()
+### resetGame()
 
 This code should reset the game if the ball goes out of bounds. Look at the code before setUp and try to place the ball and paddle at its original starting location
 
-###Putting it all together
+### Putting it all together
 
 You may notice that paddleCollision and wallCollision are not actually placed in the code. It is up to you guys to place the code. Think what paddleCollision and wallCollision do, and how it affects certain objects and how they should move. With resetGame, think where it should go in the code as well.
  
-###Tips and tricks
+### Tips and tricks
 
 There are several concepts that you need to understand if you are going to finish this game.
 
