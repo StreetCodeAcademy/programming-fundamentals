@@ -292,6 +292,5 @@ Once you're finished, you should be able to do something like this:
 **Challenges**:
 
 - Make your box change to a *random* color by pressing the SHIFT key. *(Hint: you can use `fill(..)`)* to change the color of a shape and combine it with random numbers to randomize the color. You may need to Google how to create random numbers in Python to do this.
-- Make your box move faster if the CONTROL key is being pressed
 
 > You can look at more examples and tutorials in processing [here](http://py.processing.org/tutorials/interactivity/). See if you can replicate them without looking at the code. 
