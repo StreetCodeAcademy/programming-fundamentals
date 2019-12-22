@@ -18,7 +18,7 @@ Today we are going to be creating a game called pong! I'm sure a lot of you have
 
 Wait but that isn't exactly pong! You are right. We are going to be making a simple pong game with only one player. 
 
-##Goals
+## Goals
 
 Before we start coding, let's look at some of the rules of pong.
 
