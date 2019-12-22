@@ -70,10 +70,10 @@ Lets make two rectangles that each move in opposite directions. Start with the c
 	def setup():
 	    size(600, 600)
 	
-	x1 = 20
-	y1 = 20
-	x2 = 580
-	y2 = 580
+	x1 = 0
+	y1 = 0
+	x2 = 585
+	y2 = 585
 	
 	def draw():
 		global x1, y1, x2, y2
