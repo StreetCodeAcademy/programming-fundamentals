@@ -91,7 +91,7 @@ Once you get that, try modifying the velocities to have them each go in differen
 
 ![](curves.gif)
 
-##Wall collisions
+## Wall collisions
 
 One important part of a lot of games is having objects behave differently when they hit a wall. 
 
