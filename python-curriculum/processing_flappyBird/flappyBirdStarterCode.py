@@ -43,5 +43,6 @@ def moveBird():
     fill(211,190,59)
     
 def endGame():
+    pass
     
     
