@@ -95,7 +95,7 @@ Once you get that, try modifying the velocities to have them each go in differen
 
 One important part of a lot of games is having objects behave differently when they hit a wall. 
 
-Below is an example of what the code could look like to just a ball to the right.
+Here is some code that will get a ball to move to the right continuously.
 
 	def setup():
 	    size(600, 600)
