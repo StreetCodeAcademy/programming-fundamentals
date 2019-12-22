@@ -31,7 +31,7 @@ Before we start coding, let's look at some of the rules of pong.
 
 There should be a file called pongStarterCode. Open it and copy and paste the code into processing. You will notice several parts. Let's walk through them
 
-###Before setup
+### Before setup
 
 You will notice this huge block of code
 
