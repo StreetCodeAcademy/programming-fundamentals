@@ -90,8 +90,8 @@ Let's look at the setup code
 	
 	def setup():
 	    global f
-	    size(400,500)
-	    f = createFont("Arial",16)
+	    size(400, 500)
+	    f = createFont("Arial", 16)
 	
 Nothing too exciting, just sets up the screen. You won't be modifying this code so you can leave it alone. You will notice this "f". Don't worry about it, it is just there so we can code a game over screen. 
 
@@ -101,13 +101,13 @@ Now let's look at the draw code.
 
 	def draw():
 	    global yPos,stopGame,f
-	    background(125,236,248)
+	    background(125, 236, 248)
 	    if stopGame == False:
 	        moveBird()
 	        pipeMove()
 	        endGame()
 	    else:
-	        textFont(f,16)            
+	        textFont(f, 16)            
 	        fill(0)                                                
 	        text("You lost, press shift to start again",10,100)
 	        if keyPressed: 
@@ -121,7 +121,7 @@ What is this?? There is so many lines! Let's breakdown the lines.
 
 These lines, introduce the global variables. Don't remember what global variables are? Look back at processing lesson 2.
 
-	background(125.236.248)
+	background(125, 236, 248)
 	
     
 The line above changes the background color. 
@@ -134,9 +134,9 @@ The line above changes the background color.
 If the game is supposed to continue, it will. This line moves the bird and the pipe but also checks to see if the game is supposed to end. 
 
 	else:
-	        textFont(f,16)            
+	        textFont(f, 16)            
 	        fill(0)                                                
-	        text("You lost, press shift to start again",10,100)
+	        text("You lost, press shift to start again", 10, 100)
 	        if keyPressed: 
 	            if keyCode == SHIFT:
 	                stopGame = False
@@ -151,7 +151,7 @@ We want this section to create the pipes. Now we are going to do a little math. 
 
     spaceBetweenPipes = 100
     maxHeightTopPipe = height - spaceBetweenPipes - minHeight
-    heightTopPipe = random(50,maxHeightTopPipe)
+    heightTopPipe = random(minHeight, maxHeightTopPipe)
  
 This piece of code randomizes the height for the top pipe. Now that I have given you the code for this part, let's make the bottom pipe.
 
