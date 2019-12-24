@@ -55,7 +55,7 @@ What these are, are variables. They are before setup because we are going to use
 Let's look at the setup code
 	
 	def setup():
-		size(600,600)
+		size(600, 600)
 	
 Nothing too exciting, just sets up the screen. You won't be modifying this code so you can leave it alone.
 
@@ -64,43 +64,43 @@ Nothing too exciting, just sets up the screen. You won't be modifying this code 
 Now let's look at the draw code.
 
 	def draw():
-    	global xPos, yPos
-    	global yPaddle
-    	background(0,0,0)
-    	ellipse(xPos,yPos,ballWidth,ballHeight)
-    	rect(xPaddle,yPaddle, paddleWidth,paddleHeight)
-    	paddleMove()
-    	ballMove()
+    		global xPos, yPos
+    		global inGame
+    		background(0, 0, 0)
+    		ellipse(xPos, yPos, ballWidth, ballHeight)
+    		rect(xPaddle, yPaddle, paddleWidth, paddleHeight)
+    	
+		if keyPressed and keyCode == SHIFT:
+        		inGame = True
+    
+    		if inGame == True:
+        		paddleMove()
+        		ballMove()
   
 What is this?? There is so many lines! Let's breakdown the lines. 
 
-	global xPos,yPos
-	global yPaddle
+	global xPos, yPos
+	global inGame
 
 These two lines, introduce the global variables. Don't remember what global variables are? Look back at processing lesson 2.
 
-	ellipse(xPos,yPos,ballWidth,ballHeight)
-    rect(xPaddle,yPaddle, paddleWidth,paddleHeight)
+	ellipse(xPos, yPos, ballWidth, ballHeight)
+    	rect(xPaddle, yPaddle, paddleWidth, paddleHeight)
     
 The first line creates the ball, and the second creates the paddle.
 
-Now let's look at the final two lines
+	if keyPressed and keyCode == SHIFT:
+        	inGame = True
+		
+Pressing SHIFT starts the game. When SHIFT is pressed, the inGame variable switches to True. 
 
-	   paddleMove()
-    	ballMove()
-
-You are going to be coding these two lines! The next section will be talking about what you are supposed to be coding in these parts.
+	if inGame == True:
+        	paddleMove()
+        	ballMove()
+		
+If inGame is True, then both the paddle and the ball will move. You'll be filling in the code for `paddleMove()` and `ballMove()`. The next section will be talking about what you are supposed to be coding in these parts.
 
 What is this pass inside the functions? Don't worry too much about those. Those are there to help you be able to test your code.
-
-### ballMove()
-
-What we want from this section, is to have the ball move. This should look familiar, you should have done something similar in lesson 3. Look over lesson 3 if you need a refresher. This controls how the ball should move. 
-
-Tips for this section
-
- - Remember how velocity works
- - Look over lesson 3 if you are confused
 
 ### paddleMove()
 
@@ -111,6 +111,15 @@ Tips for this section
  - Remember how velocity works
  - Remember how to use the keyboard for games
  - Look over lesson 2 if you are confused
+
+### ballMove()
+
+What we want from this section, is to have the ball move. This should look familiar, you should have done something similar in lesson 3. Look over lesson 3 if you need a refresher. This controls how the ball should move. 
+
+Tips for this section
+
+ - Remember how velocity works
+ - Look over lesson 3 if you are confused
 
 ### wallCollision()
 
@@ -133,7 +142,6 @@ Tips for this section
  - Understand what the rect and ellipse code does exactly
  - Understand if statements
 
- 
 ### resetGame()
 
 This code should reset the game if the ball goes out of bounds. Look at the code before setUp and try to place the ball and paddle at its original starting location
