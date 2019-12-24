@@ -18,16 +18,14 @@ def draw():
     global xPos, yPos
     global yPaddleOne
     background(0, 0, 0)
-    ellipse(xPos,yPos,ballWidth,ballHeight)
-    rect(xPaddle,yPaddle, paddleWidth,paddleHeight)
+    ellipse(xPos, yPos, ballWidth, ballHeight)
+    rect(xPaddle, yPaddle, paddleWidth, paddleHeight)
     
     if keyPressed and keyCode == SHIFT:
         inGame = True
     
     if inGame == True:
         paddleMove()
-        paddleCollision()
-        wallCollision()
         ballMove()
 
 def ballMove(): 
