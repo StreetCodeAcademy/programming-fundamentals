@@ -15,12 +15,12 @@ f = None
 
 def setup():
     global f
-    size(400,500)
-    f = createFont("Arial",16)
+    size(400, 500)
+    f = createFont("Arial", 16)
     
 def draw():
     global stopGame, f
-    background(125,236,248)
+    background(125, 236, 248)
     if stopGame == False:
         if pipePassed == True:
             pipeCreate()
@@ -28,9 +28,9 @@ def draw():
         pipeMove()
         endGame()
     else:
-        textFont(f,16)            
+        textFont(f, 16)            
         fill(0)                                                
-        text("You lost, press shift to start again",10,100)
+        text("You lost, press shift to start again", 10, 100)
         if keyPressed: 
             if keyCode == SHIFT:
                 stopGame = False
@@ -42,19 +42,17 @@ def pipeCreate():
     global heightTopPipe, heightBottomPipe
     spaceBetweenPipes = 100
     maxHeightTopPipe = height - spaceBetweenPipes - minHeight
-    heightTopPipe = random(50,maxHeightTopPipe)
+    heightTopPipe = random(minHeight, maxHeightTopPipe)
     global pipePassed
         
 def pipeMove():
     global pipeXPos
-    fill(118,190,58)  
+    fill(118, 190, 58)  
         
 def moveBird():
     global yPos
-    fill(211,190,59)
+    fill(211, 190, 59)
     
 def endGame():
     global yPos, pipeXPos, stopGame
     pass
-    
-    
