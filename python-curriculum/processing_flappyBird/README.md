@@ -35,13 +35,19 @@ You will notice this huge block of code
 	gravity = 2
 	xPos = 50
 	yPos = 250
+	birdWidth = 20
+	birdHeight = 20
 	minHeight = 50
 	pipeWidth = 50
 	pipeXPos = 500
+	heightTopPipe = 200
+	heightBottomPipe = 200
+	spaceBetweenPipes = 100
 	pipePassed = True
 	stopGame = False
+	f = None
 	
-What these are, are variables. They are before setup because we are going to use them a lot. Please do not modify ANY of these variables. Let's walk through each variable. 
+What these are, are variables. They are before setup because we are going to use them a lot. Please do not modify the initial values for ANY of these variables. Let's walk through each variable. 
 
 	gravity = 2
 
@@ -52,13 +58,32 @@ The gravity controls how fast the bird will fall to the ground, we can fiddle wi
 
 This is the original position of the bird. The xPos will always be the same, but the bird's y position will change.
 
+	birdWidth = 20
+	birdHeight = 20
+
+These two variables control the size of the bird. They should not be changed in any part of the code, but they will be used to draw the bird (as an ellipse).
+
 	minHeight = 50
 	pipeWidth = 50
 	pipeXPos = 500
 
 These variables control the pipe's dimensions. The minHeight means the pipe will always be at least 50 pixels high. pipeWidth controls the width of the pipe. pipeXPos is the starting position of the pipe. Note  we will be making the pipe move left, so we will be changing the x position. 
 
+	heightTopPipe = 200
+	heightBottomPipe = 200
+	spaceBetweenPipes = 100
+	
+These variables will control the height of the top and bottom pipe. Each time the pipes pass by the view window, `pipeCreate()` will be called to reassign a random value to heightTopPipe, from which heightBottomPipe can be computed.
 
+	pipePassed = True
+	stopGame = False
+	
+These variables initialize states for pipePassed and stopGame. You'll be flipping these states by checking for various conditions throughout your code. They will control when `pipeCreate()` is called and when the view window will display the game over screen.
+
+	f = None
+	
+This variable holds an initial state for the font variable. It will hold a font object after `setup()` is called. You do not need to alter this variable, since it is only used for the game over screen. The code for displaying the game over screen has already been implemented for you.
+	
 ### Setup
 
 Let's look at the setup code
@@ -91,7 +116,7 @@ Now let's look at the draw code.
   
 What is this?? There is so many lines! Let's breakdown the lines. 
 
-	global yPos, stopGame, f
+	global stopGame, f
 	
 
 These lines, introduce the global variables. Don't remember what global variables are? Look back at processing lesson 2.
