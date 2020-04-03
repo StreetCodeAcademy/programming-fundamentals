@@ -72,8 +72,8 @@ Now let's look at the draw code.
     	
 		if keyPressed and keyCode == SHIFT:
         		inGame = True
-    
-    		if inGame == True:
+    		
+		if inGame == True:
         		paddleMove()
         		ballMove()
   
